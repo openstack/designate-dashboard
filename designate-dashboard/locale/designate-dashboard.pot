@@ -1,0 +1,326 @@
+# Translations template for designatedashboard.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the designatedashboard
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: designatedashboard 0.0.1.dev21\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2015-06-18 20:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:79
+msgid "Domain Name"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:81
+msgid "Enter a valid domain name."
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:85
+#: designatedashboard/dashboards/project/dns_domains/tables.py:169
+msgid "Email"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:90
+msgid "TTL (seconds)"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:97
+#: designatedashboard/dashboards/project/dns_domains/forms.py:306
+msgid "Description"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:111
+msgid "Unable to create domain."
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:122
+#, python-format
+msgid "Domain %(name)s created."
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:130
+msgid "Unable to update domain."
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:138
+#: designatedashboard/dashboards/project/dns_domains/tables.py:175
+msgid "Serial"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:144
+msgid "Created At"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:150
+msgid "Updated At"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:185
+#, python-format
+msgid "Domain %(name)s updated."
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:205
+msgid "Record Type"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:208
+msgid "A - Address record"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:209
+msgid "AAAA - IPv6 address record"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:210
+msgid "CNAME - Canonical name record"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:211
+msgid "MX - Mail exchange record"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:212
+msgid "PTR - Pointer record"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:213
+msgid "SPF - Sender Policy Framework"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:214
+msgid "SRV - Service locator"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:215
+msgid "SSHFP - SSH Public Key Fingerprint"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:216
+msgid "TXT - Text record"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:230
+#: designatedashboard/dashboards/project/dns_domains/forms.py:231
+#: designatedashboard/dashboards/project/dns_domains/forms.py:232
+#: designatedashboard/dashboards/project/dns_domains/forms.py:233
+#: designatedashboard/dashboards/project/dns_domains/forms.py:234
+#: designatedashboard/dashboards/project/dns_domains/forms.py:235
+#: designatedashboard/dashboards/project/dns_domains/forms.py:236
+#: designatedashboard/dashboards/project/dns_domains/forms.py:237
+#: designatedashboard/dashboards/project/dns_domains/forms.py:238
+#: designatedashboard/dashboards/project/dns_domains/forms.py:239
+#: designatedashboard/dashboards/project/dns_domains/forms.py:240
+#: designatedashboard/dashboards/project/dns_domains/tables.py:165
+#: designatedashboard/dashboards/project/dns_domains/tables.py:197
+msgid "Name"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:249
+#: designatedashboard/dashboards/project/dns_domains/forms.py:250
+msgid "IP Address"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:251
+msgid "Canonical Name"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:252
+msgid "Name Server"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:253
+msgid "Mail Server"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:254
+msgid "PTR Domain Name"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:255
+#: designatedashboard/dashboards/project/dns_domains/forms.py:256
+msgid "Value"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:261
+msgid "TXT"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:266
+#: designatedashboard/dashboards/project/dns_domains/forms.py:267
+#: designatedashboard/dashboards/project/dns_domains/forms.py:268
+msgid "Text"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:279
+#: designatedashboard/dashboards/project/dns_domains/forms.py:280
+#: designatedashboard/dashboards/project/dns_domains/tables.py:210
+msgid "Priority"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:285
+#: designatedashboard/dashboards/project/dns_domains/forms.py:292
+#: designatedashboard/dashboards/project/dns_domains/forms.py:293
+#: designatedashboard/dashboards/project/dns_domains/forms.py:294
+#: designatedashboard/dashboards/project/dns_domains/forms.py:295
+#: designatedashboard/dashboards/project/dns_domains/forms.py:296
+#: designatedashboard/dashboards/project/dns_domains/forms.py:297
+#: designatedashboard/dashboards/project/dns_domains/forms.py:298
+#: designatedashboard/dashboards/project/dns_domains/forms.py:299
+#: designatedashboard/dashboards/project/dns_domains/forms.py:300
+#: designatedashboard/dashboards/project/dns_domains/forms.py:301
+#: designatedashboard/dashboards/project/dns_domains/tables.py:172
+#: designatedashboard/dashboards/project/dns_domains/tables.py:214
+msgid "TTL"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:337
+msgid "Enter a valid SRV name"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:343
+msgid "Enter a valid hostname. The hostname should end with a period."
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:349
+msgid "Name must be in the current domain"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:361
+msgid "Enter a valid IPv4 address"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:368
+msgid "Enter a valid IPv6 address"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:372
+msgid "Enter a valid hostname"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:377
+msgid "Enter a valid SRV record"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:390
+msgid "Enter a valid SSHFP record"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:411
+msgid "This field is required"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:425
+#: designatedashboard/dashboards/project/dns_domains/forms.py:439
+msgid "Unable to create record."
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:431
+#, python-format
+msgid "Domain record %(name)s created."
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:450
+msgid "NS"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:451
+msgid "SOA"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/forms.py:475
+#, python-format
+msgid "Domain record %(name)s updated."
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/panel.py:21
+#: designatedashboard/dashboards/project/dns_domains/tables.py:88
+#: designatedashboard/dashboards/project/dns_domains/tables.py:179
+msgid "Domains"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/tables.py:44
+msgid "Create Domain"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/tables.py:56
+msgid "The quotas could not be retrieved."
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/tables.py:65
+msgid "Edit Domain"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/tables.py:75
+msgid "Manage Records"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/tables.py:85
+#: designatedashboard/dashboards/project/dns_domains/tables.py:149
+msgid "Delete"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/tables.py:86
+#: designatedashboard/dashboards/project/dns_domains/tables.py:150
+msgid "Deleted"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/tables.py:87
+msgid "Domain"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/tables.py:100
+msgid "Create Record"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/tables.py:113
+msgid "Edit Record"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/tables.py:133
+#: designatedashboard/dashboards/project/dns_domains/tables.py:151
+msgid "Record"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/tables.py:202
+msgid "Type"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/tables.py:206
+msgid "Data"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/tables.py:219
+msgid "Records"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/views.py:41
+msgid "Unable to retrieve domain list."
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/views.py:68
+#: designatedashboard/dashboards/project/dns_domains/views.py:85
+#: designatedashboard/dashboards/project/dns_domains/views.py:176
+#: designatedashboard/dashboards/project/dns_domains/views.py:201
+msgid "Unable to retrieve domain record."
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/views.py:111
+msgid "Unable to retrieve record list."
+msgstr ""
+
+#: designatedashboard/tests/settings.py:67
+msgid "Password must be between 8 and 18 characters."
+msgstr ""
+
