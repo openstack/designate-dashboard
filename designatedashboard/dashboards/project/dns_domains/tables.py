@@ -52,7 +52,7 @@ class CreateDomain(tables.LinkAction):
             if self.table:
                 quota = api.designate.quota_get(request)
                 return quota['domains'] > len(self.table.data)
-        except:
+        except Exception:
             msg = _("The quotas could not be retrieved.")
             messages.warning(request, msg)
         return True
@@ -174,7 +174,7 @@ class DomainsTable(tables.DataTable):
     serial = tables.Column("serial",
                            verbose_name=_("Serial"))
 
-    class Meta:
+    class Meta(object):
         name = "domains"
         verbose_name = _("Domains")
         table_actions = (CreateDomain, DeleteDomain,)
@@ -214,7 +214,7 @@ class RecordsTable(tables.DataTable):
                         verbose_name=_("TTL")
                         )
 
-    class Meta:
+    class Meta(object):
         name = "records"
         verbose_name = _("Records")
         table_actions = (CreateRecord,)
