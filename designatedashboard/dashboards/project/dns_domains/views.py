@@ -19,6 +19,9 @@ from horizon import forms
 from horizon import tables
 from horizon.views import HorizonTemplateView   # noqa
 
+from openstack_dashboard.api.network import tenant_floating_ip_list
+from openstack_dashboard.api.nova import server_list
+
 from designatedashboard import api
 
 from .forms import DomainCreate  # noqa
@@ -27,6 +30,7 @@ from .forms import RecordCreate  # noqa
 from .forms import RecordUpdate  # noqa
 from .tables import DomainsTable  # noqa
 from .tables import RecordsTable  # noqa
+from .utils import limit_records_to_fips  # noqa
 
 
 class IndexView(tables.DataTableView):
@@ -144,11 +148,12 @@ class BaseRecordFormView(forms.ModalFormView):
 
     def get_initial(self):
         self.domain = self.get_domain()
-
-        return {
-            'domain_id': self.domain.id,
-            'domain_name': self.domain.name,
-        }
+        results = {'domain_id': self.domain.id,
+                   'domain_name': self.domain.name, }
+        if limit_records_to_fips():
+            results.update({'fips': tenant_floating_ip_list(self.request),
+                            'instances': server_list(self.request)[0]})
+        return results
 
     def get_context_data(self, **kwargs):
         context = super(BaseRecordFormView, self).get_context_data(**kwargs)
@@ -215,6 +220,8 @@ class UpdateRecordView(BaseRecordFormView):
             'type': self.record.type.lower(),
             'description': self.record.description,
         })
+        if limit_records_to_fips():
+            initial.update({'ip_addr': self.record.data})
 
         return initial
 

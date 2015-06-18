@@ -24,6 +24,8 @@ from horizon import forms
 from horizon import messages
 
 from designatedashboard import api
+from designatedashboard.dashboards.project.dns_domains.utils\
+    import limit_records_to_fips
 
 
 LOG = logging.getLogger(__name__)
@@ -257,6 +259,16 @@ class RecordForm(forms.SelfHandlingForm):
         }),
     )
 
+    ip_addr = forms.ChoiceField(
+        required=False,
+        widget=forms.Select(attrs={
+            'class': 'switched',
+            'data-switch-on': 'record_type',
+            'data-record_type-a': _('IP Address'),
+            'data-record_type-aaaa': _('IP Address'),
+        }),
+    )
+
     txt = forms.CharField(
         label=_('TXT'),
         required=False,
@@ -309,6 +321,42 @@ class RecordForm(forms.SelfHandlingForm):
         widget=forms.Textarea(),
     )
 
+    def __init__(self, request, *args, **kwargs):
+        super(RecordForm, self).__init__(request, *args, **kwargs)
+        initial = kwargs.get('initial', {})
+        if limit_records_to_fips():
+            del self.fields['data'].widget.attrs['data-record_type-a']
+            del self.fields['data'].widget.attrs['data-record_type-aaaa']
+            self.fields['ip_addr'].choices = \
+                self.populate_ip_addr_choices(request,
+                                              initial)
+        else:
+            del self.fields['ip_addr']
+
+    def _generate_fip_list(self, fips, instances):
+        instance_dict = {instance.id: instance for instance in instances}
+        for fip in fips:
+            instance_name = _("Unknown instance name")
+            if getattr(fip, "instance_id", "None") in instance_dict:
+                instance_name = instance_dict[getattr(fip, "instance_id")].name
+            yield (fip.ip, "%s (%s)" % (fip.ip, instance_name))
+
+    def populate_ip_addr_choices(self, request, initial):
+        results = [(None, _('Select an IP')), ]
+        if (initial.get('ip_addr') and
+                initial['ip_addr'] not in [fip.ip for fip in initial['fips']]):
+            """The record is currently using an ip not in the list
+            of fips - this can happen when instance goes away or in
+            multi region setups
+            """
+            results.append((initial['ip_addr'], initial['ip_addr']))
+        results.extend(self._generate_fip_list(initial['fips'],
+                                               initial['instances']))
+        if len(results) == 1:
+            messages.warning(request, _("There are no floating IP addresses "
+                                        "currently in use to select from."))
+        return results
+
     def clean_type(self):
         '''Type value needs to be uppercased before it is sent to the API.'''
         return self.cleaned_data['type'].upper()
@@ -324,6 +372,10 @@ class RecordForm(forms.SelfHandlingForm):
         cleaned_data = super(RecordForm, self).clean()
         record_type = cleaned_data['type']
         domain_name = cleaned_data['domain_name']
+        if limit_records_to_fips():
+            ip_addr = cleaned_data.pop('ip_addr')
+            if (record_type in ['AAAA', 'A'] and limit_records_to_fips()):
+                cleaned_data['data'] = ip_addr
 
         #  Name field
         if self._is_field_blank(cleaned_data, 'name'):
