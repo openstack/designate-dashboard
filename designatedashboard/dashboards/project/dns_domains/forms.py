@@ -18,6 +18,7 @@ import re
 from designateclient import exceptions as designate_exceptions
 from django.core.exceptions import ValidationError  # noqa
 from django.core import validators
+from django.template.loader import render_to_string
 from django.utils.translation import ugettext_lazy as _  # noqa
 
 from horizon import forms
@@ -38,6 +39,8 @@ WILDCARD_DOMAIN_NAME_REGEX = r'^(?!.{255,})(?:(^\*|(?!\-)[A-Za-z0-9_\-]{1,63})(?
 SRV_NAME_REGEX = r'^(?:_[A-Za-z0-9_\-]{1,62}\.){2}'
 SRV_DATA_REGEX = r'^(?:(?:6553[0-5]|655[0-2][0-9]|65[0-4][0-9]{2}|6[0-4][0-9]{3}|[1-5][0-9]{4}|[1-9][0-9]{1,3}|[0-9])\s){2}(?!.{255,})((?!\-)[A-Za-z0-9_\-]{1,63}(?<!\-)\.)+$'  # noqa
 SSHFP_DATA_REGEX = r'^[1-3]\s[1-2]\s\b([0-9a-fA-F]{5,40}|[0-9a-fA-F]{64})\b$'
+# The max length for a dns label
+NAME_MAX_LENGTH = 63
 
 
 def handle_exc(func):
@@ -189,6 +192,16 @@ class DomainUpdate(DomainForm):
         return domain
 
 
+class PrefixWidget(forms.TextInput):
+
+    def render(self, name, value, attrs=None):
+        template_name = 'project/dns_domains/prefix_html_widget.html'
+        result = super(PrefixWidget, self).render(name, value, attrs)
+        view_data = {'input': result,
+                     'suffix': getattr(self, "suffix", '')}
+        return render_to_string(template_name, view_data)
+
+
 class RecordForm(forms.SelfHandlingForm):
 
     '''Base class for RecordCreate and RecordUpdate forms.
@@ -224,9 +237,8 @@ class RecordForm(forms.SelfHandlingForm):
     )
 
     name = forms.CharField(
-        max_length=256,
         required=False,
-        widget=forms.TextInput(attrs={
+        widget=PrefixWidget(attrs={
             'class': 'switched',
             'data-switch-on': 'record_type',
             'data-record_type-a': _('Name'),
@@ -324,6 +336,10 @@ class RecordForm(forms.SelfHandlingForm):
     def __init__(self, request, *args, **kwargs):
         super(RecordForm, self).__init__(request, *args, **kwargs)
         initial = kwargs.get('initial', {})
+        domain_suffix = "." + initial['domain_name']
+        self.fields['name'].widget.suffix = domain_suffix
+        self.fields['name'].max_length = min(NAME_MAX_LENGTH,
+                                             255 - len(domain_suffix))
         if limit_records_to_fips():
             del self.fields['data'].widget.attrs['data-record_type-a']
             del self.fields['data'].widget.attrs['data-record_type-aaaa']
@@ -390,16 +406,14 @@ class RecordForm(forms.SelfHandlingForm):
                 else:
                     cleaned_data['name'] += domain_name
             else:
+                cleaned_data['name'] += "." + domain_name
                 if not re.match(WILDCARD_DOMAIN_NAME_REGEX,
                                 cleaned_data['name']):
-                    self._add_field_error('name', _('Enter a valid hostname.'
-                                                    ' The hostname should end'
-                                                    ' with a period.'))
-                elif not cleaned_data['name'].endswith(domain_name):
-                    self._add_field_error(
-                        'name',
-                        _('Name must be in the current domain'))
-
+                    self._add_field_error('name',
+                                          _('Enter a valid hostname. The '
+                                            'hostname should contain letters '
+                                            'and numbers, and be no more than '
+                                            '63 characters.'))
         # Data field
         if self._is_field_blank(cleaned_data, 'data'):
             if record_type in ['A', 'AAAA', 'CNAME', 'MX', 'SRV']:

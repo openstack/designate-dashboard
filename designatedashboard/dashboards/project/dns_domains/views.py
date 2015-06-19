@@ -223,7 +223,7 @@ class UpdateRecordView(BaseRecordFormView):
 
         initial.update({
             'id': self.record.id,
-            'name': self.record.name,
+            'name': self.record.name.replace("." + initial['domain_name'], ''),
             'data': self.record.data,
             'txt': self.record.data,
             'priority': self.record.priority,

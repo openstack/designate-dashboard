@@ -86,13 +86,14 @@ DOMAIN_ID = '123'
 class BaseRecordFormCleanTests(test.TestCase):
 
     DOMAIN_NAME = 'foo.com.'
-    HOSTNAME = 'www.foo.com.'
+    HOSTNAME = 'www'
 
     MSG_FIELD_REQUIRED = 'This field is required'
-    MSG_INVALID_HOSTNAME = 'Enter a valid hostname. The hostname should end '\
-                           'with a period.'
+    MSG_INVALID_HOSTNAME = 'Enter a valid hostname. The '\
+                           'hostname should contain letters '\
+                           'and numbers, and be no more than '\
+                           '63 characters.'
     MSG_INVALID_HOSTNAME_SHORT = 'Enter a valid hostname'
-    MSG_OUTSIDE_DOMAIN = 'Name must be in the current domain'
 
     def setUp(self):
         super(BaseRecordFormCleanTests, self).setUp()
@@ -101,7 +102,9 @@ class BaseRecordFormCleanTests(test.TestCase):
         self.request = self.factory.get('', {})
 
         # Set-up form instance
-        self.form = forms.RecordCreate(self.request)
+        kwargs = {}
+        kwargs['initial'] = {'domain_name': self.DOMAIN_NAME}
+        self.form = forms.RecordCreate(self.request, **kwargs)
         self.form._errors = {}
         self.form.cleaned_data = {
             'domain_name': self.DOMAIN_NAME,
@@ -139,7 +142,7 @@ class ARecordFormTests(BaseRecordFormCleanTests):
         self.assert_no_errors()
 
     def test_valid_name_field_wild_card(self):
-        self.form.cleaned_data['name'] = '*.' + self.DOMAIN_NAME
+        self.form.cleaned_data['name'] = '*'
         self.form.clean()
         self.assert_no_errors()
 
@@ -154,17 +157,17 @@ class ARecordFormTests(BaseRecordFormCleanTests):
         self.assert_required_error('data')
 
     def test_invalid_name_field(self):
-        self.form.cleaned_data['name'] = 'foo'
+        self.form.cleaned_data['name'] = '$#%foo!!'
         self.form.clean()
         self.assert_error('name', self.MSG_INVALID_HOSTNAME)
 
     def test_invalid_name_field_starting_dash(self):
-        self.form.cleaned_data['name'] = '-ww.foo.com'
+        self.form.cleaned_data['name'] = '-ww'
         self.form.clean()
         self.assert_error('name', self.MSG_INVALID_HOSTNAME)
 
     def test_invalid_name_field_trailing_dash(self):
-        self.form.cleaned_data['name'] = 'www.foo.co-'
+        self.form.cleaned_data['name'] = 'co-'
         self.form.clean()
         self.assert_error('name', self.MSG_INVALID_HOSTNAME)
 
@@ -176,7 +179,7 @@ class ARecordFormTests(BaseRecordFormCleanTests):
     def test_outside_of_domain_name_field(self):
         self.form.cleaned_data['name'] = 'www.bar.com.'
         self.form.clean()
-        self.assert_error('name', self.MSG_OUTSIDE_DOMAIN)
+        self.assert_error('name', self.MSG_INVALID_HOSTNAME)
 
     def test_invalid_data_field(self):
         self.form.cleaned_data['data'] = 'foo'
@@ -201,7 +204,7 @@ class AAAARecordFormTests(BaseRecordFormCleanTests):
         self.assert_no_errors()
 
     def test_valid_name_field_wild_card(self):
-        self.form.cleaned_data['name'] = '*.' + self.DOMAIN_NAME
+        self.form.cleaned_data['name'] = '*'
         self.form.clean()
         self.assert_no_errors()
 
@@ -216,7 +219,7 @@ class AAAARecordFormTests(BaseRecordFormCleanTests):
         self.assert_required_error('data')
 
     def test_invalid_name_field(self):
-        self.form.cleaned_data['name'] = 'foo'
+        self.form.cleaned_data['name'] = '#@$foo!!'
         self.form.clean()
         self.assert_error('name', self.MSG_INVALID_HOSTNAME)
 
@@ -238,7 +241,7 @@ class AAAARecordFormTests(BaseRecordFormCleanTests):
     def test_outside_of_domain_name_field(self):
         self.form.cleaned_data['name'] = 'www.bar.com.'
         self.form.clean()
-        self.assert_error('name', self.MSG_OUTSIDE_DOMAIN)
+        self.assert_error('name', self.MSG_INVALID_HOSTNAME)
 
     def test_invalid_data_field(self):
         self.form.cleaned_data['data'] = 'foo'
@@ -261,7 +264,7 @@ class CNAMERecordFormTests(BaseRecordFormCleanTests):
         self.assert_no_errors()
 
     def test_valid_name_field_wild_card(self):
-        self.form.cleaned_data['name'] = '*.' + self.DOMAIN_NAME
+        self.form.cleaned_data['name'] = '*'
         self.form.clean()
         self.assert_no_errors()
 
@@ -276,7 +279,7 @@ class CNAMERecordFormTests(BaseRecordFormCleanTests):
         self.assert_required_error('data')
 
     def test_invalid_name_field(self):
-        self.form.cleaned_data['name'] = 'foo'
+        self.form.cleaned_data['name'] = '$#%#$foo!!!'
         self.form.clean()
         self.assert_error('name', self.MSG_INVALID_HOSTNAME)
 
@@ -298,7 +301,7 @@ class CNAMERecordFormTests(BaseRecordFormCleanTests):
     def test_outside_of_domain_name_field(self):
         self.form.cleaned_data['name'] = 'www.bar.com.'
         self.form.clean()
-        self.assert_error('name', self.MSG_OUTSIDE_DOMAIN)
+        self.assert_error('name', self.MSG_INVALID_HOSTNAME)
 
     def test_invalid_data_field(self):
         self.form.cleaned_data['data'] = 'foo'
@@ -356,7 +359,7 @@ class TXTRecordFormTests(BaseRecordFormCleanTests):
         self.assert_no_errors()
 
     def test_valid_name_field_wild_card(self):
-        self.form.cleaned_data['name'] = '*.' + self.DOMAIN_NAME
+        self.form.cleaned_data['name'] = '*'
         self.form.clean()
         self.assert_no_errors()
 
@@ -371,7 +374,7 @@ class TXTRecordFormTests(BaseRecordFormCleanTests):
         self.assert_required_error('txt')
 
     def test_invalid_name_field(self):
-        self.form.cleaned_data['name'] = 'foo'
+        self.form.cleaned_data['name'] = 'foo-'
         self.form.clean()
         self.assert_error('name', self.MSG_INVALID_HOSTNAME)
 
@@ -386,14 +389,14 @@ class TXTRecordFormTests(BaseRecordFormCleanTests):
         self.assert_error('name', self.MSG_INVALID_HOSTNAME)
 
     def test_invalid_name_field_bad_wild_card(self):
-        self.form.cleaned_data['name'] = 'derp.*.' + self.DOMAIN_NAME
+        self.form.cleaned_data['name'] = 'derp.*'
         self.form.clean()
         self.assert_error('name', self.MSG_INVALID_HOSTNAME)
 
     def test_outside_of_domain_name_field(self):
         self.form.cleaned_data['name'] = 'www.bar.com.'
         self.form.clean()
-        self.assert_error('name', self.MSG_OUTSIDE_DOMAIN)
+        self.assert_error('name', self.MSG_INVALID_HOSTNAME)
 
     def test_default_assignment_data_field(self):
         self.form.clean()

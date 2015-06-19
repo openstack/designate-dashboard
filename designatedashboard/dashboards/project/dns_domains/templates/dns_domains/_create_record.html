@@ -7,13 +7,16 @@
 {% block modal_id %}create_record_modal{% endblock %}
 {% block modal-header %}{% trans "Create Record for" %} {{ domain.name }}{% endblock %}
 
-{% block modal-body-right %}
-  <h3>{% trans "Description:" %}</h3>
+{% block modal-body %}
+
+   <div id="scoped-content">
+   {% include 'project/dns_domains/prefix_field_style.html' %}
+     <fieldset>
+     {% include "horizon/common/_form_fields.html" %}
+     </fieldset>
+   </div>
+
   {% blocktrans %}
-  <p>
-     <strong>Please note:</strong>
-    For record types, the name <strong>must</strong> end with a period.
-  </p>
   <p>
     <strong>TTL</strong>
     The TTL is the time-to-live for the record, in seconds.
