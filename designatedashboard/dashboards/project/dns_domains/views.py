@@ -123,6 +123,7 @@ class RecordsView(tables.DataTableView):
 
 
 class BaseRecordFormView(forms.ModalFormView):
+    cancel_label = _("Cancel")
 
     def get_success_url(self):
         return reverse('horizon:project:dns_domains:records',
@@ -151,6 +152,14 @@ class BaseRecordFormView(forms.ModalFormView):
         }
 
     def get_context_data(self, **kwargs):
+        """Set the cancel url
+
+        the cancel_url needs a variable in it
+        so we cannot do this with a simple class attr
+        this is critical to perform before the super.get_context_data
+        """
+        self.cancel_url = reverse('horizon:project:dns_domains:records',
+                                  args=(self.kwargs['domain_id'],))
         context = super(BaseRecordFormView, self).get_context_data(**kwargs)
         context['domain'] = self.domain
         return context
@@ -158,6 +167,7 @@ class BaseRecordFormView(forms.ModalFormView):
 
 class CreateRecordView(BaseRecordFormView):
     form_class = RecordCreate
+    submit_label = _("Create Record")
     template_name = 'project/dns_domains/create_record.html'
 
 
@@ -186,6 +196,7 @@ class ViewRecordDetailsView(HorizonTemplateView):
 
 class UpdateRecordView(BaseRecordFormView):
     form_class = RecordUpdate
+    submit_label = _("Update Record")
     template_name = 'project/dns_domains/update_record.html'
 
     def get_record(self):
