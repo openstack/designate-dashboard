@@ -93,7 +93,7 @@ class DomainForm(forms.SelfHandlingForm):
 
     ttl = forms.IntegerField(
         label=_("TTL (seconds)"),
-        min_value=0,
+        min_value=1,
         max_value=MAX_TTL,
         required=False,
     )
@@ -307,7 +307,7 @@ class RecordForm(forms.SelfHandlingForm):
 
     ttl = forms.IntegerField(
         label=_('TTL'),
-        min_value=0,
+        min_value=1,
         max_value=MAX_TTL,
         required=False,
         widget=forms.TextInput(attrs={
