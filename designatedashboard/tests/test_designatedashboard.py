@@ -24,12 +24,7 @@ from django.core.urlresolvers import reverse  # noqa
 
 from mox import IsA  # noqa
 
-# from designatedashboard import api
-
-from openstack_dashboard.test import helpers as test
-
-from designatedashboard.dashboards.project.dns_domains import forms
-
+from designatedashboard import tests
 
 DOMAIN_ID = '123'
 # INDEX_URL = reverse('horizon:project:dns_domains:index')
@@ -83,49 +78,7 @@ DOMAIN_ID = '123'
 #         self.assertEqual(len(res.context['table'].data), len(records))
 
 
-class BaseRecordFormCleanTests(test.TestCase):
-
-    DOMAIN_NAME = 'foo.com.'
-    HOSTNAME = 'www'
-
-    MSG_FIELD_REQUIRED = 'This field is required'
-    MSG_INVALID_HOSTNAME = 'Enter a valid hostname. The '\
-                           'hostname should contain letters '\
-                           'and numbers, and be no more than '\
-                           '63 characters.'
-    MSG_INVALID_HOSTNAME_SHORT = 'Enter a valid hostname'
-
-    def setUp(self):
-        super(BaseRecordFormCleanTests, self).setUp()
-
-        # Request object with messages support
-        self.request = self.factory.get('', {})
-
-        # Set-up form instance
-        kwargs = {}
-        kwargs['initial'] = {'domain_name': self.DOMAIN_NAME}
-        self.form = forms.RecordCreate(self.request, **kwargs)
-        self.form._errors = {}
-        self.form.cleaned_data = {
-            'domain_name': self.DOMAIN_NAME,
-            'name': '',
-            'data': '',
-            'txt': '',
-            'priority': None,
-            'ttl': None,
-        }
-
-    def assert_no_errors(self):
-        self.assertEqual(self.form._errors, {})
-
-    def assert_error(self, field, msg):
-        self.assertIn(msg, self.form._errors[field])
-
-    def assert_required_error(self, field):
-        self.assert_error(field, self.MSG_FIELD_REQUIRED)
-
-
-class ARecordFormTests(BaseRecordFormCleanTests):
+class ARecordFormTests(tests.BaseRecordFormCleanTests):
 
     IPV4 = '1.1.1.1'
 
@@ -187,7 +140,7 @@ class ARecordFormTests(BaseRecordFormCleanTests):
         self.assert_error('data', self.MSG_INVALID_IPV4)
 
 
-class AAAARecordFormTests(BaseRecordFormCleanTests):
+class AAAARecordFormTests(tests.BaseRecordFormCleanTests):
 
     IPV6 = '1111:1111:1111:11::1'
 
@@ -249,7 +202,7 @@ class AAAARecordFormTests(BaseRecordFormCleanTests):
         self.assert_error('data', self.MSG_INVALID_IPV6)
 
 
-class CNAMERecordFormTests(BaseRecordFormCleanTests):
+class CNAMERecordFormTests(tests.BaseRecordFormCleanTests):
 
     CNAME = 'bar.foo.com.'
 
@@ -309,7 +262,7 @@ class CNAMERecordFormTests(BaseRecordFormCleanTests):
         self.assert_error('data', self.MSG_INVALID_HOSTNAME_SHORT)
 
 
-class MXRecordFormTests(BaseRecordFormCleanTests):
+class MXRecordFormTests(tests.BaseRecordFormCleanTests):
 
     MAIL_SERVER = 'mail.foo.com.'
     PRIORITY = 10
@@ -344,7 +297,7 @@ class MXRecordFormTests(BaseRecordFormCleanTests):
         self.assertEqual(self.DOMAIN_NAME, self.form.cleaned_data['name'])
 
 
-class TXTRecordFormTests(BaseRecordFormCleanTests):
+class TXTRecordFormTests(tests.BaseRecordFormCleanTests):
 
     TEXT = 'Lorem ipsum'
 
@@ -403,7 +356,7 @@ class TXTRecordFormTests(BaseRecordFormCleanTests):
         self.assertEqual(self.TEXT, self.form.cleaned_data['data'])
 
 
-class SRVRecordFormTests(BaseRecordFormCleanTests):
+class SRVRecordFormTests(tests.BaseRecordFormCleanTests):
 
     SRV_NAME = '_foo._tcp.'
     SRV_DATA = '1 1 srv.foo.com.'
