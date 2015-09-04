@@ -24,4 +24,4 @@ nosexcover
 # Horizon requirements
 Django<1.9,>=1.7
 django-compressor>=1.4
-django-openstack-auth!=1.1.8,>=1.1.7
+django-openstack-auth>=1.4.0
