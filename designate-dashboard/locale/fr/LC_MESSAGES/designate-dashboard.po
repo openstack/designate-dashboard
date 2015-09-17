@@ -1,0 +1,236 @@
+# French translations for designate-dashboard.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the designate-dashboard
+# project.
+#
+# Translators:
+# Lucas Mascaro <mascaro.lucas@yahoo.fr>, 2015
+# Kevin Tibi <kodokuu@gmail.com>, 2015. #zanata
+# OpenStack Infra <zanata@openstack.org>, 2015. #zanata
+# SOURDET Henri <hsourdet@gmail.com>, 2015. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: designate-dashboard 1.0.0.dev38\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2015-09-17 06:21+0000\n"
+"PO-Revision-Date: 2015-09-15 08:20+0000\n"
+"Last-Translator: SOURDET Henri <hsourdet@gmail.com>\n"
+"Language-Team: French (http://www.transifex.com/openstack/designate-"
+"dashboard/language/fr/)\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.0\n"
+
+msgid "A - Address record"
+msgstr "A - Enregistrement d'adresse"
+
+msgid "AAAA - IPv6 address record"
+msgstr "AAAA - Enregistrement d'adresse IPv6"
+
+msgid "CNAME - Canonical name record"
+msgstr "CNAME - Enregistrement de nom canonique"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "Canonical Name"
+msgstr "Nom canonique"
+
+msgid "Create Domain"
+msgstr "Créer un domaine"
+
+msgid "Create Record"
+msgstr "Créer un enregistrement"
+
+msgid "Created At"
+msgstr "Créer à"
+
+msgid "Data"
+msgstr "Donnée"
+
+msgid "Delete"
+msgstr "Supprimer"
+
+msgid "Deleted"
+msgstr "Supprimé"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Domain"
+msgstr "Domaine"
+
+#, python-format
+msgid "Domain %(name)s created."
+msgstr "Domaine %(name)s créé"
+
+#, python-format
+msgid "Domain %(name)s updated."
+msgstr "Domaine %(name)s mit a jour"
+
+msgid "Domain Name"
+msgstr "Nom de domaine"
+
+#, python-format
+msgid "Domain record %(name)s created."
+msgstr "Enregistrement du domaine %(name)s créé"
+
+#, python-format
+msgid "Domain record %(name)s updated."
+msgstr "Enregistrement du domaine %(name)s mis à jour."
+
+msgid "Domains"
+msgstr "Domaines"
+
+msgid "Edit Domain"
+msgstr "Editer le domaine"
+
+msgid "Edit Record"
+msgstr "Editer un enregistrement"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Enter a valid IPv4 address"
+msgstr "Entrer une adresse IPv4 valide"
+
+msgid "Enter a valid IPv6 address"
+msgstr "Entrer une adresse IPv6 valide"
+
+msgid "Enter a valid SRV name"
+msgstr "Entrer un nom SRV valide"
+
+msgid "Enter a valid SRV record"
+msgstr "Entrer un enregistrement SRV valide"
+
+msgid "Enter a valid SSHFP record"
+msgstr "Entrer un enregistrement SSHFP valide"
+
+msgid "Enter a valid domain name."
+msgstr "Entrez un nom de domaine valide"
+
+msgid "Enter a valid hostname"
+msgstr "Entrer un nom d'hôte valide"
+
+msgid ""
+"Enter a valid hostname. The hostname should contain letters and numbers, and "
+"be no more than 63 characters."
+msgstr ""
+"Entrer un nom d'hôte valide. Le nom d'hôte ne doit contenir que des lettres "
+"et des chiffres, et ne doit pas contenir plus de 63 caractères."
+
+msgid "IP Address"
+msgstr "Adresse IP"
+
+msgid "MX - Mail exchange record"
+msgstr "MX - enregistrement d'échange de mail"
+
+msgid "Mail Server"
+msgstr "Serveur mail"
+
+msgid "Manage Records"
+msgstr "Gérer les enregistrements"
+
+msgid "NS"
+msgstr "NS"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "Name Server"
+msgstr "Nom de serveur"
+
+msgid "PTR - Pointer record"
+msgstr "PTR - Enregistrement pointeur"
+
+msgid "PTR Domain Name"
+msgstr "Nom de domaine PTR"
+
+msgid "Priority"
+msgstr "Priorité"
+
+msgid "Record"
+msgstr "Enregistrement"
+
+msgid "Record Type"
+msgstr "Type d'enregistrement"
+
+msgid "Records"
+msgstr "Enregistrements"
+
+msgid "SOA"
+msgstr "SOA"
+
+msgid "SPF - Sender Policy Framework"
+msgstr "SPF - Règle et politique d’émission"
+
+msgid "SRV - Service locator"
+msgstr "SRV - Enregistrement de service"
+
+msgid "SSHFP - SSH Public Key Fingerprint"
+msgstr "SSHFP - Empreinte digitale de la clé SSH publique"
+
+msgid "Select an IP"
+msgstr "Sélectionnez une IP"
+
+msgid "Serial"
+msgstr "Série"
+
+msgid "TTL"
+msgstr "TTL"
+
+msgid "TTL (seconds)"
+msgstr "TTL (secondes)"
+
+msgid "TXT"
+msgstr "TXT"
+
+msgid "TXT - Text record"
+msgstr "TXT - Enregistrement de texte"
+
+msgid "Text"
+msgstr "Texte"
+
+msgid "The quotas could not be retrieved."
+msgstr "Les quotas n'ont pas pu être récupérés."
+
+msgid "There are no floating IP addresses currently in use to select from."
+msgstr "Aucune adresse IP flottante en cours d'utilisation à sélectionner."
+
+msgid "This field is required"
+msgstr "Ce champ est requis"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Unable to create domain."
+msgstr "Impossible de créer le domaine"
+
+msgid "Unable to create record."
+msgstr "Impossible de créer un enregistrement"
+
+msgid "Unable to retrieve domain list."
+msgstr "Impossible de récupérer la liste des domaines."
+
+msgid "Unable to retrieve domain record."
+msgstr "Impossible de récupérer l'enregistrement du domaine."
+
+msgid "Unable to retrieve record list."
+msgstr "Impossible de récupérer la liste des enregistrements."
+
+msgid "Unable to update domain."
+msgstr "Impossible de mettre a jour le domaine."
+
+msgid "Unknown instance name"
+msgstr "Nom d'instance inconnu"
+
+msgid "Update Record"
+msgstr "Enregistrer"
+
+msgid "Updated At"
+msgstr "Mit a jour à"
+
+msgid "Value"
+msgstr "Valeur"
