@@ -10,10 +10,10 @@
 # SOURDET Henri <hsourdet@gmail.com>, 2015. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: designate-dashboard 1.0.0.dev38\n"
+"Project-Id-Version: designate-dashboard 1.0.0.0b3.dev19\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-09-17 06:21+0000\n"
-"PO-Revision-Date: 2015-09-15 08:20+0000\n"
+"POT-Creation-Date: 2015-09-21 06:19+0000\n"
+"PO-Revision-Date: 2015-09-18 03:36+0000\n"
 "Last-Translator: SOURDET Henri <hsourdet@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/openstack/designate-"
 "dashboard/language/fr/)\n"
@@ -45,7 +45,7 @@ msgid "Create Record"
 msgstr "Créer un enregistrement"
 
 msgid "Created At"
-msgstr "Créer à"
+msgstr "Créé le"
 
 msgid "Data"
 msgstr "Donnée"
@@ -68,7 +68,7 @@ msgstr "Domaine %(name)s créé"
 
 #, python-format
 msgid "Domain %(name)s updated."
-msgstr "Domaine %(name)s mit a jour"
+msgstr "Domaine %(name)s mis à jour"
 
 msgid "Domain Name"
 msgstr "Nom de domaine"
@@ -125,10 +125,10 @@ msgid "IP Address"
 msgstr "Adresse IP"
 
 msgid "MX - Mail exchange record"
-msgstr "MX - enregistrement d'échange de mail"
+msgstr "MX - Enregistrement de serveur de messagerie"
 
 msgid "Mail Server"
-msgstr "Serveur mail"
+msgstr "Serveur de messagerie"
 
 msgid "Manage Records"
 msgstr "Gérer les enregistrements"
@@ -176,7 +176,7 @@ msgid "Select an IP"
 msgstr "Sélectionnez une IP"
 
 msgid "Serial"
-msgstr "Série"
+msgstr "Numéro de série"
 
 msgid "TTL"
 msgstr "TTL"
@@ -230,7 +230,7 @@ msgid "Update Record"
 msgstr "Enregistrer"
 
 msgid "Updated At"
-msgstr "Mit a jour à"
+msgstr "Mis à jour le"
 
 msgid "Value"
 msgstr "Valeur"
