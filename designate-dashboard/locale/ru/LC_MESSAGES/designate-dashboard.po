@@ -5,13 +5,15 @@
 #
 # Translators:
 # Denis Gubanov <v12aml@gmail.com>, 2015
+# OpenStack Infra <zanata@openstack.org>, 2015. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version:  designate-dashboard\n"
+"Project-Id-Version: designate-dashboard 2.0.0.dev23\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-08-04 06:31+0000\n"
+"POT-Creation-Date: 2015-09-30 06:30+0000\n"
 "PO-Revision-Date: 2015-07-25 10:25+0000\n"
 "Last-Translator: Denis Gubanov <v12aml@gmail.com>\n"
+"Language: ru\n"
 "Language-Team: Russian (http://www.transifex.com/openstack/designate-"
 "dashboard/language/ru/)\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
@@ -20,7 +22,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.0\n"
+"Generated-By: Babel 2.1.1\n"
 
 msgid "A - Address record"
 msgstr "A - IPv4 адрес"
