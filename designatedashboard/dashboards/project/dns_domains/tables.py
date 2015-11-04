@@ -22,6 +22,8 @@ from horizon.utils import memoized
 
 from designatedashboard import api
 
+from openstack_dashboard import policy
+
 LOG = logging.getLogger(__name__)
 
 EDITABLE_RECORD_TYPES = (
@@ -48,13 +50,14 @@ class CreateDomain(tables.LinkAction):
 
     @memoized.memoized_method
     def allowed(self, request, datum):
-        try:
-            if self.table:
-                quota = api.designate.quota_get(request)
-                return quota['domains'] > len(self.table.data)
-        except Exception:
-            msg = _("The quotas could not be retrieved.")
-            messages.warning(request, msg)
+        if policy.check((("dns", "get_quota"),), request):
+            try:
+                if self.table:
+                    quota = api.designate.quota_get(request)
+                    return quota['domains'] > len(self.table.data)
+            except Exception:
+                msg = _("The quotas could not be retrieved.")
+                messages.warning(request, msg)
         return True
 
 
