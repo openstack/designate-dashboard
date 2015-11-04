@@ -1,0 +1,227 @@
+# Shu Muto <shu-mutou@rf.jp.nec.com>, 2015. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: designate-dashboard 2.0.0.dev3\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2015-11-04 06:34+0000\n"
+"PO-Revision-Date: 2015-11-02 08:39+0000\n"
+"Last-Translator: Shu Muto <shu-mutou@rf.jp.nec.com>\n"
+"Language: ja\n"
+"Language-Team: Japanese\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.1.1\n"
+
+msgid "A - Address record"
+msgstr "A - アドレスレコード"
+
+msgid "AAAA - IPv6 address record"
+msgstr "AAAA - IPv6 アドレスレコード"
+
+msgid "CNAME - Canonical name record"
+msgstr "CNAME - 別名レコード"
+
+msgid "Cancel"
+msgstr "取り消し"
+
+msgid "Canonical Name"
+msgstr "正規名"
+
+msgid "Create Domain"
+msgstr "ドメインの作成"
+
+msgid "Create Record"
+msgstr "レコードの作成"
+
+msgid "Created At"
+msgstr "作成時刻"
+
+msgid "Data"
+msgstr "データ"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Deleted"
+msgstr "削除"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "Domain"
+msgstr "ドメイン"
+
+#, python-format
+msgid "Domain %(name)s created."
+msgstr "ドメイン %(name)s は作成されました。"
+
+#, python-format
+msgid "Domain %(name)s updated."
+msgstr "ドメイン %(name)s は更新されました。"
+
+msgid "Domain Name"
+msgstr "ドメイン名"
+
+#, python-format
+msgid "Domain record %(name)s created."
+msgstr "ドメインレコード %(name)s は作成されました。"
+
+#, python-format
+msgid "Domain record %(name)s updated."
+msgstr "ドメインレコード %(name)s は更新されました。"
+
+msgid "Domains"
+msgstr "ドメイン"
+
+msgid "Edit Domain"
+msgstr "ドメインの編集"
+
+msgid "Edit Record"
+msgstr "レコードの編集"
+
+msgid "Email"
+msgstr "メール"
+
+msgid "Enter a valid IPv4 address"
+msgstr "有効な IPv4 アドレスを入力してください。"
+
+msgid "Enter a valid IPv6 address"
+msgstr "有効な IPv6 アドレスを入力してください。"
+
+msgid "Enter a valid SRV name"
+msgstr "有効な SRV 名を入力してください。"
+
+msgid "Enter a valid SRV record"
+msgstr "有効な SRV レコードを入力してください。"
+
+msgid "Enter a valid SSHFP record"
+msgstr "有効な SSHFP レコードを入力してください。"
+
+msgid "Enter a valid domain name."
+msgstr "有効なドメイン名を入力してください。"
+
+msgid "Enter a valid hostname"
+msgstr "有効なホスト名を入力してください。"
+
+msgid ""
+"Enter a valid hostname. The hostname should contain letters and numbers, and "
+"be no more than 63 characters."
+msgstr ""
+"有効なホスト名を入力してください。ホスト名は、文字と数字で63文字以内で設定し"
+"てください。"
+
+msgid "IP Address"
+msgstr "IP アドレス"
+
+msgid "MX - Mail exchange record"
+msgstr "MX - メールエクスチェンジャーレコード"
+
+msgid "Mail Server"
+msgstr "メールサーバー"
+
+msgid "Manage Records"
+msgstr "レコードの管理"
+
+msgid "NS"
+msgstr "NS"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Name Server"
+msgstr "ネームサーバー"
+
+msgid "PTR - Pointer record"
+msgstr "PTR - ポインターレコード"
+
+msgid "PTR Domain Name"
+msgstr "PTR ドメイン名"
+
+msgid "Priority"
+msgstr "優先度"
+
+msgid "Record"
+msgstr "レコード"
+
+msgid "Record Type"
+msgstr "レコード種別"
+
+msgid "Records"
+msgstr "レコード"
+
+msgid "SOA"
+msgstr "SOA"
+
+msgid "SPF - Sender Policy Framework"
+msgstr "SPF - センダーポリシーフレームワーク"
+
+msgid "SRV - Service locator"
+msgstr "SRV - サービスロケーター"
+
+msgid "SSHFP - SSH Public Key Fingerprint"
+msgstr "SSHFP - SSH 公開鍵フィンガープリント"
+
+msgid "Select an IP"
+msgstr "IP を選択してください"
+
+msgid "Serial"
+msgstr "シリアル"
+
+msgid "TTL"
+msgstr "TTL"
+
+msgid "TTL (seconds)"
+msgstr "TTL (秒)"
+
+msgid "TXT"
+msgstr "TXT"
+
+msgid "TXT - Text record"
+msgstr "TXT - テキストレコード"
+
+msgid "Text"
+msgstr "テキスト"
+
+msgid "The quotas could not be retrieved."
+msgstr "クォータを取得できませんでした。"
+
+msgid "There are no floating IP addresses currently in use to select from."
+msgstr "選択可能な現在使用中のフローティングIPはありません。"
+
+msgid "This field is required"
+msgstr "このフィールドは必須です"
+
+msgid "Type"
+msgstr "種別"
+
+msgid "Unable to create domain."
+msgstr "ドメインを作成できません。"
+
+msgid "Unable to create record."
+msgstr "レコードを作成できません。"
+
+msgid "Unable to retrieve domain list."
+msgstr "ドメインの一覧を取得できません。"
+
+msgid "Unable to retrieve domain record."
+msgstr "ドメインレコードを取得できません。"
+
+msgid "Unable to retrieve record list."
+msgstr "レコードの一覧を取得できません。"
+
+msgid "Unable to update domain."
+msgstr "ドメインを更新できません"
+
+msgid "Unknown instance name"
+msgstr "不明なインスタンス名"
+
+msgid "Update Record"
+msgstr "レコードの更新"
+
+msgid "Updated At"
+msgstr "最終更新"
+
+msgid "Value"
+msgstr "値"
