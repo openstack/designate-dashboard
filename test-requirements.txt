@@ -3,25 +3,25 @@
 # process, which may cause wedges in the gate later.
 hacking<0.11,>=0.10.0
 
-coverage>=3.6
-discover
-mock>=1.2
-mox>=0.5.3
-mox3>=0.7.0
+coverage>=3.6 # Apache-2.0
+discover # BSD
+mock>=1.2 # BSD
+mox>=0.5.3 # Apache-2.0
+mox3>=0.7.0 # Apache-2.0
 oslo.config>=3.2.0 # Apache-2.0
 pylint==1.4.5 # GNU GPL v2
-testrepository>=0.0.18
-testtools>=1.4.0
-unittest2
-sphinx!=1.2.0,!=1.3b1,<1.3,>=1.1.2
+testrepository>=0.0.18 # Apache-2.0/BSD
+testtools>=1.4.0 # MIT
+unittest2 # BSD
+sphinx!=1.2.0,!=1.3b1,<1.3,>=1.1.2 # BSD
 oslosphinx!=3.4.0,>=2.5.0 # Apache-2.0
-nose
-nosehtmloutput>=0.0.3
-openstack.nose-plugin>=0.7
-django-nose>=1.2
-nosexcover
+nose # LGPL
+nosehtmloutput>=0.0.3 # Apache-2.0
+openstack.nose-plugin>=0.7 # Apache-2.0
+django-nose>=1.2 # BSD
+nosexcover # BSD
 
 # Horizon requirements
-Django<1.9,>=1.8
-django-compressor>=1.4
-django-openstack-auth>=2.0.0
+Django<1.9,>=1.8 # BSD
+django-compressor>=1.4 # MIT
+django-openstack-auth>=2.0.0 # Apache-2.0
