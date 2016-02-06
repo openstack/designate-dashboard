@@ -5,17 +5,17 @@
 #
 # Translators:
 # Alper Çiftçi <alprciftci@gmail.com>, 2015
-# OpenStack Infra <zanata@openstack.org>, 2015. #zanata
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: designate-dashboard 2.0.0.0b2.dev12\n"
+"Project-Id-Version: designate-dashboard 1.0.0.dev38\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-01-08 20:53+0000\n"
+"POT-Creation-Date: 2015-07-29 06:41+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-08-26 07:05+0000\n"
-"Last-Translator: Alper Çiftçi <alprciftci@gmail.com>\n"
+"PO-Revision-Date: 2016-02-05 07:24+0000\n"
+"Last-Translator: Andreas Jaeger <jaegerandi@gmail.com>\n"
 "Language: tr-TR\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.0\n"
@@ -57,6 +57,9 @@ msgstr "Silindi"
 
 msgid "Description"
 msgstr "Açıklama"
+
+msgid "Domain"
+msgstr "Alan"
 
 #, python-format
 msgid "Domain %(name)s created."
