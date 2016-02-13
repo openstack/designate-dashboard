@@ -1,14 +1,14 @@
-# Shu Muto <shu-mutou@rf.jp.nec.com>, 2015. #zanata
+# KATO Tomoyuki <kato.tomoyuki@jp.fujitsu.com>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: designate-dashboard 2.0.0.0b2.dev12\n"
+"Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-01-08 20:53+0000\n"
+"POT-Creation-Date: 2016-02-12 20:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-11-02 08:39+0000\n"
-"Last-Translator: Shu Muto <shu-mutou@rf.jp.nec.com>\n"
+"PO-Revision-Date: 2016-02-08 02:40+0000\n"
+"Last-Translator: KATO Tomoyuki <kato.tomoyuki@jp.fujitsu.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
 "X-Generator: Zanata 3.7.3\n"
@@ -55,22 +55,22 @@ msgstr "ドメイン"
 
 #, python-format
 msgid "Domain %(name)s created."
-msgstr "ドメイン %(name)s は作成されました。"
+msgstr "ドメイン %(name)s が作成されました。"
 
 #, python-format
 msgid "Domain %(name)s updated."
-msgstr "ドメイン %(name)s は更新されました。"
+msgstr "ドメイン %(name)s が更新されました。"
 
 msgid "Domain Name"
 msgstr "ドメイン名"
 
 #, python-format
 msgid "Domain record %(name)s created."
-msgstr "ドメインレコード %(name)s は作成されました。"
+msgstr "ドメインレコード %(name)s が作成されました。"
 
 #, python-format
 msgid "Domain record %(name)s updated."
-msgstr "ドメインレコード %(name)s は更新されました。"
+msgstr "ドメインレコード %(name)s が更新されました。"
 
 msgid "Domains"
 msgstr "ドメイン"
@@ -109,8 +109,8 @@ msgid ""
 "Enter a valid hostname. The hostname should contain letters and numbers, and "
 "be no more than 63 characters."
 msgstr ""
-"有効なホスト名を入力してください。ホスト名は、文字と数字で63文字以内で設定し"
-"てください。"
+"有効なホスト名を入力してください。ホスト名は、文字と数字で 63 文字以内で設定"
+"してください。"
 
 msgid "IP Address"
 msgstr "IP アドレス"
@@ -188,7 +188,7 @@ msgid "The quotas could not be retrieved."
 msgstr "クォータを取得できませんでした。"
 
 msgid "There are no floating IP addresses currently in use to select from."
-msgstr "選択可能な現在使用中のフローティングIPはありません。"
+msgstr "選択可能な現在使用中の Floating IP がありません。"
 
 msgid "This field is required"
 msgstr "このフィールドは必須です"
