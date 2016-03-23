@@ -12,10 +12,10 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-from designatedashboard import tests
+from designatedashboard.tests import base
 
 
-class PTRRecordFormTests(tests.BaseRecordFormCleanTests):
+class PTRRecordFormTests(base.BaseRecordFormCleanTests):
 
     PTR = "6.0.0.10.in-addr.arpa."
 

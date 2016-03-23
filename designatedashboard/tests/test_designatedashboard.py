@@ -22,9 +22,7 @@ from __future__ import unicode_literals
 from django.core.urlresolvers import reverse  # noqa
 # from django import http
 
-from mox import IsA  # noqa
-
-from designatedashboard import tests
+from designatedashboard.tests import base
 
 DOMAIN_ID = '123'
 # INDEX_URL = reverse('horizon:project:dns_domains:index')
@@ -78,7 +76,7 @@ DOMAIN_ID = '123'
 #         self.assertEqual(len(res.context['table'].data), len(records))
 
 
-class ARecordFormTests(tests.BaseRecordFormCleanTests):
+class ARecordFormTests(base.BaseRecordFormCleanTests):
 
     IPV4 = '1.1.1.1'
 
@@ -140,7 +138,7 @@ class ARecordFormTests(tests.BaseRecordFormCleanTests):
         self.assert_error('data', self.MSG_INVALID_IPV4)
 
 
-class AAAARecordFormTests(tests.BaseRecordFormCleanTests):
+class AAAARecordFormTests(base.BaseRecordFormCleanTests):
 
     IPV6 = '1111:1111:1111:11::1'
 
@@ -202,7 +200,7 @@ class AAAARecordFormTests(tests.BaseRecordFormCleanTests):
         self.assert_error('data', self.MSG_INVALID_IPV6)
 
 
-class CNAMERecordFormTests(tests.BaseRecordFormCleanTests):
+class CNAMERecordFormTests(base.BaseRecordFormCleanTests):
 
     CNAME = 'bar.foo.com.'
 
@@ -262,7 +260,7 @@ class CNAMERecordFormTests(tests.BaseRecordFormCleanTests):
         self.assert_error('data', self.MSG_INVALID_HOSTNAME_SHORT)
 
 
-class MXRecordFormTests(tests.BaseRecordFormCleanTests):
+class MXRecordFormTests(base.BaseRecordFormCleanTests):
 
     MAIL_SERVER = 'mail.foo.com.'
     PRIORITY = 10
@@ -297,7 +295,7 @@ class MXRecordFormTests(tests.BaseRecordFormCleanTests):
         self.assertEqual(self.DOMAIN_NAME, self.form.cleaned_data['name'])
 
 
-class TXTRecordFormTests(tests.BaseRecordFormCleanTests):
+class TXTRecordFormTests(base.BaseRecordFormCleanTests):
 
     TEXT = 'Lorem ipsum'
 
@@ -356,7 +354,7 @@ class TXTRecordFormTests(tests.BaseRecordFormCleanTests):
         self.assertEqual(self.TEXT, self.form.cleaned_data['data'])
 
 
-class SRVRecordFormTests(tests.BaseRecordFormCleanTests):
+class SRVRecordFormTests(base.BaseRecordFormCleanTests):
 
     SRV_NAME = '_foo._tcp.'
     SRV_DATA = '1 1 srv.foo.com.'
