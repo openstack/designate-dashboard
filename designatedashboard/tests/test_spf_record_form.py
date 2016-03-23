@@ -12,10 +12,10 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-from designatedashboard import tests
+from designatedashboard.tests import base
 
 
-class SPFRecordFormTests(tests.BaseRecordFormCleanTests):
+class SPFRecordFormTests(base.BaseRecordFormCleanTests):
 
     TEXT = 'v=spf1 +all'
 
