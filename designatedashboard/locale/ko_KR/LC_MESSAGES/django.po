@@ -1,0 +1,227 @@
+# Ian Y. Choi <ianyrchoi@gmail.com>, 2016. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-03-18 13:46+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-03-22 11:51+0000\n"
+"Last-Translator: Ian Y. Choi <ianyrchoi@gmail.com>\n"
+"Language-Team: Korean (South Korea)\n"
+"Language: ko-KR\n"
+"X-Generator: Zanata 3.7.3\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+msgid "A - Address record"
+msgstr "A - 주소 레코드"
+
+msgid "AAAA - IPv6 address record"
+msgstr "AAAA - IPv6 주소 레코드"
+
+msgid "CNAME - Canonical name record"
+msgstr "CNAME - 대체 이름 레코드"
+
+msgid "Cancel"
+msgstr "취소"
+
+msgid "Canonical Name"
+msgstr "대체 이름"
+
+msgid "Create Domain"
+msgstr "도메인 생성"
+
+msgid "Create Record"
+msgstr "레코드 생성"
+
+msgid "Created At"
+msgstr "생성 시점"
+
+msgid "Data"
+msgstr "데이터"
+
+msgid "Delete"
+msgstr "삭제"
+
+msgid "Deleted"
+msgstr "삭제됨"
+
+msgid "Description"
+msgstr "설명"
+
+msgid "Domain"
+msgstr "도메인"
+
+#, python-format
+msgid "Domain %(name)s created."
+msgstr "도메인 %(name)s 이 생성되었습니다."
+
+#, python-format
+msgid "Domain %(name)s updated."
+msgstr "도메인 %(name)s 이 수정되었습니다."
+
+msgid "Domain Name"
+msgstr "도메인 이름"
+
+#, python-format
+msgid "Domain record %(name)s created."
+msgstr "도메인 레코드 %(name)s 가 생성되었습니다."
+
+#, python-format
+msgid "Domain record %(name)s updated."
+msgstr "도메인 레코드 %(name)s 가 업데이트되었습니다."
+
+msgid "Domains"
+msgstr "도메인"
+
+msgid "Edit Domain"
+msgstr "도메인 수정"
+
+msgid "Edit Record"
+msgstr "레코드 수정"
+
+msgid "Email"
+msgstr "이메일"
+
+msgid "Enter a valid IPv4 address"
+msgstr "유효한 IPv4 주소를 입력합니다"
+
+msgid "Enter a valid IPv6 address"
+msgstr "유요한 IPv6 주소를 입력합니다"
+
+msgid "Enter a valid SRV name"
+msgstr "유효한 SRV 이름을 입력합니다"
+
+msgid "Enter a valid SRV record"
+msgstr "유효한 SRV 레코드를 입력합니다"
+
+msgid "Enter a valid SSHFP record"
+msgstr "유효한 SSHFP 레코드를 입력합니다"
+
+msgid "Enter a valid domain name."
+msgstr "유효한 도메인 이름을 입력하시오."
+
+msgid "Enter a valid hostname"
+msgstr "유효한 호스트명을 입력합니다"
+
+msgid ""
+"Enter a valid hostname. The hostname should contain letters and numbers, and "
+"be no more than 63 characters."
+msgstr ""
+"유효한 호스트명을 입력합니다. 호스트명은 문자 및 숫자로 구성되어야 하며, 63 "
+"문자를 초과할 수 없습니다."
+
+msgid "IP Address"
+msgstr "IP 주소"
+
+msgid "MX - Mail exchange record"
+msgstr "MX - 메일 교환 레코드"
+
+msgid "Mail Server"
+msgstr "메일 서버"
+
+msgid "Manage Records"
+msgstr "레코드 관리"
+
+msgid "NS"
+msgstr "NS"
+
+msgid "Name"
+msgstr "이름"
+
+msgid "Name Server"
+msgstr "네임 서버"
+
+msgid "PTR - Pointer record"
+msgstr "PTR - 포인터 레코드"
+
+msgid "PTR Domain Name"
+msgstr "PTR 도메인 이름"
+
+msgid "Priority"
+msgstr "우선순위"
+
+msgid "Record"
+msgstr "레코드"
+
+msgid "Record Type"
+msgstr "레코드 타입"
+
+msgid "Records"
+msgstr "레코드"
+
+msgid "SOA"
+msgstr "SOA"
+
+msgid "SPF - Sender Policy Framework"
+msgstr "SPF - 발송자 정책 프레임워크"
+
+msgid "SRV - Service locator"
+msgstr "SRV - 서비스 위치"
+
+msgid "SSHFP - SSH Public Key Fingerprint"
+msgstr "SSHFP - SSH 공개키 Fingerprint"
+
+msgid "Select an IP"
+msgstr "IP를 선택합니다"
+
+msgid "Serial"
+msgstr "시리얼"
+
+msgid "TTL"
+msgstr "TTL"
+
+msgid "TTL (seconds)"
+msgstr "TTL (초)"
+
+msgid "TXT"
+msgstr "TXT"
+
+msgid "TXT - Text record"
+msgstr "TXT - 텍스트 레코드"
+
+msgid "Text"
+msgstr "텍스트"
+
+msgid "The quotas could not be retrieved."
+msgstr "할당량을 가져올 수 없습니다."
+
+msgid "There are no floating IP addresses currently in use to select from."
+msgstr "선택할 수 있는 사용 중인 floating IP 주소가 없습니다."
+
+msgid "This field is required"
+msgstr "해당 필드는 필수입니다"
+
+msgid "Type"
+msgstr "타입"
+
+msgid "Unable to create domain."
+msgstr "도메인을 생성할 수 없습니다."
+
+msgid "Unable to create record."
+msgstr "레코드를 생성할 수 없습니다."
+
+msgid "Unable to retrieve domain list."
+msgstr "도메인 목록을 가져올 수 없습니다."
+
+msgid "Unable to retrieve domain record."
+msgstr "도메인 레코드를 가져올 수 없습니다."
+
+msgid "Unable to retrieve record list."
+msgstr "레코드 목록을 가져올 수 없습니다."
+
+msgid "Unable to update domain."
+msgstr "도메인을 업데이트할 수 없습니다."
+
+msgid "Unknown instance name"
+msgstr "알려지지 않은 인스턴스 이름"
+
+msgid "Update Record"
+msgstr "레코드 업데이트"
+
+msgid "Updated At"
+msgstr "갱신 시점"
+
+msgid "Value"
+msgstr "값"
