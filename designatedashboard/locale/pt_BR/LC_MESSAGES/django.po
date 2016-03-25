@@ -1,0 +1,228 @@
+# José Mello <jose.eduardo.jr@gmail.com>, 2016. #zanata
+# Marcelo Dieder <marcelodieder@gmail.com>, 2016. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-03-23 08:38+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-03-24 06:40+0000\n"
+"Last-Translator: José Mello <jose.eduardo.jr@gmail.com>\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt-BR\n"
+"X-Generator: Zanata 3.7.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgid "A - Address record"
+msgstr "A - Registro do endereço"
+
+msgid "AAAA - IPv6 address record"
+msgstr "AAAA - Registro do endereço IPv6"
+
+msgid "CNAME - Canonical name record"
+msgstr "CNAME - Registro Canonical name "
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Canonical Name"
+msgstr "Canonical Name"
+
+msgid "Create Domain"
+msgstr "Criar Domínio"
+
+msgid "Create Record"
+msgstr "Criar Registro"
+
+msgid "Created At"
+msgstr "Criado em"
+
+msgid "Data"
+msgstr "Dados"
+
+msgid "Delete"
+msgstr "Remover"
+
+msgid "Deleted"
+msgstr "Removido"
+
+msgid "Description"
+msgstr "Descrição"
+
+msgid "Domain"
+msgstr "Domínio"
+
+#, python-format
+msgid "Domain %(name)s created."
+msgstr "Domínio %(name)s criado."
+
+#, python-format
+msgid "Domain %(name)s updated."
+msgstr "Domínio %(name)s atualizado."
+
+msgid "Domain Name"
+msgstr "Nome do Domínio"
+
+#, python-format
+msgid "Domain record %(name)s created."
+msgstr "Registro de domínio %(name)s criado."
+
+#, python-format
+msgid "Domain record %(name)s updated."
+msgstr "Registro de domínio %(name)s atualizado."
+
+msgid "Domains"
+msgstr "Domínios"
+
+msgid "Edit Domain"
+msgstr "Editar Domínio"
+
+msgid "Edit Record"
+msgstr "Editar Registro"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Enter a valid IPv4 address"
+msgstr "Entre com um endereço IPv4 válido"
+
+msgid "Enter a valid IPv6 address"
+msgstr "Entre com um endereço IPv6 válido"
+
+msgid "Enter a valid SRV name"
+msgstr "Entre com um nome SRV válido."
+
+msgid "Enter a valid SRV record"
+msgstr "Entre com um registro SRV válido"
+
+msgid "Enter a valid SSHFP record"
+msgstr "Entre com um registro SSHFP válido"
+
+msgid "Enter a valid domain name."
+msgstr "Entre com um nome de domínio válido."
+
+msgid "Enter a valid hostname"
+msgstr "Entre com um nome de host válido"
+
+msgid ""
+"Enter a valid hostname. The hostname should contain letters and numbers, and "
+"be no more than 63 characters."
+msgstr ""
+"Insira um nome de host válido. O Nome de host deve conter letras e números, "
+"e não pode ter mais de 63 caracteres."
+
+msgid "IP Address"
+msgstr "Endereço IP"
+
+msgid "MX - Mail exchange record"
+msgstr "MX - Registro Mail exchange"
+
+msgid "Mail Server"
+msgstr "Servidor de Email"
+
+msgid "Manage Records"
+msgstr "Gerenciar Registros"
+
+msgid "NS"
+msgstr "NS"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Name Server"
+msgstr "Servidor de Nome"
+
+msgid "PTR - Pointer record"
+msgstr "PTR - Registro Pointer record"
+
+msgid "PTR Domain Name"
+msgstr "PTR Nome do Domínio"
+
+msgid "Priority"
+msgstr "Prioridade"
+
+msgid "Record"
+msgstr "Registro"
+
+msgid "Record Type"
+msgstr "Tipo de Registro"
+
+msgid "Records"
+msgstr "Registros"
+
+msgid "SOA"
+msgstr "SOA"
+
+msgid "SPF - Sender Policy Framework"
+msgstr "SPF - Sender Policy Framework"
+
+msgid "SRV - Service locator"
+msgstr "SRV - Service locator"
+
+msgid "SSHFP - SSH Public Key Fingerprint"
+msgstr "SSHFP - SSH Public Key Fingerprint"
+
+msgid "Select an IP"
+msgstr "Selecione um IP"
+
+msgid "Serial"
+msgstr "Serial"
+
+msgid "TTL"
+msgstr "TTL"
+
+msgid "TTL (seconds)"
+msgstr "TTL (segundos)"
+
+msgid "TXT"
+msgstr "TXT"
+
+msgid "TXT - Text record"
+msgstr "TXT - Text record"
+
+msgid "Text"
+msgstr "Text"
+
+msgid "The quotas could not be retrieved."
+msgstr "Não foi possível recuperar as cotas."
+
+msgid "There are no floating IP addresses currently in use to select from."
+msgstr "Nenhum endereço IP flutuante atualmente em uso para ser selecionado."
+
+msgid "This field is required"
+msgstr "Este campo é necessário"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Unable to create domain."
+msgstr "Não foi possível criar o domínio."
+
+msgid "Unable to create record."
+msgstr "Não é possível criar o registro."
+
+msgid "Unable to retrieve domain list."
+msgstr "Não foi possível recuperar a lista de domínios."
+
+msgid "Unable to retrieve domain record."
+msgstr "Não foi possível recuperar o registro de domínio."
+
+msgid "Unable to retrieve record list."
+msgstr "Não é possível recuperar lista de registros."
+
+msgid "Unable to update domain."
+msgstr "Não foi possível atualizar o domínio."
+
+msgid "Unknown instance name"
+msgstr "Nome de Instância desconhecida"
+
+msgid "Update Record"
+msgstr "Atualizar Registro"
+
+msgid "Updated At"
+msgstr "Atualizado em"
+
+msgid "Value"
+msgstr "Valor"
