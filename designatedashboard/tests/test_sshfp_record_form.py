@@ -12,10 +12,10 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-from designatedashboard import tests
+from designatedashboard.tests import base
 
 
-class SSHFPRecordFormTests(tests.BaseRecordFormCleanTests):
+class SSHFPRecordFormTests(base.BaseRecordFormCleanTests):
 
     TEXT = '2 1 d1eb0d876ec69d18bcefc4263ae43ec33ae14f4c'
     MSG_INVALID_RECORD = "Enter a valid SSHFP record"
