@@ -21,6 +21,8 @@ PANEL_DASHBOARD = 'project'
 # The name of the panel group the PANEL is associated with.
 PANEL_GROUP = 'dns'
 
+ADD_INSTALLED_APPS = ['designatedashboard']
+
 ADD_EXCEPTIONS = {
     'recoverable': exceptions.RECOVERABLE,
     'not_found': exceptions.NOT_FOUND,
