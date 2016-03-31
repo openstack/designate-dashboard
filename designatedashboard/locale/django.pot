@@ -1,22 +1,21 @@
-# Translations template for designate-dashboard.
-# Copyright (C) 2015 ORGANIZATION
-# This file is distributed under the same license as the designate-dashboard
-# project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+# Translations template for PROJECT.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: designate-dashboard 1.0.0.dev38\n"
+"Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-07-29 06:41+0000\n"
+"POT-Creation-Date: 2016-03-30 06:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.0\n"
+"Generated-By: Babel 2.2.0\n"
 
 #: designatedashboard/dashboards/project/dns_domains/forms.py:84
 msgid "Domain Name"
@@ -27,7 +26,8 @@ msgid "Enter a valid domain name."
 msgstr ""
 
 #: designatedashboard/dashboards/project/dns_domains/forms.py:90
-#: designatedashboard/dashboards/project/dns_domains/tables.py:169
+#: designatedashboard/dashboards/project/dns_domains/tables.py:172
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:15
 msgid "Email"
 msgstr ""
 
@@ -37,6 +37,10 @@ msgstr ""
 
 #: designatedashboard/dashboards/project/dns_domains/forms.py:102
 #: designatedashboard/dashboards/project/dns_domains/forms.py:330
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_create_domain.html:18
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:11
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:15
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_update_domain.html:18
 msgid "Description"
 msgstr ""
 
@@ -54,7 +58,8 @@ msgid "Unable to update domain."
 msgstr ""
 
 #: designatedashboard/dashboards/project/dns_domains/forms.py:143
-#: designatedashboard/dashboards/project/dns_domains/tables.py:175
+#: designatedashboard/dashboards/project/dns_domains/tables.py:178
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:13
 msgid "Serial"
 msgstr ""
 
@@ -122,8 +127,10 @@ msgstr ""
 #: designatedashboard/dashboards/project/dns_domains/forms.py:252
 #: designatedashboard/dashboards/project/dns_domains/forms.py:253
 #: designatedashboard/dashboards/project/dns_domains/forms.py:254
-#: designatedashboard/dashboards/project/dns_domains/tables.py:165
-#: designatedashboard/dashboards/project/dns_domains/tables.py:197
+#: designatedashboard/dashboards/project/dns_domains/tables.py:168
+#: designatedashboard/dashboards/project/dns_domains/tables.py:200
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:9
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:9
 msgid "Name"
 msgstr ""
 
@@ -167,7 +174,8 @@ msgstr ""
 
 #: designatedashboard/dashboards/project/dns_domains/forms.py:303
 #: designatedashboard/dashboards/project/dns_domains/forms.py:304
-#: designatedashboard/dashboards/project/dns_domains/tables.py:210
+#: designatedashboard/dashboards/project/dns_domains/tables.py:213
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:19
 msgid "Priority"
 msgstr ""
 
@@ -182,8 +190,10 @@ msgstr ""
 #: designatedashboard/dashboards/project/dns_domains/forms.py:323
 #: designatedashboard/dashboards/project/dns_domains/forms.py:324
 #: designatedashboard/dashboards/project/dns_domains/forms.py:325
-#: designatedashboard/dashboards/project/dns_domains/tables.py:172
-#: designatedashboard/dashboards/project/dns_domains/tables.py:214
+#: designatedashboard/dashboards/project/dns_domains/tables.py:175
+#: designatedashboard/dashboards/project/dns_domains/tables.py:217
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:17
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:21
 msgid "TTL"
 msgstr ""
 
@@ -257,64 +267,71 @@ msgid "Domain record %(name)s updated."
 msgstr ""
 
 #: designatedashboard/dashboards/project/dns_domains/panel.py:21
-#: designatedashboard/dashboards/project/dns_domains/tables.py:88
-#: designatedashboard/dashboards/project/dns_domains/tables.py:179
+#: designatedashboard/dashboards/project/dns_domains/tables.py:91
+#: designatedashboard/dashboards/project/dns_domains/tables.py:182
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/index.html:3
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/records.html:14
 msgid "Domains"
 msgstr ""
 
-#: designatedashboard/dashboards/project/dns_domains/tables.py:44
+#: designatedashboard/dashboards/project/dns_domains/tables.py:46
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_create_domain.html:8
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_create_domain.html:36
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/create_domain.html:3
 msgid "Create Domain"
 msgstr ""
 
-#: designatedashboard/dashboards/project/dns_domains/tables.py:56
+#: designatedashboard/dashboards/project/dns_domains/tables.py:59
 msgid "The quotas could not be retrieved."
 msgstr ""
 
-#: designatedashboard/dashboards/project/dns_domains/tables.py:65
+#: designatedashboard/dashboards/project/dns_domains/tables.py:68
 msgid "Edit Domain"
 msgstr ""
 
-#: designatedashboard/dashboards/project/dns_domains/tables.py:75
+#: designatedashboard/dashboards/project/dns_domains/tables.py:78
 msgid "Manage Records"
 msgstr ""
 
-#: designatedashboard/dashboards/project/dns_domains/tables.py:85
-#: designatedashboard/dashboards/project/dns_domains/tables.py:149
+#: designatedashboard/dashboards/project/dns_domains/tables.py:88
+#: designatedashboard/dashboards/project/dns_domains/tables.py:152
 msgid "Delete"
 msgstr ""
 
-#: designatedashboard/dashboards/project/dns_domains/tables.py:86
-#: designatedashboard/dashboards/project/dns_domains/tables.py:150
+#: designatedashboard/dashboards/project/dns_domains/tables.py:89
+#: designatedashboard/dashboards/project/dns_domains/tables.py:153
 msgid "Deleted"
 msgstr ""
 
-#: designatedashboard/dashboards/project/dns_domains/tables.py:87
+#: designatedashboard/dashboards/project/dns_domains/tables.py:90
 msgid "Domain"
 msgstr ""
 
-#: designatedashboard/dashboards/project/dns_domains/tables.py:100
+#: designatedashboard/dashboards/project/dns_domains/tables.py:103
 #: designatedashboard/dashboards/project/dns_domains/views.py:175
 msgid "Create Record"
 msgstr ""
 
-#: designatedashboard/dashboards/project/dns_domains/tables.py:113
+#: designatedashboard/dashboards/project/dns_domains/tables.py:116
 msgid "Edit Record"
 msgstr ""
 
-#: designatedashboard/dashboards/project/dns_domains/tables.py:133
-#: designatedashboard/dashboards/project/dns_domains/tables.py:151
+#: designatedashboard/dashboards/project/dns_domains/tables.py:136
+#: designatedashboard/dashboards/project/dns_domains/tables.py:154
 msgid "Record"
 msgstr ""
 
-#: designatedashboard/dashboards/project/dns_domains/tables.py:202
+#: designatedashboard/dashboards/project/dns_domains/tables.py:205
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:13
 msgid "Type"
 msgstr ""
 
-#: designatedashboard/dashboards/project/dns_domains/tables.py:206
+#: designatedashboard/dashboards/project/dns_domains/tables.py:209
 msgid "Data"
 msgstr ""
 
-#: designatedashboard/dashboards/project/dns_domains/tables.py:219
+#: designatedashboard/dashboards/project/dns_domains/tables.py:222
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/records.html:15
 msgid "Records"
 msgstr ""
 
@@ -334,10 +351,165 @@ msgid "Unable to retrieve record list."
 msgstr ""
 
 #: designatedashboard/dashboards/project/dns_domains/views.py:130
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_create_domain.html:37
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_update_domain.html:35
 msgid "Cancel"
 msgstr ""
 
 #: designatedashboard/dashboards/project/dns_domains/views.py:204
 msgid "Update Record"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_create_domain.html:22
+msgid ""
+"\n"
+"      The Name field should contain a full-qualified domain name (with\n"
+"      trailing period).\n"
+"    "
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_create_domain.html:26
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_update_domain.html:25
+msgid ""
+"\n"
+"      The Email field should contain a valid email address to be "
+"associated\n"
+"      with the domain.\n"
+"    "
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_create_domain.html:30
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_update_domain.html:29
+msgid ""
+"\n"
+"      The optional TTL field can be any value between 1 and 2147483647\n"
+"      seconds.\n"
+"    "
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_create_record.html:8
+msgid "Create Record for"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_create_record.html:27
+msgid ""
+"\n"
+"  <p>\n"
+"    <strong>TTL</strong>\n"
+"    The TTL is the time-to-live for the record, in seconds.\n"
+"  </p>\n"
+"  <p>\n"
+"    See <a href=\"http://en.wikipedia.org/wiki/List_of_DNS_record_types\""
+" target=\"_designate_record_defs\">more info</a> on record types.\n"
+"  </p>\n"
+"  "
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:3
+msgid "Domain Overview"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:7
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:11
+msgid "ID"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:8
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:10
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:12
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:5
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:10
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:12
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:16
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:18
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:22
+msgid "None"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:16
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:18
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:23
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:29
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:14
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:27
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:33
+msgid "Unknown"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:19
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:23
+msgid "Created"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_domain_detail.html:25
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:29
+msgid "Updated"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:3
+msgid "All Records"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_record_detail.html:17
+msgid "Record Data"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_update_domain.html:8
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_update_domain.html:34
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/update_domain.html:3
+msgid "Update Domain"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_update_domain.html:21
+msgid ""
+"\n"
+"      From here you can edit the email address and TTL associated with a "
+"domain.\n"
+"    "
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_update_record.html:8
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/update_record.html:3
+msgid "Update Domain Record"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/create_domain.html:6
+msgid "\"Create Domain\""
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/create_record.html:3
+msgid "Create Domain Record"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/create_record.html:6
+msgid "\"Create Domain Record\""
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/domain_detail.html:3
+msgid "Domain Detail"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/domain_detail.html:6
+msgid "\"Domain\""
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/index.html:6
+msgid "\"Domains\""
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/record_detail.html:3
+msgid "Record Detail"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/records.html:3
+msgid "Domain Records"
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/records.html:6
+msgid "\"Domain Records\""
+msgstr ""
+
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/records.html:23
+msgid "Nameservers"
 msgstr ""
 
