@@ -1,24 +1,110 @@
 # Ian Y. Choi <ianyrchoi@gmail.com>, 2016. #zanata
+# SeYeon Lee <sy_lee@kr.ibm.com>, 2016. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-03-18 13:46+0000\n"
+"POT-Creation-Date: 2016-03-30 19:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-03-22 11:51+0000\n"
+"PO-Revision-Date: 2016-03-31 03:45+0000\n"
 "Last-Translator: Ian Y. Choi <ianyrchoi@gmail.com>\n"
 "Language-Team: Korean (South Korea)\n"
 "Language: ko-KR\n"
 "X-Generator: Zanata 3.7.3\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
+msgid ""
+"\n"
+"      From here you can edit the email address and TTL associated with a "
+"domain.\n"
+"    "
+msgstr ""
+"\n"
+"      여기서부터 도메인과 연결된 이메일 주소 및 TTL을 편집할 수 있습니다.\n"
+"    "
+
+msgid ""
+"\n"
+"      The Email field should contain a valid email address to be associated\n"
+"      with the domain.\n"
+"    "
+msgstr ""
+"\n"
+"      이메일 피드는 도메인에 연결된 유료한 이메일 주소 값을\n"
+"      포람해야 합니다.\n"
+"    "
+
+msgid ""
+"\n"
+"      The Name field should contain a full-qualified domain name (with\n"
+"      trailing period).\n"
+"    "
+msgstr ""
+"\n"
+"      이름 필드는 정규화된 도메인 이름 (끝 마침표와 함께)을\n"
+"      포함해야 합니다.\n"
+"    "
+
+msgid ""
+"\n"
+"      The optional TTL field can be any value between 1 and 2147483647\n"
+"      seconds.\n"
+"    "
+msgstr ""
+"\n"
+"      옵션인 TTL 필드는 1 에서 2147483647 초 사이 임의의 값을\n"
+"      사용할 수 있습니다.\n"
+"    "
+
+msgid ""
+"\n"
+"  <p>\n"
+"    <strong>TTL</strong>\n"
+"    The TTL is the time-to-live for the record, in seconds.\n"
+"  </p>\n"
+"  <p>\n"
+"    See <a href=\"http://en.wikipedia.org/wiki/List_of_DNS_record_types\" "
+"target=\"_designate_record_defs\">more info</a> on record types.\n"
+"  </p>\n"
+"  "
+msgstr ""
+"\n"
+"  <p>\n"
+"    <strong>TTL</strong>\n"
+"    TTL은 초 단위의 레코드에 대한 time-to-live 값입니다.\n"
+"  </p>\n"
+"  <p>\n"
+"    레코드 유형에 관한 <a href=\"http://en.wikipedia.org/wiki/"
+"List_of_DNS_record_types\" target=\"_designate_record_defs\">자세한 정보를</"
+"a> 살펴봅니다.\n"
+"  </p>\n"
+"  "
+
+msgid "\"Create Domain Record\""
+msgstr "\"도메인 레코드 생성\""
+
+msgid "\"Create Domain\""
+msgstr "\"도메인 생성\""
+
+msgid "\"Domain Records\""
+msgstr "\"도메인 레코드\""
+
+msgid "\"Domain\""
+msgstr "\"도메인\""
+
+msgid "\"Domains\""
+msgstr "\"도메인\""
+
 msgid "A - Address record"
 msgstr "A - 주소 레코드"
 
 msgid "AAAA - IPv6 address record"
 msgstr "AAAA - IPv6 주소 레코드"
+
+msgid "All Records"
+msgstr "모든 레코드"
 
 msgid "CNAME - Canonical name record"
 msgstr "CNAME - 대체 이름 레코드"
@@ -32,8 +118,17 @@ msgstr "대체 이름"
 msgid "Create Domain"
 msgstr "도메인 생성"
 
+msgid "Create Domain Record"
+msgstr "도메인 레코드 생성"
+
 msgid "Create Record"
 msgstr "레코드 생성"
+
+msgid "Create Record for"
+msgstr "다음에 대한 레코드 생성"
+
+msgid "Created"
+msgstr "생성됨"
 
 msgid "Created At"
 msgstr "생성 시점"
@@ -61,8 +156,17 @@ msgstr "도메인 %(name)s 이 생성되었습니다."
 msgid "Domain %(name)s updated."
 msgstr "도메인 %(name)s 이 수정되었습니다."
 
+msgid "Domain Detail"
+msgstr "도메인 세부 사항"
+
 msgid "Domain Name"
 msgstr "도메인 이름"
+
+msgid "Domain Overview"
+msgstr "도메인 개요"
+
+msgid "Domain Records"
+msgstr "도메인 레코드"
 
 #, python-format
 msgid "Domain record %(name)s created."
@@ -112,6 +216,9 @@ msgstr ""
 "유효한 호스트명을 입력합니다. 호스트명은 문자 및 숫자로 구성되어야 하며, 63 "
 "문자를 초과할 수 없습니다."
 
+msgid "ID"
+msgstr "ID"
+
 msgid "IP Address"
 msgstr "IP 주소"
 
@@ -133,6 +240,12 @@ msgstr "이름"
 msgid "Name Server"
 msgstr "네임 서버"
 
+msgid "Nameservers"
+msgstr "이름 서버"
+
+msgid "None"
+msgstr "없음"
+
 msgid "PTR - Pointer record"
 msgstr "PTR - 포인터 레코드"
 
@@ -144,6 +257,12 @@ msgstr "우선순위"
 
 msgid "Record"
 msgstr "레코드"
+
+msgid "Record Data"
+msgstr "레코드 데이터"
+
+msgid "Record Detail"
+msgstr "레코드 세부 사항"
 
 msgid "Record Type"
 msgstr "레코드 타입"
@@ -214,11 +333,23 @@ msgstr "레코드 목록을 가져올 수 없습니다."
 msgid "Unable to update domain."
 msgstr "도메인을 업데이트할 수 없습니다."
 
+msgid "Unknown"
+msgstr "알 수 없음"
+
 msgid "Unknown instance name"
 msgstr "알려지지 않은 인스턴스 이름"
 
+msgid "Update Domain"
+msgstr "도메인 업데이트"
+
+msgid "Update Domain Record"
+msgstr "도메인 레코드 업데이트"
+
 msgid "Update Record"
 msgstr "레코드 업데이트"
+
+msgid "Updated"
+msgstr "업데이트됨"
 
 msgid "Updated At"
 msgstr "갱신 시점"
