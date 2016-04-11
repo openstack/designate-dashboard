@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-03-30 06:46+0000\n"
+"POT-Creation-Date: 2016-04-11 07:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -270,6 +270,7 @@ msgstr ""
 #: designatedashboard/dashboards/project/dns_domains/tables.py:91
 #: designatedashboard/dashboards/project/dns_domains/tables.py:182
 #: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/index.html:3
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/index.html:6
 #: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/records.html:14
 msgid "Domains"
 msgstr ""
@@ -278,6 +279,7 @@ msgstr ""
 #: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_create_domain.html:8
 #: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/_create_domain.html:36
 #: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/create_domain.html:3
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/create_domain.html:6
 msgid "Create Domain"
 msgstr ""
 
@@ -304,6 +306,7 @@ msgid "Deleted"
 msgstr ""
 
 #: designatedashboard/dashboards/project/dns_domains/tables.py:90
+#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/domain_detail.html:6
 msgid "Domain"
 msgstr ""
 
@@ -473,28 +476,13 @@ msgstr ""
 msgid "Update Domain Record"
 msgstr ""
 
-#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/create_domain.html:6
-msgid "\"Create Domain\""
-msgstr ""
-
 #: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/create_record.html:3
-msgid "Create Domain Record"
-msgstr ""
-
 #: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/create_record.html:6
-msgid "\"Create Domain Record\""
+msgid "Create Domain Record"
 msgstr ""
 
 #: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/domain_detail.html:3
 msgid "Domain Detail"
-msgstr ""
-
-#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/domain_detail.html:6
-msgid "\"Domain\""
-msgstr ""
-
-#: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/index.html:6
-msgid "\"Domains\""
 msgstr ""
 
 #: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/record_detail.html:3
@@ -502,11 +490,8 @@ msgid "Record Detail"
 msgstr ""
 
 #: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/records.html:3
-msgid "Domain Records"
-msgstr ""
-
 #: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/records.html:6
-msgid "\"Domain Records\""
+msgid "Domain Records"
 msgstr ""
 
 #: designatedashboard/dashboards/project/dns_domains/templates/dns_domains/records.html:23
