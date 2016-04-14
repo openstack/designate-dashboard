@@ -16,4 +16,4 @@ import pbr.version
 
 
 __version__ = pbr.version.VersionInfo(
-    'designatedashboard').version_string()
+    'designate-dashboard').version_string()
