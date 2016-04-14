@@ -24,4 +24,4 @@ nosexcover # BSD
 # Horizon requirements
 Django<1.9,>=1.8 # BSD
 django-compressor>=2.0 # MIT
-django-openstack-auth>=2.0.0 # Apache-2.0
+django-openstack-auth>=2.2.0 # Apache-2.0
