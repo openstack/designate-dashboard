@@ -5,19 +5,18 @@
 #
 # Translators:
 # Lucas Mascaro <mascaro.lucas@yahoo.fr>, 2015
-# Kevin Tibi <kodokuu@gmail.com>, 2015. #zanata
-# OpenStack Infra <zanata@openstack.org>, 2015. #zanata
-# SOURDET Henri <hsourdet@gmail.com>, 2015. #zanata
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
+# Gérald LONLAS <g.lonlas@gmail.com>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: designate-dashboard 2.0.0.0b2.dev12\n"
+"Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-01-08 20:53+0000\n"
+"POT-Creation-Date: 2016-04-12 19:07+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-09-18 03:36+0000\n"
-"Last-Translator: SOURDET Henri <hsourdet@gmail.com>\n"
+"PO-Revision-Date: 2016-04-07 05:25+0000\n"
+"Last-Translator: Gérald LONLAS <g.lonlas@gmail.com>\n"
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.0\n"
@@ -29,6 +28,9 @@ msgstr "A - Enregistrement d'adresse"
 
 msgid "AAAA - IPv6 address record"
 msgstr "AAAA - Enregistrement d'adresse IPv6"
+
+msgid "All Records"
+msgstr "Tous les enregistrements"
 
 msgid "CNAME - Canonical name record"
 msgstr "CNAME - Enregistrement de nom canonique"
@@ -44,6 +46,12 @@ msgstr "Créer un domaine"
 
 msgid "Create Record"
 msgstr "Créer un enregistrement"
+
+msgid "Create Record for"
+msgstr "Créer un enregistrement pour"
+
+msgid "Created"
+msgstr "Créé"
 
 msgid "Created At"
 msgstr "Créé le"
@@ -73,6 +81,9 @@ msgstr "Domaine %(name)s mis à jour"
 
 msgid "Domain Name"
 msgstr "Nom de domaine"
+
+msgid "Domain Overview"
+msgstr "Vue d'ensemble du domaine"
 
 #, python-format
 msgid "Domain record %(name)s created."
@@ -122,6 +133,9 @@ msgstr ""
 "Entrer un nom d'hôte valide. Le nom d'hôte ne doit contenir que des lettres "
 "et des chiffres, et ne doit pas contenir plus de 63 caractères."
 
+msgid "ID"
+msgstr "ID"
+
 msgid "IP Address"
 msgstr "Adresse IP"
 
@@ -142,6 +156,9 @@ msgstr "Nom"
 
 msgid "Name Server"
 msgstr "Nom de serveur"
+
+msgid "None"
+msgstr "Aucun"
 
 msgid "PTR - Pointer record"
 msgstr "PTR - Enregistrement pointeur"
@@ -224,11 +241,23 @@ msgstr "Impossible de récupérer la liste des enregistrements."
 msgid "Unable to update domain."
 msgstr "Impossible de mettre a jour le domaine."
 
+msgid "Unknown"
+msgstr "Inconnu"
+
 msgid "Unknown instance name"
 msgstr "Nom d'instance inconnu"
 
+msgid "Update Domain"
+msgstr "Mise à jour du domaine"
+
+msgid "Update Domain Record"
+msgstr "Mise à jour des enregistrements du domaine"
+
 msgid "Update Record"
 msgstr "Enregistrer"
+
+msgid "Updated"
+msgstr "Mis à jour"
 
 msgid "Updated At"
 msgstr "Mis à jour le"

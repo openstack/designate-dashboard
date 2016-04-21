@@ -5,12 +5,12 @@
 #
 # Translators:
 # Denis Gubanov <v12aml@gmail.com>, 2015
-# OpenStack Infra <zanata@openstack.org>, 2015. #zanata
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: designate-dashboard 2.0.0.0b2.dev12\n"
+"Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-01-08 20:53+0000\n"
+"POT-Creation-Date: 2016-04-12 19:07+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -44,6 +44,9 @@ msgstr "Создать домен"
 
 msgid "Create Record"
 msgstr "Создать запись"
+
+msgid "Created"
+msgstr "Создано"
 
 msgid "Created At"
 msgstr "Создано"
@@ -122,6 +125,9 @@ msgstr ""
 "Введите верное имя узла. Имя узла должно содержать буквы, цифры и быть не "
 "длиннее 63 символов."
 
+msgid "ID"
+msgstr "ID"
+
 msgid "IP Address"
 msgstr "IP адрес"
 
@@ -142,6 +148,9 @@ msgstr "Имя"
 
 msgid "Name Server"
 msgstr "Сервер имен"
+
+msgid "None"
+msgstr "Нет"
 
 msgid "PTR - Pointer record"
 msgstr "PTR - указатель на каноническое имя"
@@ -224,11 +233,17 @@ msgstr "Невозможно получить список записей."
 msgid "Unable to update domain."
 msgstr "Невозможно обновить домен."
 
+msgid "Unknown"
+msgstr "Неизвестно"
+
 msgid "Unknown instance name"
 msgstr "Неизвестное имя инстанса"
 
 msgid "Update Record"
 msgstr "Обновить запись"
+
+msgid "Updated"
+msgstr "Обновлено"
 
 msgid "Updated At"
 msgstr "Обновлено"
