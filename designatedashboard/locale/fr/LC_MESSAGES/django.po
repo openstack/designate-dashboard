@@ -6,6 +6,7 @@
 # Translators:
 # Lucas Mascaro <mascaro.lucas@yahoo.fr>, 2015
 # Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
+# Gael Rehault <gael_rehault@dell.com>, 2016. #zanata
 # Gérald LONLAS <g.lonlas@gmail.com>, 2016. #zanata
 msgid ""
 msgstr ""
@@ -15,13 +16,25 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-04-07 05:25+0000\n"
-"Last-Translator: Gérald LONLAS <g.lonlas@gmail.com>\n"
+"PO-Revision-Date: 2016-04-29 07:57+0000\n"
+"Last-Translator: Gael Rehault <gael_rehault@dell.com>\n"
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.0\n"
 "X-Generator: Zanata 3.7.3\n"
 "Language-Team: French\n"
+
+msgid "\"Create Domain Record\""
+msgstr "\"Créer un enregistrement de domaine\""
+
+msgid "\"Create Domain\""
+msgstr "Créer un domaine"
+
+msgid "\"Domain\""
+msgstr "\"Domaine\""
+
+msgid "\"Domains\""
+msgstr "\"Domaines\""
 
 msgid "A - Address record"
 msgstr "A - Enregistrement d'adresse"
@@ -43,6 +56,9 @@ msgstr "Nom canonique"
 
 msgid "Create Domain"
 msgstr "Créer un domaine"
+
+msgid "Create Domain Record"
+msgstr "Créer un enregistrement de domaine"
 
 msgid "Create Record"
 msgstr "Créer un enregistrement"
@@ -78,6 +94,9 @@ msgstr "Domaine %(name)s créé"
 #, python-format
 msgid "Domain %(name)s updated."
 msgstr "Domaine %(name)s mis à jour"
+
+msgid "Domain Detail"
+msgstr "Détail du domaine"
 
 msgid "Domain Name"
 msgstr "Nom de domaine"
@@ -157,6 +176,9 @@ msgstr "Nom"
 msgid "Name Server"
 msgstr "Nom de serveur"
 
+msgid "Nameservers"
+msgstr "Serveurs de nom DNS"
+
 msgid "None"
 msgstr "Aucun"
 
@@ -171,6 +193,9 @@ msgstr "Priorité"
 
 msgid "Record"
 msgstr "Enregistrement"
+
+msgid "Record Detail"
+msgstr "Détail de l'enregistrement du domaine"
 
 msgid "Record Type"
 msgstr "Type d'enregistrement"
