@@ -100,7 +100,8 @@ class ARecordFormTests(base.BaseRecordFormCleanTests):
     def test_missing_name_field(self):
         self.form.cleaned_data['name'] = ''
         self.form.clean()
-        self.assert_required_error('name')
+        self.assert_no_errors()
+        self.assertIsNotNone(self.form.cleaned_data['name'])
 
     def test_missing_data_field(self):
         self.form.cleaned_data['data'] = ''
@@ -162,7 +163,8 @@ class AAAARecordFormTests(base.BaseRecordFormCleanTests):
     def test_missing_name_field(self):
         self.form.cleaned_data['name'] = ''
         self.form.clean()
-        self.assert_required_error('name')
+        self.assert_no_errors()
+        self.assertIsNotNone(self.form.cleaned_data['name'])
 
     def test_missing_data_field(self):
         self.form.cleaned_data['data'] = ''
@@ -317,7 +319,8 @@ class TXTRecordFormTests(base.BaseRecordFormCleanTests):
     def test_missing_name_field(self):
         self.form.cleaned_data['name'] = ''
         self.form.clean()
-        self.assert_required_error('name')
+        self.assert_no_errors()
+        self.assertIsNotNone(self.form.cleaned_data['name'])
 
     def test_missing_txt_field(self):
         self.form.cleaned_data['txt'] = ''

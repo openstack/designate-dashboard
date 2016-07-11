@@ -395,9 +395,9 @@ class RecordForm(forms.SelfHandlingForm):
 
         #  Name field
         if self._is_field_blank(cleaned_data, 'name'):
-            if record_type in ['A', 'AAAA', 'CNAME', 'SRV', 'TXT', 'PTR']:
+            if record_type in ['CNAME', 'SRV', 'PTR']:
                 self._add_required_field_error('name')
-            elif record_type == 'MX':
+            elif record_type in ['MX', 'A', 'AAAA', 'TXT']:
                 cleaned_data['name'] = domain_name
         else:
             if record_type == 'SRV':
