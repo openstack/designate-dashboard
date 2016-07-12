@@ -1,0 +1,45 @@
+<div ng-controller="designatedashboard.resources.os-designate-recordset.detailController as ctrl">
+  <div class="row">
+    <div class="col-md-6 detail">
+      <h3 translate>Details</h3>
+      <hr>
+      <hz-resource-property-list
+          ng-if="ctrl.item"
+          resource-type-name="OS::Designate::RecordSet"
+          item="ctrl.item"
+          cls="dl-horizontal"
+          property-groups="[
+            ['id', 'type', 'name', 'records', 'notes', 'description', 'ttl', 'version', 'action', 'status']
+          ]">
+      </hz-resource-property-list>
+    </div>
+    <div class="col-md-6 detail">
+      <h3 translate>Associations</h3>
+      <hr>
+      <hz-resource-property-list
+          ng-if="ctrl.item"
+          resource-type-name="OS::Designate::RecordSet"
+          item="ctrl.item"
+          cls="dl-horizontal"
+          property-groups="[
+            ['zone_id', 'zone_name', 'project_id']
+          ]">
+      </hz-resource-property-list>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 detail">
+      <h3 translate>Modification Times</h3>
+      <hr>
+      <hz-resource-property-list
+          ng-if="ctrl.item"
+          resource-type-name="OS::Designate::RecordSet"
+          item="ctrl.item"
+          cls="dl-horizontal"
+          property-groups="[
+            ['created_at', 'updated_at']
+          ]">
+      </hz-resource-property-list>
+    </div>
+  </div>
+</div>

@@ -15,13 +15,11 @@
 from designatedashboard import exceptions
 
 # The name of the panel to be added to HORIZON_CONFIG. Required.
-PANEL = 'domains'
+PANEL = 'dnszones'
 # The name of the dashboard the PANEL associated with. Required.
 PANEL_DASHBOARD = 'project'
 # The name of the panel group the PANEL is associated with.
 PANEL_GROUP = 'dns'
-
-ADD_INSTALLED_APPS = ['designatedashboard']
 
 ADD_EXCEPTIONS = {
     'recoverable': exceptions.RECOVERABLE,
@@ -29,8 +27,14 @@ ADD_EXCEPTIONS = {
     'unauthorized': exceptions.UNAUTHORIZED,
 }
 
+ADD_INSTALLED_APPS = ['designatedashboard']
+
 # Python panel class of the PANEL to be added.
 ADD_PANEL = (
-    'designatedashboard.dashboards.project.dns_domains.panel.DNSDomains')
+    'designatedashboard.dashboards.project.ngdns.zones.panel.Zones')
 
-DISABLED = True
+ADD_ANGULAR_MODULES = ['designatedashboard']
+
+ADD_SCSS_FILES = ['designatedashboard/designatedashboard.scss']
+
+AUTO_DISCOVER_STATIC_FILES = True

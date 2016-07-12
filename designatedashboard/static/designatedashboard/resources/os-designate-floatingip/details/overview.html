@@ -1,0 +1,11 @@
+<div ng-controller="designatedashboard.resources.os-designate-floatingip.details.overviewController as ctrl">
+  <hz-resource-property-list
+      ng-if="ctrl.item"
+      resource-type-name="OS::Designate::FloatingIp"
+      item="ctrl.item"
+      cls="dl-horizontal"
+      property-groups="[
+            ['ptrdname', 'description', 'id', 'ttl', 'status', 'action']
+          ]">
+  </hz-resource-property-list>
+</div>

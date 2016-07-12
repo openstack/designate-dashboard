@@ -23,6 +23,7 @@ from openstack_dashboard.api.network import tenant_floating_ip_list
 from openstack_dashboard.api.nova import server_list
 
 from designatedashboard import api
+from designatedashboard.api import rest  # noqa
 
 from .forms import DomainCreate  # noqa
 from .forms import DomainUpdate  # noqa

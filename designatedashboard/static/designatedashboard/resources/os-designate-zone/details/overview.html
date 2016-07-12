@@ -1,0 +1,58 @@
+<div ng-controller="designatedashboard.resources.os-designate-zone.detailController as ctrl">
+  <div class="row">
+    <div class="col-md-6 detail">
+      <h3 translate>Details</h3>
+      <hr>
+      <hz-resource-property-list
+          ng-if="ctrl.item"
+          resource-type-name="OS::Designate::Zone"
+          item="ctrl.item"
+          cls="dl-horizontal"
+          property-groups="[
+            ['id', 'description', 'type', 'status', 'action', 'email', 'serial', 'ttl', 'version']
+          ]">
+      </hz-resource-property-list>
+    </div>
+    <div class="col-md-6 detail">
+      <h3 translate>Attributes</h3>
+      <hr>
+      <hz-resource-property-list
+          ng-if="ctrl.item"
+          resource-type-name="OS::Designate::Zone"
+          item="ctrl.item"
+          cls="dl-horizontal"
+          property-groups="[
+            ['attributes']
+          ]">
+      </hz-resource-property-list>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 detail">
+      <h3 translate>Modification Times</h3>
+      <hr>
+      <hz-resource-property-list
+          ng-if="ctrl.item"
+          resource-type-name="OS::Designate::Zone"
+          item="ctrl.item"
+          cls="dl-horizontal"
+          property-groups="[
+            ['created_at', 'updated_at', 'transferred_at']
+          ]">
+      </hz-resource-property-list>
+    </div>
+    <div class="col-md-6 detail">
+      <h3 translate>Associations</h3>
+      <hr>
+      <hz-resource-property-list
+          ng-if="ctrl.item"
+          resource-type-name="OS::Designate::Zone"
+          item="ctrl.item"
+          cls="dl-horizontal"
+          property-groups="[
+            ['pool_id', 'project_id', 'masters']
+          ]">
+      </hz-resource-property-list>
+    </div>
+  </div>
+</div>
