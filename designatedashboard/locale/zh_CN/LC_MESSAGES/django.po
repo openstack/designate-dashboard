@@ -1,0 +1,345 @@
+# OpenStack Infra <zanata@openstack.org>, 2015. #zanata
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
+# Gaoxiao Zhu <zhu.gaoxiao@h3c.com>, 2016. #zanata
+# Linda <duleish@cn.ibm.com>, 2016. #zanata
+# Wu Han <wu.han@h3c.com>, 2016. #zanata
+# ZHIYUAN SU <suzhiyuan@inspur.com>, 2016. #zanata
+# vuuv <froms2008@gmail.com>, 2016. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: designate-dashboard 3.0.0.0b3.dev7\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-08-25 22:21+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-08-30 08:56+0000\n"
+"Last-Translator: ZHIYUAN SU <suzhiyuan@inspur.com>\n"
+"Language-Team: Chinese (China)\n"
+"Language: zh-CN\n"
+"X-Generator: Zanata 3.7.3\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+msgid ""
+"\n"
+"      From here you can edit the email address and TTL associated with a "
+"domain.\n"
+"    "
+msgstr ""
+"\n"
+"从这里可以编辑邮件地址和关联到一个域的TTL\n"
+" "
+
+msgid ""
+"\n"
+"      The Email field should contain a valid email address to be associated\n"
+"      with the domain.\n"
+"    "
+msgstr ""
+"\n"
+"__电子邮件项应包括一个有效的邮件地址来\n"
+"__跟域名进行关联\n"
+"_"
+
+msgid ""
+"\n"
+"      The Name field should contain a full-qualified domain name (with\n"
+"      trailing period).\n"
+"    "
+msgstr ""
+"\n"
+"__名称项应该包含一个完全合格的域名（有一个\n"
+"__尾随句点）\n"
+"__"
+
+msgid ""
+"\n"
+"      The optional TTL field can be any value between 1 and 2147483647\n"
+"      seconds.\n"
+"    "
+msgstr ""
+"\n"
+"__可选的TTL项可以是1到2147483647之间的任何数字\n"
+"__秒\n"
+"__"
+
+msgid ""
+"\n"
+"  <p>\n"
+"    <strong>TTL</strong>\n"
+"    The TTL is the time-to-live for the record, in seconds.\n"
+"  </p>\n"
+"  <p>\n"
+"    See <a href=\"http://en.wikipedia.org/wiki/List_of_DNS_record_types\" "
+"target=\"_designate_record_defs\">more info</a> on record types.\n"
+"  </p>\n"
+"  "
+msgstr ""
+"\n"
+"<p>\n"
+"<strong>TTL</strong>\n"
+"TTL是指 记录的存活时间或者存在时间，单位为秒\n"
+"</p>\n"
+"<p>\n"
+"见 <a href=\"http://en.wikipedia.org/wiki/List_of_DNS_record_types\" target="
+"\"_designate_record_defs\">more info</a> on record types.\n"
+"</p>\n"
+" "
+
+msgid "A - Address record"
+msgstr "A-地址记录"
+
+msgid "AAAA - IPv6 address record"
+msgstr "AAAA-IPv6地址记录"
+
+msgid "All Records"
+msgstr "所有记录"
+
+msgid "CNAME - Canonical name record"
+msgstr "CNAME-标准名称记录"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Canonical Name"
+msgstr "规范名称"
+
+msgid "Create Domain"
+msgstr "创建域"
+
+msgid "Create Domain Record"
+msgstr "创建域记录"
+
+msgid "Create Record"
+msgstr "创建记录"
+
+msgid "Create Record for"
+msgstr "创建记录为："
+
+msgid "Created"
+msgstr "已创建"
+
+msgid "Created At"
+msgstr "创建于"
+
+msgid "Data"
+msgstr "数据"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Deleted"
+msgstr "删除"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Domain"
+msgstr "域"
+
+#, python-format
+msgid "Domain %(name)s created."
+msgstr "域 %(name)s 已创建"
+
+#, python-format
+msgid "Domain %(name)s updated."
+msgstr "域%(name)s已更新"
+
+msgid "Domain Detail"
+msgstr "域明细"
+
+msgid "Domain Name"
+msgstr "域名"
+
+msgid "Domain Overview"
+msgstr "域概览"
+
+msgid "Domain Records"
+msgstr "域记录"
+
+#, python-format
+msgid "Domain record %(name)s created."
+msgstr "创建的域记录数 %(name)s "
+
+#, python-format
+msgid "Domain record %(name)s updated."
+msgstr "更新的域记录数 %(name)s"
+
+msgid "Domains"
+msgstr "域"
+
+msgid "Edit Domain"
+msgstr "编辑域"
+
+msgid "Edit Record"
+msgstr "编辑记录"
+
+msgid "Email"
+msgstr "邮箱"
+
+msgid "Enter a valid IPv4 address"
+msgstr "输入一个有效的IPv4地址"
+
+msgid "Enter a valid IPv6 address"
+msgstr "输入一个有效的IPv6地址"
+
+msgid "Enter a valid SRV name"
+msgstr "输入一个有效的SRV名"
+
+msgid "Enter a valid SRV record"
+msgstr "输入一个有效的SRV记录"
+
+msgid "Enter a valid SSHFP record"
+msgstr "输入一个有效的SSHFP记录"
+
+msgid "Enter a valid domain name."
+msgstr "输入一个有效域名"
+
+msgid "Enter a valid hostname"
+msgstr "输入一个有效的主机名"
+
+msgid ""
+"Enter a valid hostname. The hostname should contain letters and numbers, and "
+"be no more than 63 characters."
+msgstr "输入一个有效的主机名。该主机名应包含字母和数字且不多余63个字符。"
+
+msgid "ID"
+msgstr "标识"
+
+msgid "IP Address"
+msgstr "IP 地址"
+
+msgid "MX - Mail exchange record"
+msgstr "MX-邮件交换记录"
+
+msgid "Mail Server"
+msgstr "邮件服务器"
+
+msgid "Manage Records"
+msgstr "管理记录"
+
+msgid "NS"
+msgstr "NS"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Name Server"
+msgstr "域名服务器"
+
+msgid "Nameservers"
+msgstr "名称服务器数"
+
+msgid "None"
+msgstr "无"
+
+msgid "PTR - Pointer record"
+msgstr "PTR-指针记录"
+
+msgid "PTR Domain Name"
+msgstr "域名"
+
+msgid "Priority"
+msgstr "优先级"
+
+msgid "Record"
+msgstr "记录"
+
+msgid "Record Data"
+msgstr "记录数据"
+
+msgid "Record Detail"
+msgstr "记录明细"
+
+msgid "Record Type"
+msgstr "记录类型"
+
+msgid "Records"
+msgstr "记录数"
+
+msgid "SOA"
+msgstr "SOA"
+
+msgid "SPF - Sender Policy Framework"
+msgstr "SPF-发送方策略框架"
+
+msgid "SRV - Service locator"
+msgstr "SRV-服务定位器"
+
+msgid "SSHFP - SSH Public Key Fingerprint"
+msgstr "SSHFP-SSH公钥指纹"
+
+msgid "Select an IP"
+msgstr "选择一个IP"
+
+msgid "Serial"
+msgstr "序列号"
+
+msgid "TTL"
+msgstr "Time-to-Live"
+
+msgid "TTL (seconds)"
+msgstr "生存时间（秒）"
+
+msgid "TXT"
+msgstr "TXT"
+
+msgid "TXT - Text record"
+msgstr "TXT-文本记录"
+
+msgid "Text"
+msgstr "文本"
+
+msgid "The quotas could not be retrieved."
+msgstr "无法获取配额"
+
+msgid "There are no floating IP addresses currently in use to select from."
+msgstr "没有可以从中选择的使用中的浮动IP地址"
+
+msgid "This field is required"
+msgstr "需要此字段"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "Unable to create domain."
+msgstr "无法创建域"
+
+msgid "Unable to create record."
+msgstr "不能创建记录。"
+
+msgid "Unable to retrieve domain list."
+msgstr "无法获取域列表。"
+
+msgid "Unable to retrieve domain record."
+msgstr "无法获取域记录"
+
+msgid "Unable to retrieve record list."
+msgstr "无法获取记录列表"
+
+msgid "Unable to update domain."
+msgstr "无法更新域"
+
+msgid "Unknown"
+msgstr "未知"
+
+msgid "Unknown instance name"
+msgstr "未知实例名"
+
+msgid "Update Domain"
+msgstr "更新域"
+
+msgid "Update Domain Record"
+msgstr "更新域记录"
+
+msgid "Update Record"
+msgstr "更新记录"
+
+msgid "Updated"
+msgstr "已更新"
+
+msgid "Updated At"
+msgstr "已更新于"
+
+msgid "Value"
+msgstr "值"
