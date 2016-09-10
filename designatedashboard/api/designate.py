@@ -35,9 +35,6 @@ def designateclient(request):
         LOG.debug('no dns service configured.')
         return None
 
-    LOG.debug('designateclient connection created using token "%s"'
-              'and url "%s"' % (request.user.token.id, designate_url))
-
     insecure = getattr(settings, 'OPENSTACK_SSL_NO_VERIFY', False)
     cacert = getattr(settings, 'OPENSTACK_SSL_CACERT', None)
 
