@@ -459,7 +459,11 @@ class RecordForm(forms.SelfHandlingForm):
         cleaned_data.pop('txt')
 
         # Priority field
-        if self._is_field_blank(cleaned_data, 'priority'):
+        # Check against '' instead of using _is_field_blank because we need to
+        # allow a valud of 0.
+        if ('priority' not in cleaned_data or
+                cleaned_data['priority'] == '' or
+                cleaned_data['priority'] is None):
             if record_type in ['MX', 'SRV']:
                 self._add_required_field_error('priority')
 
