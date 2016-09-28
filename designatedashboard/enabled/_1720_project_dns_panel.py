@@ -32,5 +32,3 @@ ADD_EXCEPTIONS = {
 # Python panel class of the PANEL to be added.
 ADD_PANEL = (
     'designatedashboard.dashboards.project.dns_domains.panel.DNSDomains')
-
-DISABLED = True
