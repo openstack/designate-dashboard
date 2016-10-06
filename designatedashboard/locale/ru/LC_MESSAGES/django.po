@@ -6,16 +6,17 @@
 # Translators:
 # Denis Gubanov <v12aml@gmail.com>, 2015
 # Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
+# Ivan Startsev <istartsev67@gmail.com>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: designate-dashboard 2.0.1.dev8\n"
+"Project-Id-Version: designate-dashboard 3.0.0.0rc2.dev7\n"
 "Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
-"POT-Creation-Date: 2016-04-21 12:59+0000\n"
+"POT-Creation-Date: 2016-09-29 15:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-07-25 10:25+0000\n"
-"Last-Translator: Denis Gubanov <v12aml@gmail.com>\n"
+"PO-Revision-Date: 2016-10-05 02:21+0000\n"
+"Last-Translator: Ivan Startsev <istartsev67@gmail.com>\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
@@ -24,11 +25,82 @@ msgstr ""
 "X-Generator: Zanata 3.7.3\n"
 "Language-Team: Russian\n"
 
+msgid ""
+"\n"
+"      From here you can edit the email address and TTL associated with a "
+"domain.\n"
+"    "
+msgstr ""
+"\n"
+"      Отсюда вы можете отредактировать адрес почты и ассоциированный с "
+"доменом TTL \n"
+"    "
+
+msgid ""
+"\n"
+"      The Email field should contain a valid email address to be associated\n"
+"      with the domain.\n"
+"    "
+msgstr ""
+"\n"
+"      Поле Почта должно содержать валидный почтовый адрес\n"
+"      который может быть ассоциирован с доменом.\n"
+"    "
+
+msgid ""
+"\n"
+"      The Name field should contain a full-qualified domain name (with\n"
+"      trailing period).\n"
+"    "
+msgstr ""
+"\n"
+"      Поле Имя должно содержать полностью определённое имя домена (FQDN) "
+"( с\n"
+"      завершающей точкой).\n"
+"    "
+
+msgid ""
+"\n"
+"      The optional TTL field can be any value between 1 and 2147483647\n"
+"      seconds.\n"
+"    "
+msgstr ""
+"\n"
+"      Опциональное поле TTL может принимать любое значение \n"
+"      между 1 и 2147483647 секундами.\n"
+"    "
+
+msgid ""
+"\n"
+"  <p>\n"
+"    <strong>TTL</strong>\n"
+"    The TTL is the time-to-live for the record, in seconds.\n"
+"  </p>\n"
+"  <p>\n"
+"    See <a href=\"http://en.wikipedia.org/wiki/List_of_DNS_record_types\" "
+"target=\"_designate_record_defs\">more info</a> on record types.\n"
+"  </p>\n"
+"  "
+msgstr ""
+"\n"
+"  <p>\n"
+"    <strong>TTL</strong>\n"
+"    TTL - это time-to-live для записи, в секундах.\n"
+"  </p>\n"
+"  <p>\n"
+"    See <a href=\"http://en.wikipedia.org/wiki/List_of_DNS_record_types\" "
+"target=\"_designate_record_defs\">больше информации</a> на типах записи.\n"
+"  </p>\n"
+"  "
+
 msgid "A - Address record"
 msgstr "A - IPv4 адрес"
 
 msgid "AAAA - IPv6 address record"
 msgstr "AAAA - IPv6 адрес"
+
+msgid "All Records"
+msgstr "Все Записи"
 
 msgid "CNAME - Canonical name record"
 msgstr "CNAME - каноническое имя"
@@ -42,8 +114,14 @@ msgstr "Каноническое имя"
 msgid "Create Domain"
 msgstr "Создать домен"
 
+msgid "Create Domain Record"
+msgstr "Создать Доменную Запись"
+
 msgid "Create Record"
 msgstr "Создать запись"
+
+msgid "Create Record for"
+msgstr "Создать запись для"
 
 msgid "Created"
 msgstr "Создано"
@@ -74,8 +152,17 @@ msgstr "Домен %(name)s создан."
 msgid "Domain %(name)s updated."
 msgstr "Домен %(name)s обновлен."
 
+msgid "Domain Detail"
+msgstr "Детали Домена"
+
 msgid "Domain Name"
 msgstr "Имя домена"
+
+msgid "Domain Overview"
+msgstr "Обзор Домена"
+
+msgid "Domain Records"
+msgstr "Записи Домена"
 
 #, python-format
 msgid "Domain record %(name)s created."
@@ -149,6 +236,9 @@ msgstr "Имя"
 msgid "Name Server"
 msgstr "Сервер имен"
 
+msgid "Nameservers"
+msgstr "сервера"
+
 msgid "None"
 msgstr "Нет"
 
@@ -164,11 +254,20 @@ msgstr "Приоритет"
 msgid "Record"
 msgstr "Запись"
 
+msgid "Record Data"
+msgstr "Запись Данных"
+
+msgid "Record Detail"
+msgstr "Детали Записи"
+
 msgid "Record Type"
 msgstr "Тип записи"
 
 msgid "Records"
 msgstr "Записи"
+
+msgid "Reverse DNS"
+msgstr "Обратный DNS"
 
 msgid "SOA"
 msgstr "SOA"
@@ -239,6 +338,12 @@ msgstr "Неизвестно"
 msgid "Unknown instance name"
 msgstr "Неизвестное имя инстанса"
 
+msgid "Update Domain"
+msgstr "Обновить Домен"
+
+msgid "Update Domain Record"
+msgstr "Обновить Доменную Запись"
+
 msgid "Update Record"
 msgstr "Обновить запись"
 
@@ -250,3 +355,6 @@ msgstr "Обновлено"
 
 msgid "Value"
 msgstr "Значение"
+
+msgid "Zones"
+msgstr "Зоны"
