@@ -1,0 +1,351 @@
+# Frank Kloeker <eumel@arcor.de>, 2016. #zanata
+# Robert Simai <robert.simai@suse.com>, 2016. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: designate-dashboard 3.0.0.0rc2.dev5\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-09-29 13:19+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-10-13 04:32+0000\n"
+"Last-Translator: Andreas Jaeger <jaegerandi@gmail.com>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"X-Generator: Zanata 3.7.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgid ""
+"\n"
+"      From here you can edit the email address and TTL associated with a "
+"domain.\n"
+"    "
+msgstr ""
+"\n"
+"      Hier können Sie die E-Mail-Adresse und TTL mit dazugehöriger Domäne "
+"editieren.\n"
+"    "
+
+msgid ""
+"\n"
+"      The Email field should contain a valid email address to be associated\n"
+"      with the domain.\n"
+"    "
+msgstr ""
+"\n"
+"      Das E-Mail-Feld sollte eine gültige E-Mail-Adresse enthalten,\n"
+"  die der Domäne zugewiesen wird.\n"
+"   "
+
+msgid ""
+"\n"
+"      The Name field should contain a full-qualified domain name (with\n"
+"      trailing period).\n"
+"    "
+msgstr ""
+"\n"
+"      Das Namensfeld sollte einen vollqualifizierten Domänennamen enthalten "
+"(mit\n"
+"      abschließendem Punkt).\n"
+"    "
+
+msgid ""
+"\n"
+"      The optional TTL field can be any value between 1 and 2147483647\n"
+"      seconds.\n"
+"    "
+msgstr ""
+"\n"
+"      Das optionale TTL Feld kann einen Wert zwischen 1 und 2147483647\n"
+"      Sekunden haben.\n"
+"    "
+
+msgid ""
+"\n"
+"  <p>\n"
+"    <strong>TTL</strong>\n"
+"    The TTL is the time-to-live for the record, in seconds.\n"
+"  </p>\n"
+"  <p>\n"
+"    See <a href=\"http://en.wikipedia.org/wiki/List_of_DNS_record_types\" "
+"target=\"_designate_record_defs\">more info</a> on record types.\n"
+"  </p>\n"
+"  "
+msgstr ""
+"\n"
+"  <p>\n"
+"    <strong>TTL</strong>\n"
+"    Die TTL ist die time-to-live für den Datensatz,  in Sekunden.\n"
+"  </p>\n"
+"  <p>\n"
+"    Hier finden Sie <a href=\"http://en.wikipedia.org/wiki/"
+"List_of_DNS_record_types\" target=\"_designate_record_defs\">mehr "
+"Informationen</a> zu Datensatztypen.\n"
+"  </p>\n"
+"  "
+
+msgid "A - Address record"
+msgstr "A - Adress Datensatz"
+
+msgid "AAAA - IPv6 address record"
+msgstr "AAAA - IPv6 Adress Datensatz"
+
+msgid "All Records"
+msgstr "Alle Datensätze"
+
+msgid "CNAME - Canonical name record"
+msgstr "CNAME - Canonical Name Datensatz"
+
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgid "Canonical Name"
+msgstr "Canonical Name"
+
+msgid "Create Domain"
+msgstr "Domäne erstellen"
+
+msgid "Create Domain Record"
+msgstr "Erzeuge Datensatz für Domäne"
+
+msgid "Create Record"
+msgstr "Datensatz erzeugen"
+
+msgid "Create Record for"
+msgstr "Erzeuge Datensatz für"
+
+msgid "Created"
+msgstr "Erstellt"
+
+msgid "Created At"
+msgstr "Erstellt am"
+
+msgid "Data"
+msgstr "Daten"
+
+msgid "Delete"
+msgstr "Löschen"
+
+msgid "Deleted"
+msgstr "Gelöscht"
+
+msgid "Description"
+msgstr "Beschreibung"
+
+msgid "Domain"
+msgstr "Domäne"
+
+#, python-format
+msgid "Domain %(name)s created."
+msgstr "Domäne %(name)s erstellt."
+
+#, python-format
+msgid "Domain %(name)s updated."
+msgstr "Domäne %(name)s wurde geändert."
+
+msgid "Domain Detail"
+msgstr "Domänen Details"
+
+msgid "Domain Name"
+msgstr "Domänenname"
+
+msgid "Domain Overview"
+msgstr "Domänenübersicht"
+
+msgid "Domain Records"
+msgstr "Domänendatensatz"
+
+#, python-format
+msgid "Domain record %(name)s created."
+msgstr "Domändatensatz %(name)s erstellt."
+
+#, python-format
+msgid "Domain record %(name)s updated."
+msgstr "Domänendatensatz %(name)s aktualisiert."
+
+msgid "Domains"
+msgstr "Domänen"
+
+msgid "Edit Domain"
+msgstr "Domäne bearbeiten"
+
+msgid "Edit Record"
+msgstr "Datensatze bearbeiten"
+
+msgid "Email"
+msgstr "E-Mail"
+
+msgid "Enter a valid IPv4 address"
+msgstr "Geben Sie eine gültige IPv4 Addresse ein"
+
+msgid "Enter a valid IPv6 address"
+msgstr "Geben Sie eine gültige IPv6 Addresse ein"
+
+msgid "Enter a valid SRV name"
+msgstr "Geben Sie einen gültigen SRV Namen ein"
+
+msgid "Enter a valid SRV record"
+msgstr "Geben Sie einen gültigen SRV Datensatz ein"
+
+msgid "Enter a valid SSHFP record"
+msgstr "Geben Sie einen gültigen SSHFP Datensatz ein"
+
+msgid "Enter a valid domain name."
+msgstr "Geben Sie einen gültigen Domänennamen ein."
+
+msgid "Enter a valid hostname"
+msgstr "Geben Sie einen gültigen Hostnamen ein"
+
+msgid ""
+"Enter a valid hostname. The hostname should contain letters and numbers, and "
+"be no more than 63 characters."
+msgstr ""
+"Geben Sie einen gültien Hostnamen ein. Der Hostname darf nur Buchstaben und "
+"Nummern enthalten und darf nicht mehr als 63 Zeichen lang sein."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "IP Address"
+msgstr "IP-Adresse"
+
+msgid "MX - Mail exchange record"
+msgstr "MX - Mail Austausch Datensatz"
+
+msgid "Mail Server"
+msgstr "Mailserver"
+
+msgid "Manage Records"
+msgstr "Datensätze verwalten"
+
+msgid "NS"
+msgstr "NS"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Name Server"
+msgstr "Nameserver"
+
+msgid "Nameservers"
+msgstr "Namensserver"
+
+msgid "None"
+msgstr "Keine"
+
+msgid "PTR - Pointer record"
+msgstr "PTR - Pointer Datensatz"
+
+msgid "PTR Domain Name"
+msgstr "PTR Domänenname"
+
+msgid "Priority"
+msgstr "Priorität"
+
+msgid "Record"
+msgstr "Datensatz"
+
+msgid "Record Data"
+msgstr "Datensatz"
+
+msgid "Record Detail"
+msgstr "Datensatzdetails"
+
+msgid "Record Type"
+msgstr "Datensatztyp"
+
+msgid "Records"
+msgstr "Datensätze"
+
+msgid "Reverse DNS"
+msgstr "Reverse DNS"
+
+msgid "SOA"
+msgstr "SOA"
+
+msgid "SPF - Sender Policy Framework"
+msgstr "SPF - Sender Policy Framework"
+
+msgid "SRV - Service locator"
+msgstr "SRV - Dienstezeiger"
+
+msgid "SSHFP - SSH Public Key Fingerprint"
+msgstr "SSHFP - SSH Fingerprint für öffentlichen Schlüssel"
+
+msgid "Select an IP"
+msgstr "Wähle eine IP"
+
+msgid "Serial"
+msgstr "Seriennummer"
+
+msgid "TTL"
+msgstr "TTL"
+
+msgid "TTL (seconds)"
+msgstr "TTL (Sekunden)"
+
+msgid "TXT"
+msgstr "TXT"
+
+msgid "TXT - Text record"
+msgstr "TXT - Text Datensatz"
+
+msgid "Text"
+msgstr "Text"
+
+msgid "The quotas could not be retrieved."
+msgstr "Die Kontingente konnten nicht abgerufen werden."
+
+msgid "There are no floating IP addresses currently in use to select from."
+msgstr "Es stehen derzeit keine Floating IP-Adressen zur Auswahl."
+
+msgid "This field is required"
+msgstr "Dieses Feld ist erforderlich"
+
+msgid "Type"
+msgstr "Typ"
+
+msgid "Unable to create domain."
+msgstr "Die Domäne kann nicht erstellt werden."
+
+msgid "Unable to create record."
+msgstr "Datensatz konnte nicht erzeugt werden."
+
+msgid "Unable to retrieve domain list."
+msgstr "Domänen-Liste kann nicht abgerufen werden."
+
+msgid "Unable to retrieve domain record."
+msgstr "Domänendatensatz kann nicht abgerufen werden."
+
+msgid "Unable to retrieve record list."
+msgstr "Die Datensatzliste kann nicht abgerufen werden."
+
+msgid "Unable to update domain."
+msgstr "Die Domäne kann nicht geändert werden."
+
+msgid "Unknown"
+msgstr "Unbekannt"
+
+msgid "Unknown instance name"
+msgstr "Unbekannter Instanzname"
+
+msgid "Update Domain"
+msgstr "Domain ändern"
+
+msgid "Update Domain Record"
+msgstr "Domänendatensatz aktualisieren"
+
+msgid "Update Record"
+msgstr "Datensatz aktualisieren"
+
+msgid "Updated"
+msgstr "Aktualisiert"
+
+msgid "Updated At"
+msgstr "Aktualisiert am"
+
+msgid "Value"
+msgstr "Wert"
+
+msgid "Zones"
+msgstr "Zonen"
