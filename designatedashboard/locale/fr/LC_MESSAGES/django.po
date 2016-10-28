@@ -10,19 +10,64 @@
 # Gérald LONLAS <g.lonlas@gmail.com>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: designate-dashboard 3.0.0.0rc2.dev6\n"
+"Project-Id-Version: designate-dashboard 3.0.0.0rc2.dev9\n"
 "Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
-"POT-Creation-Date: 2016-10-14 10:51+0000\n"
+"POT-Creation-Date: 2016-10-27 17:27+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-10-24 09:11+0000\n"
+"PO-Revision-Date: 2016-10-27 03:47+0000\n"
 "Last-Translator: Gérald LONLAS <g.lonlas@gmail.com>\n"
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.0\n"
 "X-Generator: Zanata 3.7.3\n"
 "Language-Team: French\n"
+
+msgid ""
+"\n"
+"      From here you can edit the email address and TTL associated with a "
+"domain.\n"
+"    "
+msgstr ""
+"\n"
+"      Depuis ici vous pouvez éditer l'adresse email et le TTL associé au "
+"domaine.\n"
+"    "
+
+msgid ""
+"\n"
+"      The Email field should contain a valid email address to be associated\n"
+"      with the domain.\n"
+"    "
+msgstr ""
+"\n"
+"      Le champ Email doit contenir un email valide qui sera associé \n"
+"      avec le domaine.\n"
+"    "
+
+msgid ""
+"\n"
+"      The Name field should contain a full-qualified domain name (with\n"
+"      trailing period).\n"
+"    "
+msgstr ""
+"\n"
+"      Le champ Nom doit contenir un nom de domaine (FQDN avec le\n"
+"      point \".\" à la fin).\n"
+"    "
+
+msgid ""
+"\n"
+"      The optional TTL field can be any value between 1 and 2147483647\n"
+"      seconds.\n"
+"    "
+msgstr ""
+"\n"
+"      Le champ optionnel TLL ne peut avoir une valeur qu'entre 1 et "
+"2147483647\n"
+"      secondes.\n"
+"    "
 
 msgid ""
 "\n"
@@ -69,6 +114,9 @@ msgstr "Nom canonique"
 msgid "Create Domain"
 msgstr "Créer un domaine"
 
+msgid "Create Domain Record"
+msgstr "Créer un enregistrement de domaine"
+
 msgid "Create Record"
 msgstr "Créer un enregistrement"
 
@@ -112,6 +160,9 @@ msgstr "Nom de domaine"
 
 msgid "Domain Overview"
 msgstr "Vue d'ensemble du domaine"
+
+msgid "Domain Records"
+msgstr "Enregistrements domaine"
 
 #, python-format
 msgid "Domain record %(name)s created."
@@ -203,11 +254,21 @@ msgstr "Priorité"
 msgid "Record"
 msgstr "Enregistrement"
 
+#, fuzzy
+msgid "Record Data"
+msgstr "Record Data"
+
+msgid "Record Detail"
+msgstr "Détail de l'enregistrement du domaine"
+
 msgid "Record Type"
 msgstr "Type d'enregistrement"
 
 msgid "Records"
 msgstr "Enregistrements"
+
+msgid "Reverse DNS"
+msgstr "Reverse DNS"
 
 msgid "SOA"
 msgstr "SOA"
@@ -295,3 +356,6 @@ msgstr "Mis à jour le"
 
 msgid "Value"
 msgstr "Valeur"
+
+msgid "Zones"
+msgstr "Zones"
