@@ -28,3 +28,4 @@ functionaltests/tempest.log
 functionaltests/.testrepository/
 *.ipynb
 /.ipynb_checkpoints/*
+releasenotes/build
