@@ -34,15 +34,20 @@ def _passthrough_request(request_method, url,
 
     Should set any necessary auth headers and SSL parameters.
     """
-    service = 'dns' \
-              ''
+
     # Set verify if a CACERT is set and SSL_NO_VERIFY isn't True
     verify = getattr(settings, 'OPENSTACK_SSL_CACERT', None)
     if getattr(settings, 'OPENSTACK_SSL_NO_VERIFY', False):
         verify = False
 
+    service_url = _get_service_url(request, 'dns')
+    request_url = '{}{}'.format(
+        service_url,
+        url if service_url.endswith('/') else ('/' + url)
+    )
+
     response = request_method(
-        _get_service_url(request, service) + url,
+        request_url,
         headers={'X-Auth-Token': request.user.token.id},
         json=data,
         verify=verify,
