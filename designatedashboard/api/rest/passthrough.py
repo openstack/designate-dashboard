@@ -16,7 +16,6 @@
 from django.conf import settings
 from django.views import generic
 import functools
-import logging
 import requests
 from requests.exceptions import HTTPError
 
@@ -24,6 +23,7 @@ from horizon import exceptions
 from openstack_dashboard.api import base
 from openstack_dashboard.api.rest import urls
 from openstack_dashboard.api.rest import utils as rest_utils
+from oslo_log import log as logging
 
 LOG = logging.getLogger(__name__)
 
