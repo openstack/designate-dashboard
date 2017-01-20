@@ -280,3 +280,6 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 # exinfo_no_detailmenu = False
+
+# -- Options for Internationalization output ------------------------------
+locale_dirs = ['locale/']
