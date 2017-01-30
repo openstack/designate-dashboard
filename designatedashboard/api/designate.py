@@ -20,9 +20,9 @@ from designateclient.v1.records import Record  # noqa
 from django.conf import settings  # noqa
 
 from horizon import exceptions
-import logging
 
 from openstack_dashboard.api.base import url_for  # noqa
+from oslo_log import log as logging
 
 LOG = logging.getLogger(__name__)
 

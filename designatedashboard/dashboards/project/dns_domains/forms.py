@@ -12,7 +12,6 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 import functools
-import logging
 import re
 
 from designateclient import exceptions as designate_exceptions
@@ -27,6 +26,7 @@ from horizon import messages
 from designatedashboard import api
 from designatedashboard.dashboards.project.dns_domains.utils\
     import limit_records_to_fips
+from oslo_log import log as logging
 
 
 LOG = logging.getLogger(__name__)

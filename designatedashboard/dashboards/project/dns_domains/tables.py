@@ -11,8 +11,6 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 # License for the specific language governing permissions and limitations
 # under the License.
-import logging
-
 from django.core import urlresolvers
 from django.utils.translation import ugettext_lazy as _  # noqa
 
@@ -23,6 +21,7 @@ from horizon.utils import memoized
 from designatedashboard import api
 
 from openstack_dashboard import policy
+from oslo_log import log as logging
 
 LOG = logging.getLogger(__name__)
 
