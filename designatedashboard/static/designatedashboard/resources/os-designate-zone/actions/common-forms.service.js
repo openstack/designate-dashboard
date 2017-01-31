@@ -128,10 +128,10 @@
           {
             "key": "email",
             "title": gettext("Email Address"),
-            "placeholder": "owner@example.com",
             "description": gettext("Email address to contact the zone owner."),
             "validationMessage": gettext("Email address must contain a single '@' character"),
             "type": "text",
+            "condition": "model.type == 'PRIMARY'",
             "required": true
           },
           {
@@ -139,6 +139,7 @@
             "title": gettext("TTL"),
             "description": gettext("Time To Live in seconds."),
             "type": "number",
+            "condition": "model.type == 'PRIMARY'",
             "required": true
           },
           {

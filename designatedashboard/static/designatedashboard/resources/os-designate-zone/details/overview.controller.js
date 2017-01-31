@@ -40,6 +40,15 @@
 
     function onGetResponse(response) {
       ctrl.item = response.data;
+
+      var attr = '';
+      var keys = Object.keys(response.data.attributes);
+
+      for (var i = keys.length - 1; i >= 0; i--) {
+        attr += keys[i] + ':' + response.data.attributes[keys[i]] + ', ';
+      }
+
+      ctrl.item.attributes = attr;
     }
   }
 
