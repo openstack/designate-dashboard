@@ -1,14 +1,15 @@
+# Ian Y. Choi <ianyrchoi@gmail.com>, 2017. #zanata
 # Sungjin Kang <gang.sungjin@gmail.com>, 2017. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: Designate dashboard Client Release Notes 3.0.0\n"
+"Project-Id-Version: Designate dashboard Client Release Notes 4.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-14 20:14+0000\n"
+"POT-Creation-Date: 2017-02-03 00:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-01-10 11:19+0000\n"
-"Last-Translator: Sungjin Kang <gang.sungjin@gmail.com>\n"
+"PO-Revision-Date: 2017-02-03 06:01+0000\n"
+"Last-Translator: Ian Y. Choi <ianyrchoi@gmail.com>\n"
 "Language-Team: Korean (South Korea)\n"
 "Language: ko-KR\n"
 "X-Generator: Zanata 3.7.3\n"
@@ -34,6 +35,9 @@ msgstr "Mitaka 시리즈에 대한 릴리즈 노트"
 
 msgid "Newton Series Release Notes"
 msgstr "Newton 시리즈에 대한 릴리즈 노트"
+
+msgid "Ocata Series Release Notes"
+msgstr "Ocata 시리즈에 대한 릴리즈 노트"
 
 msgid "Welcome to Designate dashboard Agent Release Notes documentation!"
 msgstr "대시 보드 에이전트 릴리스 노트 문서에 오신 것을 환영합니다!"
