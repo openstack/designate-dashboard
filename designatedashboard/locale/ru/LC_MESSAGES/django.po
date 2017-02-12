@@ -7,16 +7,17 @@
 # Denis Gubanov <v12aml@gmail.com>, 2015
 # Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
 # Ivan Startsev <istartsev67@gmail.com>, 2016. #zanata
+# Ilya Alekseyev <ilyaalekseyev@acm.org>, 2017. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: designate-dashboard 3.0.0.0rc2.dev5\n"
+"Project-Id-Version: designate-dashboard 4.0.0.0rc2.dev1\n"
 "Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
-"POT-Creation-Date: 2016-09-29 13:19+0000\n"
+"POT-Creation-Date: 2017-02-03 00:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-10-05 02:21+0000\n"
-"Last-Translator: Ivan Startsev <istartsev67@gmail.com>\n"
+"PO-Revision-Date: 2017-02-10 02:44+0000\n"
+"Last-Translator: Ilya Alekseyev <ilyaalekseyev@acm.org>\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
@@ -185,25 +186,25 @@ msgid "Email"
 msgstr "Email"
 
 msgid "Enter a valid IPv4 address"
-msgstr "Введите верный IPv4 адрес"
+msgstr "Введите корректный IPv4 адрес"
 
 msgid "Enter a valid IPv6 address"
-msgstr "Введите верный IPv6 адрес"
+msgstr "Введите корректный IPv6 адрес"
 
 msgid "Enter a valid SRV name"
 msgstr "Введите верное SRV имя"
 
 msgid "Enter a valid SRV record"
-msgstr "Введите верную SRV запись"
+msgstr "Введите корректную SRV запись"
 
 msgid "Enter a valid SSHFP record"
-msgstr "Введите верную SSHFP запись"
+msgstr "Введите корректныю SSHFP запись"
 
 msgid "Enter a valid domain name."
-msgstr "Введите верное имя домена"
+msgstr "Введите корректное имя домена"
 
 msgid "Enter a valid hostname"
-msgstr "Введите верное имя узла"
+msgstr "Введите корректное имя узла"
 
 msgid ""
 "Enter a valid hostname. The hostname should contain letters and numbers, and "
@@ -225,7 +226,7 @@ msgid "Mail Server"
 msgstr "Почтовый сервер"
 
 msgid "Manage Records"
-msgstr "Управлять записями"
+msgstr "Управление записями"
 
 msgid "NS"
 msgstr "NS"
@@ -309,7 +310,7 @@ msgid "There are no floating IP addresses currently in use to select from."
 msgstr "Отсутствуют используемые плавающие IP-адреса для выбора."
 
 msgid "This field is required"
-msgstr "Обязательное поле"
+msgstr "Это поле обязательно"
 
 msgid "Type"
 msgstr "Тип"
