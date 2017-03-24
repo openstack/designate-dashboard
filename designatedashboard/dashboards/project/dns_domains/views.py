@@ -106,6 +106,7 @@ class RecordsView(tables.DataTableView):
 
     def get_data(self):
         domain_id = self.kwargs['domain_id']
+        records = []
         try:
             self.domain = api.designate.domain_get(self.request, domain_id)
             self.servers = api.designate.server_list(self.request, domain_id)
@@ -116,7 +117,6 @@ class RecordsView(tables.DataTableView):
                               _('Unable to retrieve record list.'),
                               redirect=redirect)
 
-        # TODO(Matt): This may not be defined here.
         return records
 
     def get_context_data(self, **kwargs):
