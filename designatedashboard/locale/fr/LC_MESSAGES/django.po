@@ -8,20 +8,21 @@
 # Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
 # Gael Rehault <gael_rehault@dell.com>, 2016. #zanata
 # Gérald LONLAS <g.lonlas@gmail.com>, 2016. #zanata
+# JF Taltavull <jftalta@gmail.com>, 2017. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: designate-dashboard 3.0.0.0rc2.dev9\n"
+"Project-Id-Version: designate-dashboard 4.0.0.0rc2.dev10\n"
 "Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
-"POT-Creation-Date: 2016-10-27 17:27+0000\n"
+"POT-Creation-Date: 2017-03-10 19:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-10-27 03:47+0000\n"
-"Last-Translator: Gérald LONLAS <g.lonlas@gmail.com>\n"
+"PO-Revision-Date: 2017-03-23 08:04+0000\n"
+"Last-Translator: JF Taltavull <jftalta@gmail.com>\n"
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.0\n"
-"X-Generator: Zanata 3.7.3\n"
+"X-Generator: Zanata 3.9.6\n"
 "Language-Team: French\n"
 
 msgid ""
@@ -31,7 +32,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Depuis ici vous pouvez éditer l'adresse email et le TTL associé au "
+"      Ici vous pouvez éditer l'adresse email e t le TTL associés à un "
 "domaine.\n"
 "    "
 
@@ -54,7 +55,7 @@ msgid ""
 msgstr ""
 "\n"
 "      Le champ Nom doit contenir un nom de domaine (FQDN avec le\n"
-"      point \".\" à la fin).\n"
+"      point \".\" de terminaison).\n"
 "    "
 
 msgid ""
@@ -64,7 +65,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"      Le champ optionnel TLL ne peut avoir une valeur qu'entre 1 et "
+"      La valeur du champ optionnel TTL doit être comprise entre 1 et "
 "2147483647\n"
 "      secondes.\n"
 "    "
@@ -84,26 +85,26 @@ msgstr ""
 "\n"
 "  <p>\n"
 "    <strong>TTL</strong>\n"
-"    Le TTL est le time-to-live pour une enregistrement, en secondes.\n"
+"    Le TTL est le time-to-live de l'enregistrement, en secondes.\n"
 "  </p>\n"
 "  <p>\n"
 "    Voir <a href=\"http://en.wikipedia.org/wiki/List_of_DNS_record_types\" "
-"target=\"_designate_record_defs\">pour plus de détails</a> sur les types "
+"target=\"_designate_record_defs\">plus de détails</a> sur les types "
 "d'enregistrement.\n"
 "  </p>\n"
 "  "
 
 msgid "A - Address record"
-msgstr "A - Enregistrement d'adresse"
+msgstr "A - Enregistrement d'Adresse"
 
 msgid "AAAA - IPv6 address record"
-msgstr "AAAA - Enregistrement d'adresse IPv6"
+msgstr "AAAA - Enregistrement d'Adresse IPv6"
 
 msgid "All Records"
 msgstr "Tous les enregistrements"
 
 msgid "CNAME - Canonical name record"
-msgstr "CNAME - Enregistrement de nom canonique"
+msgstr "CNAME - Enregistrement de Nom Canonique"
 
 msgid "Cancel"
 msgstr "Annuler"
@@ -130,7 +131,7 @@ msgid "Created At"
 msgstr "Créé le"
 
 msgid "Data"
-msgstr "Donnée"
+msgstr "Données"
 
 msgid "Delete"
 msgstr "Supprimer"
@@ -150,7 +151,7 @@ msgstr "Domaine %(name)s créé"
 
 #, python-format
 msgid "Domain %(name)s updated."
-msgstr "Domaine %(name)s mis à jour"
+msgstr "Domaine %(name)s mis à jour."
 
 msgid "Domain Detail"
 msgstr "Détail du domaine"
@@ -162,15 +163,15 @@ msgid "Domain Overview"
 msgstr "Vue d'ensemble du domaine"
 
 msgid "Domain Records"
-msgstr "Enregistrements domaine"
+msgstr "Enregistrements de domaine"
 
 #, python-format
 msgid "Domain record %(name)s created."
-msgstr "Enregistrement du domaine %(name)s créé"
+msgstr "Enregistrement Domaine %(name)s créé"
 
 #, python-format
 msgid "Domain record %(name)s updated."
-msgstr "Enregistrement du domaine %(name)s mis à jour."
+msgstr "Enregistrement Domaine %(name)s mis à jour."
 
 msgid "Domains"
 msgstr "Domaines"
@@ -179,7 +180,7 @@ msgid "Edit Domain"
 msgstr "Editer le domaine"
 
 msgid "Edit Record"
-msgstr "Editer un enregistrement"
+msgstr "Editer l'enregistrement"
 
 msgid "Email"
 msgstr "Email"
@@ -210,7 +211,7 @@ msgid ""
 "be no more than 63 characters."
 msgstr ""
 "Entrer un nom d'hôte valide. Le nom d'hôte ne doit contenir que des lettres "
-"et des chiffres, et ne doit pas contenir plus de 63 caractères."
+"et des chiffres, et ne doit pas dépasser 63 caractères."
 
 msgid "ID"
 msgstr "ID"
@@ -219,7 +220,7 @@ msgid "IP Address"
 msgstr "Adresse IP"
 
 msgid "MX - Mail exchange record"
-msgstr "MX - Enregistrement de serveur de messagerie"
+msgstr "MX - Enregistrement de Serveur de messagerie"
 
 msgid "Mail Server"
 msgstr "Serveur de messagerie"
@@ -237,13 +238,13 @@ msgid "Name Server"
 msgstr "Nom de serveur"
 
 msgid "Nameservers"
-msgstr "Serveurs de nom DNS"
+msgstr "Serveurs de nom"
 
 msgid "None"
 msgstr "Aucun"
 
 msgid "PTR - Pointer record"
-msgstr "PTR - Enregistrement pointeur"
+msgstr "PTR - Enregistrement de Pointeur"
 
 msgid "PTR Domain Name"
 msgstr "Nom de domaine PTR"
@@ -254,12 +255,11 @@ msgstr "Priorité"
 msgid "Record"
 msgstr "Enregistrement"
 
-#, fuzzy
 msgid "Record Data"
-msgstr "Record Data"
+msgstr "Enregistrer les données"
 
 msgid "Record Detail"
-msgstr "Détail de l'enregistrement du domaine"
+msgstr "Détail de l'enregistrement"
 
 msgid "Record Type"
 msgstr "Type d'enregistrement"
@@ -274,16 +274,16 @@ msgid "SOA"
 msgstr "SOA"
 
 msgid "SPF - Sender Policy Framework"
-msgstr "SPF - Règle et politique d’émission"
+msgstr "SPF - Politique d’émission"
 
 msgid "SRV - Service locator"
-msgstr "SRV - Enregistrement de service"
+msgstr "SRV - Enregistrement de Service"
 
 msgid "SSHFP - SSH Public Key Fingerprint"
-msgstr "SSHFP - Empreinte digitale de la clé SSH publique"
+msgstr "SSHFP - Somme de contrôle de la clé SSH publique"
 
 msgid "Select an IP"
-msgstr "Sélectionnez une IP"
+msgstr "Sélectionner une IP"
 
 msgid "Serial"
 msgstr "Numéro de série"
@@ -298,7 +298,7 @@ msgid "TXT"
 msgstr "TXT"
 
 msgid "TXT - Text record"
-msgstr "TXT - Enregistrement de texte"
+msgstr "TXT - Enregistrement Texte"
 
 msgid "Text"
 msgstr "Texte"
@@ -325,7 +325,7 @@ msgid "Unable to retrieve domain list."
 msgstr "Impossible de récupérer la liste des domaines."
 
 msgid "Unable to retrieve domain record."
-msgstr "Impossible de récupérer l'enregistrement du domaine."
+msgstr "Impossible de récupérer l'enregistrement de domaine."
 
 msgid "Unable to retrieve record list."
 msgstr "Impossible de récupérer la liste des enregistrements."
@@ -340,13 +340,13 @@ msgid "Unknown instance name"
 msgstr "Nom d'instance inconnu"
 
 msgid "Update Domain"
-msgstr "Mise à jour du domaine"
+msgstr "Mettre à jour le domaine"
 
 msgid "Update Domain Record"
-msgstr "Mise à jour des enregistrements du domaine"
+msgstr "Mettre à jour  l'enregistrement de domaine"
 
 msgid "Update Record"
-msgstr "Enregistrer"
+msgstr "Mettre à jour l'enregistrement"
 
 msgid "Updated"
 msgstr "Mis à jour"
