@@ -1,0 +1,42 @@
+# TigerFang <tigerfun@126.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Designate dashboard Client Release Notes 5.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-04 14:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-05-15 09:55+0000\n"
+"Last-Translator: TigerFang <tigerfun@126.com>\n"
+"Language-Team: Chinese (China)\n"
+"Language: zh-CN\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+msgid ":ref:`genindex`"
+msgstr ":ref:`genindex`"
+
+msgid ":ref:`search`"
+msgstr ":ref:`search`"
+
+msgid "Contents"
+msgstr "内容"
+
+msgid "Current Series Release Notes"
+msgstr "当前版本发布说明"
+
+msgid "Indices and tables"
+msgstr "索引和表格"
+
+msgid "Mitaka Series Release Notes"
+msgstr "Mitaka 版本发布说明"
+
+msgid "Newton Series Release Notes"
+msgstr "Newton版本发布说明"
+
+msgid "Ocata Series Release Notes"
+msgstr "Ocata版本发布说明"
+
+msgid "Welcome to Designate dashboard Agent Release Notes documentation!"
+msgstr "欢迎使用Designate控制台代理发布说明文档！"
