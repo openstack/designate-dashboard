@@ -8,27 +8,99 @@
 # Mücahit Büyükyılmaz <mucahit@deltanoc.com>, 2015. #zanata
 # OpenStack Infra <zanata@openstack.org>, 2015. #zanata
 # Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
+# işbaran akçayır <isbaran@gmail.com>, 2017. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: designate-dashboard 2.0.1.dev8\n"
+"Project-Id-Version: designate-dashboard 5.0.0.0b2.dev8\n"
 "Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
-"POT-Creation-Date: 2016-04-21 12:59+0000\n"
+"POT-Creation-Date: 2017-05-18 22:12+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-02-05 07:24+0000\n"
-"Last-Translator: Andreas Jaeger <jaegerandi@gmail.com>\n"
+"PO-Revision-Date: 2017-05-22 08:57+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language: tr-TR\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.0\n"
-"X-Generator: Zanata 3.7.3\n"
+"X-Generator: Zanata 3.9.6\n"
 "Language-Team: Turkish (Turkey)\n"
+
+msgid ""
+"\n"
+"      From here you can edit the email address and TTL associated with a "
+"domain.\n"
+"    "
+msgstr ""
+"\n"
+"      Burdan alan ile ilişkili eposta adresini ve TTL değerini "
+"düzenleyebilirsiniz.\n"
+"    "
+
+msgid ""
+"\n"
+"      The Email field should contain a valid email address to be associated\n"
+"      with the domain.\n"
+"    "
+msgstr ""
+"\n"
+"      Eposta alanı alan ile ilişkilendirilecek geçerli bir\n"
+"      eposta adresi içermelidir.\n"
+"    "
+
+msgid ""
+"\n"
+"      The Name field should contain a full-qualified domain name (with\n"
+"      trailing period).\n"
+"    "
+msgstr ""
+"\n"
+"      İsim alanı tam-nitelikli alan adı içermelidir\n"
+"      (sonunda nokta ile).\n"
+"    "
+
+msgid ""
+"\n"
+"      The optional TTL field can be any value between 1 and 2147483647\n"
+"      seconds.\n"
+"    "
+msgstr ""
+"\n"
+"      İsteğe bağlı TTL alanı 1 ve 2147483647 saniye arasında\n"
+"      bir sayı olabilir.\n"
+"    "
+
+msgid ""
+"\n"
+"  <p>\n"
+"    <strong>TTL</strong>\n"
+"    The TTL is the time-to-live for the record, in seconds.\n"
+"  </p>\n"
+"  <p>\n"
+"    See <a href=\"http://en.wikipedia.org/wiki/List_of_DNS_record_types\" "
+"target=\"_designate_record_defs\">more info</a> on record types.\n"
+"  </p>\n"
+"  "
+msgstr ""
+"\n"
+"  <p>\n"
+"    <strong>TTL</strong>\n"
+"    TTL kaydın yaşam süresidir, saniye olarak.\n"
+"  </p>\n"
+"  <p>\n"
+"    Kayıt türleri hakkında <a href=\"http://en.wikipedia.org/wiki/"
+"List_of_DNS_record_types\" target=\"_designate_record_defs\">daha fazla "
+"bilgi için</a> bakınız.\n"
+"  </p>\n"
+"  "
 
 msgid "A - Address record"
 msgstr "A - Adres kaydı"
 
 msgid "AAAA - IPv6 address record"
 msgstr "AAAA - IPv6 adres kaydı"
+
+msgid "All Records"
+msgstr "Tüm Kayıtlar"
 
 msgid "CNAME - Canonical name record"
 msgstr "CNAME -  Meşru isim kaydı"
@@ -42,8 +114,14 @@ msgstr "Meşru isim"
 msgid "Create Domain"
 msgstr "Alan Oluştur"
 
+msgid "Create Domain Record"
+msgstr "Alan Kaydı Oluştur"
+
 msgid "Create Record"
 msgstr "Kayıt Oluştur"
+
+msgid "Create Record for"
+msgstr "Kayıt oluştur"
 
 msgid "Created"
 msgstr "Oluşturuldu"
@@ -74,8 +152,17 @@ msgstr "%(name)s alanı oluşturuldu"
 msgid "Domain %(name)s updated."
 msgstr "%(name)s alanı güncellendi"
 
+msgid "Domain Detail"
+msgstr "Alan Ayrıntısı"
+
 msgid "Domain Name"
 msgstr "Alan Adı"
+
+msgid "Domain Overview"
+msgstr "Alan Genel Görünümü"
+
+msgid "Domain Records"
+msgstr "Alan Kayıtları"
 
 #, python-format
 msgid "Domain record %(name)s created."
@@ -131,6 +218,9 @@ msgstr "KİMLİK"
 msgid "IP Address"
 msgstr "IP Adresi"
 
+msgid "MX - Mail exchange record"
+msgstr "MX - Posta değişim kaydı"
+
 msgid "Mail Server"
 msgstr "Posta Sunucusu"
 
@@ -146,8 +236,14 @@ msgstr "İsim"
 msgid "Name Server"
 msgstr "İsim Sunucusu"
 
+msgid "Nameservers"
+msgstr "İsim sunucular"
+
 msgid "None"
 msgstr "Yok"
+
+msgid "PTR - Pointer record"
+msgstr "PTR - İşaretçi kaydı"
 
 msgid "PTR Domain Name"
 msgstr "PTR Alan Adı"
@@ -158,14 +254,32 @@ msgstr "Öncelik"
 msgid "Record"
 msgstr "Kayıt"
 
+msgid "Record Data"
+msgstr "Kayıt Verisi"
+
+msgid "Record Detail"
+msgstr "Kayıt Ayrıntısı"
+
 msgid "Record Type"
 msgstr "Kayıt Tipi"
 
 msgid "Records"
 msgstr "Kayıtlar"
 
+msgid "Reverse DNS"
+msgstr "Ters DNS"
+
 msgid "SOA"
 msgstr "SOA"
+
+msgid "SPF - Sender Policy Framework"
+msgstr "SPF - Gönderen İlkesi Çatısı"
+
+msgid "SRV - Service locator"
+msgstr "SRV - Servis konumlandırıcı"
+
+msgid "SSHFP - SSH Public Key Fingerprint"
+msgstr "SSHFP - SSH Açık Anahtar Parmakizi"
 
 msgid "Select an IP"
 msgstr "Bir IP seçiniz"
@@ -188,6 +302,12 @@ msgstr "TXT - Yazı Kaydı"
 msgid "Text"
 msgstr "Yazı"
 
+msgid "The quotas could not be retrieved."
+msgstr "Kotalar alınamadı."
+
+msgid "There are no floating IP addresses currently in use to select from."
+msgstr "Seçilecek kullanılabilir değişken IP adresi yok."
+
 msgid "This field is required"
 msgstr "Bu alanın doldurulması gerekmektedir."
 
@@ -203,6 +323,12 @@ msgstr "Kayıt oluşturulamıyor"
 msgid "Unable to retrieve domain list."
 msgstr "Alan listesi alınamıyor."
 
+msgid "Unable to retrieve domain record."
+msgstr "Alan kaydı alınamadı."
+
+msgid "Unable to retrieve record list."
+msgstr "Kayıt listesi alınamadı."
+
 msgid "Unable to update domain."
 msgstr "Alan güncellenemiyor."
 
@@ -211,6 +337,12 @@ msgstr "Bilinmeyen"
 
 msgid "Unknown instance name"
 msgstr "Bilinmeyen mesafe adı"
+
+msgid "Update Domain"
+msgstr "Alanı Güncelle"
+
+msgid "Update Domain Record"
+msgstr "Alan Kaydını Güncelle"
 
 msgid "Update Record"
 msgstr "Kaydı Güncelle"
@@ -223,3 +355,6 @@ msgstr "Güncellendiği Zaman"
 
 msgid "Value"
 msgstr "Değer"
+
+msgid "Zones"
+msgstr "Bölgeler"
