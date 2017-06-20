@@ -13,6 +13,7 @@
 # under the License.
 import functools
 import re
+import six
 
 from designateclient import exceptions as designate_exceptions
 from django.core.exceptions import ValidationError  # noqa
@@ -52,8 +53,8 @@ def handle_exc(func):
             msg = ""
             data = {}
 
-            if ex.message is not None:
-                data['message'] = ex.message
+            if six.text_type(ex) is not None:
+                data['message'] = six.text_type(ex)
                 msg += "Error: %(message)s"
             else:
                 data["type"] = ex.type
