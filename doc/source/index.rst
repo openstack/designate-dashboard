@@ -3,21 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to designatedashboard's documentation!
-========================================================
-
-Contents:
+================================================
+ Welcome to designatedashboard's documentation!
+================================================
 
 .. toctree::
    :maxdepth: 2
 
    readme
-   installation
-   usage
-   contributing
+   install/index
+   user/index
+   contributor/index
 
-Indices and tables
-==================
+.. rubric:: Indices and tables
 
 * :ref:`genindex`
 * :ref:`search`
