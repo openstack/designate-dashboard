@@ -23,8 +23,15 @@ sys.path.insert(0, os.path.abspath('../..'))
 extensions = [
     'sphinx.ext.autodoc',
     #'sphinx.ext.intersphinx',
-    'oslosphinx'
+    'openstackdocstheme'
 ]
+
+# openstackdocstheme options
+repository_name = 'openstack/designate-dashboard'
+bug_project = 'designate-dashboard'
+bug_tag = ''
+html_last_updated_fmt = '%Y-%m-%d %H:%M'
+html_theme = 'openstackdocs'
 
 # autodoc generation is a bit aggressive and a ndashboardsance when doing heavy
 # text edit cycles.
