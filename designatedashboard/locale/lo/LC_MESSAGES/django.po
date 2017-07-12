@@ -1,0 +1,288 @@
+# Saikeo Kavhanxay <kavhanxay@hotmail.com>, 2016. #zanata
+# Saikeo Kavhanxay <kavhanxay@hotmail.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: designate-dashboard 3.0.1.dev4\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-10-27 17:29+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-07-12 04:32+0000\n"
+"Last-Translator: Saikeo Kavhanxay <kavhanxay@hotmail.com>\n"
+"Language-Team: Lao\n"
+"Language: lo\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+msgid ""
+"\n"
+"  <p>\n"
+"    <strong>TTL</strong>\n"
+"    The TTL is the time-to-live for the record, in seconds.\n"
+"  </p>\n"
+"  <p>\n"
+"    See <a href=\"http://en.wikipedia.org/wiki/List_of_DNS_record_types\" "
+"target=\"_designate_record_defs\">more info</a> on record types.\n"
+"  </p>\n"
+"  "
+msgstr ""
+"\n"
+"  <p>\n"
+"    <strong>TTL</strong>\n"
+"    The TTL is the time-to-live for the record, in seconds.\n"
+"  </p>\n"
+"  <p>\n"
+"    See <a href=\"http://en.wikipedia.org/wiki/List_of_DNS_record_types\" "
+"target=\"_designate_record_defs\">more info</a> on record types.\n"
+"  </p>\n"
+"  "
+
+msgid "A - Address record"
+msgstr "A - ການຈົດທະບຽນທີ່ຢູ່"
+
+msgid "AAAA - IPv6 address record"
+msgstr "AAAA - ການຈົດທະບຽນທີ່ຢູ່ IPv6"
+
+msgid "All Records"
+msgstr "Records ທັງຫມົດ"
+
+msgid "CNAME - Canonical name record"
+msgstr "CNAME - ການຈົດທະບຽນຊື່ Canonical"
+
+msgid "Cancel"
+msgstr "ຍົກເລີກ"
+
+msgid "Canonical Name"
+msgstr "ຊື່ Canonical"
+
+msgid "Create Domain"
+msgstr "ສ້າງໂດເມນ"
+
+msgid "Create Domain Record"
+msgstr "ສ້າງໂດເມນ Record"
+
+msgid "Create Record"
+msgstr "ສ້າງ Record"
+
+msgid "Create Record for"
+msgstr "ສ້າງ Record ສຳລັບ"
+
+msgid "Created"
+msgstr "ສ້າງແລ້ວ"
+
+msgid "Created At"
+msgstr "ໄດ້ສ້າງຂື້ນມາທີ່"
+
+msgid "Data"
+msgstr "ຂໍ້ມູນ"
+
+msgid "Delete"
+msgstr "ລົບ"
+
+msgid "Deleted"
+msgstr "ລົບແລ້ວ"
+
+msgid "Description"
+msgstr "ຄຳອະທິບາຍ"
+
+msgid "Domain"
+msgstr "ໂດເມນ"
+
+#, python-format
+msgid "Domain %(name)s created."
+msgstr "ໂດເມນ %(name)s ໄດ້ສ້າງຂື້ນມາແລ້ວ."
+
+#, python-format
+msgid "Domain %(name)s updated."
+msgstr "ໂດເມນ %(name)s ໄດ້ອັບເດດແລ້ວ."
+
+msgid "Domain Detail"
+msgstr "ລາຍລະອຽດຂອງໂດເມນ"
+
+msgid "Domain Name"
+msgstr "ຊື່ໂດເມນ"
+
+msgid "Domain Overview"
+msgstr "ພາບລວມຂອງໂດເມນ"
+
+msgid "Domain Records"
+msgstr "ໂດເມນ Records"
+
+#, python-format
+msgid "Domain record %(name)s created."
+msgstr "ສ້າງໂດເມນ record %(name)s ແລ້ວ"
+
+#, python-format
+msgid "Domain record %(name)s updated."
+msgstr "ອັບເດດໂດເມນ record %(name)s ແລ້ວ"
+
+msgid "Domains"
+msgstr "ໂດເມນ"
+
+msgid "Edit Domain"
+msgstr "ແກ້ໄຂໂດເມນ"
+
+msgid "Edit Record"
+msgstr "ແກ້ໄຂ Record"
+
+msgid "Email"
+msgstr "ອີເມລ"
+
+msgid "Enter a valid IPv4 address"
+msgstr "ປ້ອນທີ່ຢູ່ IPv4 ທີ່ຖືກຕ້ອງ"
+
+msgid "Enter a valid IPv6 address"
+msgstr "ປ້ອນທີ່ຢູ່ IPv6 ທີ່ຖືກຕ້ອງ"
+
+msgid "Enter a valid SRV name"
+msgstr "ປ້ອນຊື່ SRV ທີ່ຖືກຕ້ອງ"
+
+msgid "Enter a valid SRV record"
+msgstr "ປ້ອນ SRV record ທີ່ຖືກຕ້ອງ"
+
+msgid "Enter a valid SSHFP record"
+msgstr "ປ້ອນ SSHFP record ທີ່ຖືກຕ້ອງ"
+
+msgid "Enter a valid domain name."
+msgstr "ປ້ອນຊື່ໂດເມນທີ່ຖືກຕ້ອງ."
+
+msgid "Enter a valid hostname"
+msgstr "ປ້ອນຊື່ໂຮສ໌ທີ່ຖືກຕ້ອງ"
+
+msgid ""
+"Enter a valid hostname. The hostname should contain letters and numbers, and "
+"be no more than 63 characters."
+msgstr "ປ້ອນຊື່ໂຮສ໌ທີ່ຖືກຕ້ອງ. ຊື່ໂຮສ໌ຄວນຈະປະກອບດ້ວຍຕົວອັກສອນ, ຕົວເລກ ແລະ ບໍ່ຫລາຍເກີນ 63 ຕົວ."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "IP Address"
+msgstr "ທີ່ຢູ່ໄອພີ"
+
+msgid "MX - Mail exchange record"
+msgstr "MX - ການຈົດທະບຽນ Mail exchange"
+
+msgid "Mail Server"
+msgstr "ເມລເຊີເວີ"
+
+msgid "Manage Records"
+msgstr "ຈັດການ Records"
+
+msgid "NS"
+msgstr "NS"
+
+msgid "Name"
+msgstr "ຊື່"
+
+msgid "Name Server"
+msgstr "ຊື່ເຊີເວີ"
+
+msgid "Nameservers"
+msgstr "Nameservers"
+
+msgid "None"
+msgstr "ບໍ່ມີ"
+
+msgid "PTR - Pointer record"
+msgstr "PTR - ການຈົດທະບຽນ Pointer"
+
+msgid "PTR Domain Name"
+msgstr "ຊື່ໂດເມນ PTR"
+
+msgid "Priority"
+msgstr "ບຸລິມະສິດ"
+
+msgid "Record"
+msgstr "Record"
+
+msgid "Record Data"
+msgstr "ຂໍ້ມູນ Record"
+
+msgid "Record Detail"
+msgstr "ລາຍລະອຽດຂອງ Record"
+
+msgid "Record Type"
+msgstr "ປະເພດຂອງການຈົດທະບຽນ"
+
+msgid "Records"
+msgstr "Records"
+
+msgid "Reverse DNS"
+msgstr "Reverse DNS"
+
+msgid "SOA"
+msgstr "SOA"
+
+msgid "SPF - Sender Policy Framework"
+msgstr "SPF - Sender Policy Framework"
+
+msgid "SRV - Service locator"
+msgstr "SRV - Service locator "
+
+msgid "SSHFP - SSH Public Key Fingerprint"
+msgstr "SSHFP - SSH Public Key Fingerprint"
+
+msgid "Select an IP"
+msgstr "ເລືອກ IP"
+
+msgid "Serial"
+msgstr "Serial"
+
+msgid "TTL"
+msgstr "TTL"
+
+msgid "TTL (seconds)"
+msgstr "TTL (ວິນາທີ)"
+
+msgid "TXT"
+msgstr "TXT"
+
+msgid "TXT - Text record"
+msgstr "TXT - Text record"
+
+msgid "Text"
+msgstr "ຕົວຫນັງສື"
+
+msgid "This field is required"
+msgstr "ຕ້ອງລະບຸຂໍ້ມູນໃສ່ໃນຫ້ອງນີ້"
+
+msgid "Type"
+msgstr "ປະເພດ"
+
+msgid "Unable to create domain."
+msgstr "ບໍ່ສາມາດສ້າງໂດເມນຂື້ນມາໄດ້."
+
+msgid "Unable to create record."
+msgstr "ບໍ່ສາມາດສ້າງ record ໄດ້"
+
+msgid "Unable to update domain."
+msgstr "ບໍ່ສາມາດອັບເດດໂດເມນໄດ້."
+
+msgid "Unknown"
+msgstr "ບໍ່ຮູ້ຈັກ"
+
+msgid "Unknown instance name"
+msgstr "ຊື່ instance ທີ່ບໍ່ຮູ້ຈັກ"
+
+msgid "Update Domain"
+msgstr "ອັບເດດໂດເມນ"
+
+msgid "Update Domain Record"
+msgstr "ອັບເດດໂດເມນ Record"
+
+msgid "Update Record"
+msgstr "ອັບເດດ Record"
+
+msgid "Updated"
+msgstr "ອັບເດດແລ້ວ"
+
+msgid "Updated At"
+msgstr "ໄດ້ອັບເດດທີ່"
+
+msgid "Value"
+msgstr "ຄ່າ"
+
+msgid "Zones"
+msgstr "Zones"
