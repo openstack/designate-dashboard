@@ -1,0 +1,26 @@
+{
+  "version": "0.0.0",
+  "private": true,
+  "name": "designate-dashboard",
+  "description": "Designate Dashboard",
+  "repository": "none",
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "eslint": "1.10.3",
+    "eslint-config-openstack": "1.2.4",
+    "jasmine-core": "2.4.1",
+    "karma": "1.1.2",
+    "karma-chrome-launcher": "1.0.1",
+    "karma-cli": "1.0.1",
+    "karma-jasmine": "1.0.2",
+    "karma-ng-html2js-preprocessor": "1.0.0"
+  },
+  "scripts": {
+    "postinstall": "if [ ! -d .venv ]; then tox -epy27 --notest; fi",
+    "lint": "eslint --no-color designatedashboard/static",
+    "lintq": "eslint --quiet designatedashboard/static",
+    "test": "karma start karma.conf.js --single-run"
+  },
+  "dependencies": {}
+}
+
