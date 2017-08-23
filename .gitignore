@@ -29,3 +29,5 @@ functionaltests/.testrepository/
 *.ipynb
 /.ipynb_checkpoints/*
 releasenotes/build
+node_modules
+npm-debug.log
