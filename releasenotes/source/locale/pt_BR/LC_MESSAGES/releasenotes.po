@@ -1,0 +1,46 @@
+# André Franciosi <andre@franciosi.org>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Designate dashboard Client Release Notes 5.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-22 13:02+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-08-22 10:43+0000\n"
+"Last-Translator: André Franciosi <andre@franciosi.org>\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt-BR\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgid ":ref:`genindex`"
+msgstr ":ref:`genindex`"
+
+msgid ":ref:`search`"
+msgstr ":ref:`search`"
+
+msgid "Contents"
+msgstr "Conteúdo"
+
+msgid "Current Series Release Notes"
+msgstr "Atual - Série de Notas de Versão"
+
+msgid "Indices and tables"
+msgstr "Índices e tabelas"
+
+msgid "Mitaka Series Release Notes"
+msgstr "Mitaka - Série de Notas de Versão"
+
+msgid "Newton Series Release Notes"
+msgstr "Newton - Série de Notas de Versão"
+
+msgid "Ocata Series Release Notes"
+msgstr "Ocata - Série de Notas de Versão"
+
+msgid "Pike Series Release Notes"
+msgstr "Pike - Série de Notas de Versão"
+
+msgid "Welcome to Designate dashboard Agent Release Notes documentation!"
+msgstr ""
+"Bemvindo a documentação de Notas de Versão do Agente dashboard do Designate!"
