@@ -1,13 +1,13 @@
 # suhartono <cloudsuhartono@gmail.com>, 2017. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: Designate dashboard Client Release Notes 4.0.0\n"
+"Project-Id-Version: Designate dashboard Client Release Notes 5.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-10 19:52+0000\n"
+"POT-Creation-Date: 2017-08-23 14:30+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-04-17 11:00+0000\n"
+"PO-Revision-Date: 2017-08-23 02:39+0000\n"
 "Last-Translator: suhartono <cloudsuhartono@gmail.com>\n"
 "Language-Team: Indonesian\n"
 "Language: id\n"
@@ -37,6 +37,9 @@ msgstr "Newton Series Release Notes"
 
 msgid "Ocata Series Release Notes"
 msgstr "Ocata Series Release Notes"
+
+msgid "Pike Series Release Notes"
+msgstr "Catatan Rilis Seri Pike"
 
 msgid "Welcome to Designate dashboard Agent Release Notes documentation!"
 msgstr "Selamat Datang di dokumentasi Designate dashboard Agent Release Notes!"
