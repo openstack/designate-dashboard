@@ -60,3 +60,20 @@ Howto
    addresses instead of a free form text field::
 
     DESIGNATE = { 'records_use_fips': True }
+
+
+Test
+----
+
+* How to run JS tests:
+
+    * Install npm and nodejs=4.8.4
+
+    $ ``sudo apt-get install npm``
+    $ ``curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -``
+    $ ``sudo apt-get install -y nodejs``
+
+  1. ``npm install`` (to create virtual environment and install all dependencies in package.json)
+  2. ``npm run lint`` for eslint
+  3. ``npm run test`` for JS unit tests
+
