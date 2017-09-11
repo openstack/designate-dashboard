@@ -73,6 +73,7 @@
   }
 
   run.$inject = [
+    'horizon.app.core.detailRoute',
     'horizon.framework.conf.resource-type-registry.service',
     'designatedashboard.resources.os-designate-recordset.api',
     'designatedashboard.resources.os-designate-recordset.resourceType',
@@ -80,7 +81,8 @@
     'designatedashboard.resources.util'
   ];
 
-  function run(registry,
+  function run(detailRoute,
+               registry,
                recordSetApi,
                resourceTypeString,
                typeMap,
@@ -160,7 +162,7 @@
         sortDefault: true,
         filters: ['noName'],
         // For link format, see pathGenerator in details.module.js
-        template: '<a ng-href="{$ \'project/ngdetails/OS::Designate::RecordSet/\' + item.zone_id + \'/\' + item.id $}">{$ item.name $}</a>'
+        template: '<a ng-href="{$ \'' + detailRoute + 'OS::Designate::RecordSet/\' + item.zone_id + \'/\' + item.id $}">{$ item.name $}</a>'
       })
       .append({
         id: 'type',
