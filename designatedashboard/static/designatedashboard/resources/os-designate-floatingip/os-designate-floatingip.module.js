@@ -45,6 +45,7 @@
   }
 
   run.$inject = [
+    'horizon.app.core.detailRoute',
     'horizon.framework.conf.resource-type-registry.service',
     'designatedashboard.resources.os-designate-floatingip.api',
     'designatedashboard.resources.os-designate-floatingip.resourceType',
@@ -52,6 +53,7 @@
   ];
 
   function run(
+    detailRoute,
     registry,
     api,
     resourceTypeString,
@@ -97,7 +99,7 @@
         id: 'address',
         priority: 1,
         sortDefault: true,
-        template: '<a ng-href="{$ \'project/ngdetails/OS::Designate::FloatingIp/\' + item.id $}">{$ item.address $}</a>'
+        template: '<a ng-href="{$ \'' + detailRoute + 'OS::Designate::FloatingIp/\' + item.id $}">{$ item.address $}</a>'
       })
       .append({
         id: 'ptrdname',
