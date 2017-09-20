@@ -45,13 +45,15 @@
   }
 
   run.$inject = [
+    'horizon.app.core.detailRoute',
     'horizon.framework.conf.resource-type-registry.service',
     'designatedashboard.resources.os-designate-zone.api',
     'designatedashboard.resources.os-designate-zone.resourceType',
     'designatedashboard.resources.util'
   ];
 
-  function run(registry,
+  function run(detailRoute,
+               registry,
                zoneApi,
                resourceTypeString,
                util) {
@@ -133,7 +135,7 @@
         id: 'name',
         priority: 1,
         sortDefault: true,
-        template: '<a ng-href="{$ \'project/ngdetails/OS::Designate::Zone/\' + item.id $}">{$ item.name $}</a>'
+        template: '<a ng-href="{$ \'' + detailRoute + 'OS::Designate::Zone/\' + item.id $}">{$ item.name $}</a>'
       })
       .append({
         id: 'type',
