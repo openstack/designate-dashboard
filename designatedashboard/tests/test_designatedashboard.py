@@ -18,60 +18,10 @@
 from __future__ import unicode_literals
 
 from django.core.urlresolvers import reverse  # noqa
-# from django import http
 
 from designatedashboard.tests import base
 
 DOMAIN_ID = '123'
-# INDEX_URL = reverse('horizon:project:dns_domains:index')
-# RECORDS_URL = reverse('horizon:project:dns_domains:records',
-#                       args=[DOMAIN_ID])
-
-
-# class DNSDomainsTests(test.TestCase):
-
-#     def setUp(self):
-#         super(DNSDomainsTests, self).setUp()
-
-#     @test.create_stubs(
-#         {api.designate: ('domain_list',)})
-#     def test_index(self):
-#         domains = self.dns_domains.list()
-#         api.designate.domain_list(
-#             IsA(http.HttpRequest)).AndReturn(domains)
-#         self.mox.ReplayAll()
-
-#         res = self.client.get(INDEX_URL)
-
-#         self.assertTemplateUsed(res, 'project/dns_domains/index.html')
-#         self.assertEqual(len(res.context['table'].data), len(domains))
-
-#     @test.create_stubs(
-#         {api.designate: ('domain_get', 'server_list', 'record_list')})
-#     def test_records(self):
-#         domain_id = '123'
-#         domain = self.dns_domains.first()
-#         servers = self.dns_servers.list()
-#         records = self.dns_records.list()
-
-#         api.designate.domain_get(
-#             IsA(http.HttpRequest),
-#             domain_id).AndReturn(domain)
-
-#         api.designate.server_list(
-#             IsA(http.HttpRequest),
-#             domain_id).AndReturn(servers)
-
-#         api.designate.record_list(
-#             IsA(http.HttpRequest),
-#             domain_id).AndReturn(records)
-
-#         self.mox.ReplayAll()
-
-#         res = self.client.get(RECORDS_URL)
-
-#         self.assertTemplateUsed(res, 'project/dns_domains/records.html')
-#         self.assertEqual(len(res.context['table'].data), len(records))
 
 
 class ARecordFormTests(base.BaseRecordFormCleanTests):
