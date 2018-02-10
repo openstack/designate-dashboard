@@ -1,4 +1,4 @@
-# Rodrigo Loures <rmoraesloures@gmail.com>, 2018. #zanata
+# Akihiro Motoki <amotoki@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: Designate dashboard Client Release Notes\n"
@@ -7,12 +7,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-01-30 08:14+0000\n"
-"Last-Translator: Rodrigo Loures <rmoraesloures@gmail.com>\n"
-"Language-Team: Portuguese (Brazil)\n"
-"Language: pt-BR\n"
+"PO-Revision-Date: 2018-02-08 08:47+0000\n"
+"Last-Translator: Akihiro Motoki <amotoki@gmail.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
 "X-Generator: Zanata 3.9.6\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 msgid ":ref:`genindex`"
 msgstr ":ref:`genindex`"
@@ -21,27 +21,25 @@ msgid ":ref:`search`"
 msgstr ":ref:`search`"
 
 msgid "Contents"
-msgstr "Conteúdo"
+msgstr "内容"
 
 msgid "Current Series Release Notes"
-msgstr "Atual - Série de Notas de Versão"
+msgstr "開発中バージョンのリリースノート"
 
 msgid "Indices and tables"
-msgstr "Índices e tabelas"
+msgstr "目次と表"
 
 msgid "Mitaka Series Release Notes"
-msgstr "Mitaka - Série de Notas de Versão"
+msgstr "Mitaka バージョンのリリースノート"
 
 msgid "Newton Series Release Notes"
-msgstr "Newton - Série de Notas de Versão"
+msgstr "Newton バージョンのリリースノート"
 
 msgid "Ocata Series Release Notes"
-msgstr "Ocata - Série de Notas de Versão"
+msgstr "Ocata バージョンのリリースノート"
 
 msgid "Pike Series Release Notes"
-msgstr "Pike - Série de Notas de Versão"
+msgstr "Pike  バージョンのリリースノート"
 
 msgid "Welcome to Designate dashboard Agent Release Notes documentation!"
-msgstr ""
-"Bem-vindo para designar  a documentação de Notas de Versão do painel do "
-"Agente!"
+msgstr "Designate ダッシュボードのリリースノートにようこそ！"
