@@ -19,11 +19,10 @@ from horizon import forms
 from horizon import tables
 from horizon.views import HorizonTemplateView   # noqa
 
-from openstack_dashboard.api.network import tenant_floating_ip_list
+from openstack_dashboard.api.neutron import tenant_floating_ip_list
 from openstack_dashboard.api.nova import server_list
 
 from designatedashboard import api
-from designatedashboard.api import rest  # noqa
 
 from .forms import DomainCreate  # noqa
 from .forms import DomainUpdate  # noqa
