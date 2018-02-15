@@ -11,7 +11,7 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 # License for the specific language governing permissions and limitations
 # under the License.
-from django.conf.urls import url, patterns  # noqa
+from django.conf.urls import url  # noqa
 
 from .views import CreateDomainView  # noqa
 from .views import CreateRecordView  # noqa
@@ -23,8 +23,7 @@ from .views import UpdateRecordView  # noqa
 from .views import ViewRecordDetailsView  # noqa
 
 
-urlpatterns = patterns(
-    '',
+urlpatterns = [
     url(r'^$',
         IndexView.as_view(),
         name='index'),
@@ -49,4 +48,4 @@ urlpatterns = patterns(
     url(r'^(?P<domain_id>[^/]+)/records/(?P<record_id>[^/]+)/$',
         ViewRecordDetailsView.as_view(),
         name='view_record'),
-)
+]
