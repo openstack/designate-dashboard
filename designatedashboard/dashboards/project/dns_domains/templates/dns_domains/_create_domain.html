@@ -16,15 +16,15 @@
 
   <div class="right quota-dynamic">
     <h3>{% trans "Description" %}:</h3>
-    <p>{% blocktrans %}
+    <p>{% blocktrans trimmed %}
       The Name field should contain a full-qualified domain name (with
       trailing period).
     {% endblocktrans %}</p>
-    <p>{% blocktrans %}
+    <p>{% blocktrans trimmed %}
       The Email field should contain a valid email address to be associated
       with the domain.
     {% endblocktrans %}</p>
-    <p>{% blocktrans %}
+    <p>{% blocktrans trimmed %}
       The optional TTL field can be any value between 1 and 2147483647
       seconds.
     {% endblocktrans %}</p>
