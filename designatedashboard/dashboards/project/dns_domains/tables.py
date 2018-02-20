@@ -13,6 +13,7 @@
 # under the License.
 from django.core import urlresolvers
 from django.utils.translation import ugettext_lazy as _  # noqa
+from django.utils.translation import ungettext_lazy
 
 from horizon import messages
 from horizon import tables
@@ -84,12 +85,24 @@ class DeleteDomain(tables.BatchAction):
 
     '''Batch action for deleting domains.'''
     name = "delete"
-    action_present = _("Delete")
-    action_past = _("Deleted")
-    data_type_singular = _("Domain")
-    data_type_plural = _("Domains")
     classes = ('btn-danger', 'btn-delete')
     policy_rules = (("dns", "delete_domain"),)
+
+    @staticmethod
+    def action_present(count):
+        return ungettext_lazy(
+            u"Delete Domain",
+            u"Delete Domains",
+            count
+        )
+
+    @staticmethod
+    def action_past(count):
+        return ungettext_lazy(
+            u"Deleted Domain",
+            u"Deleted Domains",
+            count
+        )
 
     def action(self, request, domain_id):
         api.designate.domain_delete(request, domain_id)
@@ -132,8 +145,23 @@ class EditRecord(tables.LinkAction):
 class DeleteRecord(tables.DeleteAction):
 
     '''Link action for navigating to the UpdateRecord view.'''
-    data_type_singular = _("Record")
     policy_rules = (("dns", "delete_record"),)
+
+    @staticmethod
+    def action_present(count):
+        return ungettext_lazy(
+            u"Delete Record",
+            u"Delete Records",
+            count
+        )
+
+    @staticmethod
+    def action_past(count):
+        return ungettext_lazy(
+            u"Deleted Record",
+            u"Deleted Records",
+            count
+        )
 
     def delete(self, request, record_id):
         domain_id = self.table.kwargs['domain_id']
@@ -148,11 +176,24 @@ class BatchDeleteRecord(tables.BatchAction):
     '''Batch action for deleting domain records.'''
 
     name = "delete"
-    action_present = _("Delete")
-    action_past = _("Deleted")
-    data_type_singular = _("Record")
     classes = ('btn-danger', 'btn-delete')
     policy_rules = (("dns", "delete_record"),)
+
+    @staticmethod
+    def action_present(count):
+        return ungettext_lazy(
+            u"Delete Record",
+            u"Delete Records",
+            count
+        )
+
+    @staticmethod
+    def action_past(count):
+        return ungettext_lazy(
+            u"Deleted Record",
+            u"Deleted Records",
+            count
+        )
 
     def action(self, request, record_id):
         domain_id = self.table.kwargs['domain_id']
