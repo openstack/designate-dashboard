@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: designate-dashboard VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
-"POT-Creation-Date: 2018-02-15 18:09+0000\n"
+"POT-Creation-Date: 2018-02-20 06:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -67,12 +67,6 @@ msgstr "Criado em"
 
 msgid "Data"
 msgstr "Dados"
-
-msgid "Delete"
-msgstr "Remover"
-
-msgid "Deleted"
-msgstr "Removido"
 
 msgid "Description"
 msgstr "Descrição"
@@ -186,9 +180,6 @@ msgstr "PTR Nome do Domínio"
 
 msgid "Priority"
 msgstr "Prioridade"
-
-msgid "Record"
-msgstr "Registro"
 
 msgid "Record Data"
 msgstr "Dados do Registro"
