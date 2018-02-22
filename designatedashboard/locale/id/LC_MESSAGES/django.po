@@ -1,19 +1,20 @@
 # OpenStack Infra <zanata@openstack.org>, 2015. #zanata
 # Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
 # suhartono <cloudsuhartono@gmail.com>, 2016. #zanata
+# suhartono <cloudsuhartono@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: designate-dashboard 3.0.0.0rc2.dev5\n"
+"Project-Id-Version: designate-dashboard VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
-"POT-Creation-Date: 2016-09-29 13:19+0000\n"
+"POT-Creation-Date: 2018-02-20 18:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-10-13 04:32+0000\n"
+"PO-Revision-Date: 2018-02-21 03:08+0000\n"
 "Last-Translator: suhartono <cloudsuhartono@gmail.com>\n"
 "Language-Team: Indonesian\n"
 "Language: id\n"
-"X-Generator: Zanata 3.7.3\n"
+"X-Generator: Zanata 3.9.6\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
 msgid ""
@@ -122,11 +123,21 @@ msgstr "Created At (dibuat pada)"
 msgid "Data"
 msgstr "Data"
 
-msgid "Delete"
-msgstr "Hapus"
+msgid "Delete Domain"
+msgid_plural "Delete Domains"
+msgstr[0] "Delete Domain"
 
-msgid "Deleted"
-msgstr "Terhapus"
+msgid "Delete Record"
+msgid_plural "Delete Records"
+msgstr[0] "Delete Record"
+
+msgid "Deleted Domain"
+msgid_plural "Deleted Domains"
+msgstr[0] "Deleted Domain"
+
+msgid "Deleted Record"
+msgid_plural "Deleted Records"
+msgstr[0] "Deleted Record"
 
 msgid "Description"
 msgstr "Deskripsi"
@@ -240,9 +251,6 @@ msgstr "PTR Domain Name (nama domain PTR)"
 
 msgid "Priority"
 msgstr "Priority (prioritas)"
-
-msgid "Record"
-msgstr "Record (rekor)"
 
 msgid "Record Data"
 msgstr "Record Data (data rekam)"
