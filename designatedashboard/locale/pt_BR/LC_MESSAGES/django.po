@@ -1,18 +1,19 @@
 # Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
 # Eric Baum <ecbaum@gmail.com>, 2016. #zanata
 # Marcio <marciofoz@gmail.com>, 2017. #zanata
+# Fernando Pimenta <fernando.c.pimenta@gmail.com>, 2018. #zanata
 # Rodrigo Loures <rmoraesloures@gmail.com>, 2018. #zanata
 # andrew melim <nokostya.translation@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: designate-dashboard VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
-"POT-Creation-Date: 2018-02-20 06:10+0000\n"
+"POT-Creation-Date: 2018-03-05 03:46+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-01-30 08:19+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"PO-Revision-Date: 2018-02-21 09:25+0000\n"
+"Last-Translator: Fernando Pimenta <fernando.c.pimenta@gmail.com>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt_BR\n"
 "X-Generator: Zanata 4.3.3\n"
@@ -67,6 +68,26 @@ msgstr "Criado em"
 
 msgid "Data"
 msgstr "Dados"
+
+msgid "Delete Domain"
+msgid_plural "Delete Domains"
+msgstr[0] "Excluir Domínio"
+msgstr[1] "Excluir Domínios"
+
+msgid "Delete Record"
+msgid_plural "Delete Records"
+msgstr[0] "Excluir Registro"
+msgstr[1] "Excluir Registros"
+
+msgid "Deleted Domain"
+msgid_plural "Deleted Domains"
+msgstr[0] "Domínio Excluído"
+msgstr[1] "Domínios Excluídos"
+
+msgid "Deleted Record"
+msgid_plural "Deleted Records"
+msgstr[0] "Excluir Registro"
+msgstr[1] "Excluir Registros"
 
 msgid "Description"
 msgstr "Descrição"

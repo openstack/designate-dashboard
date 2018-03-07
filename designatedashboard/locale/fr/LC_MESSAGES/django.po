@@ -10,20 +10,21 @@
 # Gérald LONLAS <g.lonlas@gmail.com>, 2016. #zanata
 # Gaelle <pattedeph@gmail.com>, 2017. #zanata
 # JF Taltavull <jftalta@gmail.com>, 2017. #zanata
+# JF Taltavull <jftalta@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: designate-dashboard VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
-"POT-Creation-Date: 2018-02-20 06:10+0000\n"
+"POT-Creation-Date: 2018-03-05 03:46+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-11-14 07:52+0000\n"
-"Last-Translator: Gaelle <pattedeph@gmail.com>\n"
+"PO-Revision-Date: 2018-03-06 07:18+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.0\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Zanata 4.3.3\n"
 "Language-Team: French\n"
 
 msgid ""
@@ -75,6 +76,26 @@ msgstr "Créé le"
 
 msgid "Data"
 msgstr "Données"
+
+msgid "Delete Domain"
+msgid_plural "Delete Domains"
+msgstr[0] "Supprimer le domaine"
+msgstr[1] "Supprimer les domaines"
+
+msgid "Delete Record"
+msgid_plural "Delete Records"
+msgstr[0] "Supprimer l'enregistrement"
+msgstr[1] "Supprimer les enregistrements"
+
+msgid "Deleted Domain"
+msgid_plural "Deleted Domains"
+msgstr[0] "Domaine supprimé"
+msgstr[1] "Domaines supprimés"
+
+msgid "Deleted Record"
+msgid_plural "Deleted Records"
+msgstr[0] "Enregistrement supprimé"
+msgstr[1] "Enregistrements supprimés"
 
 msgid "Description"
 msgstr "Description"
