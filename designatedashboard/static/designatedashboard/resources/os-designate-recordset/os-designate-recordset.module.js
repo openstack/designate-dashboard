@@ -42,7 +42,7 @@
         'CNAME': gettext('CNAME - Canonical name record'),
         'MX': gettext('MX - Mail exchange record'),
         'PTR': gettext('PTR - Pointer record'),
-        'SPF': gettext('SPR - Sender Policy Framework'),
+        'SPF': gettext('SPF - Sender Policy Framework'),
         'SRV': gettext('SRV - Service locator'),
         'SSHFP': gettext('SSHFP - SSH Public Key Fingerprint'),
         'TXT': gettext('TXT - Text record'),
