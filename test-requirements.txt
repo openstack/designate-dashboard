@@ -21,5 +21,5 @@ django-nose>=1.4.4 # BSD
 nosexcover>=1.0.10 # BSD
 
 # Horizon requirements
-Django<2.0,>=1.8 # BSD
+Django<2.0,>=1.11 # BSD
 django-compressor>=2.0 # MIT
