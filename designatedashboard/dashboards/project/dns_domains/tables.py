@@ -11,7 +11,7 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 # License for the specific language governing permissions and limitations
 # under the License.
-from django.core import urlresolvers
+from django import urls
 from django.utils.translation import ugettext_lazy as _  # noqa
 from django.utils.translation import ungettext_lazy
 
@@ -118,7 +118,7 @@ class CreateRecord(tables.LinkAction):
 
     def get_link_url(self, datum=None):
         url = "horizon:project:dns_domains:create_record"
-        return urlresolvers.reverse(url, kwargs=self.table.kwargs)
+        return urls.reverse(url, kwargs=self.table.kwargs)
 
 
 class EditRecord(tables.LinkAction):
@@ -136,7 +136,7 @@ class EditRecord(tables.LinkAction):
             'record_id': datum.id,
         }
 
-        return urlresolvers.reverse(url, kwargs=kwargs)
+        return urls.reverse(url, kwargs=kwargs)
 
     def allowed(self, request, record=None):
         return record.type in EDITABLE_RECORD_TYPES
@@ -227,7 +227,7 @@ class DomainsTable(tables.DataTable):
 def record__details_link(record):
     '''Returns a link to the view for updating DNS records.'''
 
-    return urlresolvers.reverse(
+    return urls.reverse(
         "horizon:project:dns_domains:view_record",
         args=(record.domain_id, record.id))
 
