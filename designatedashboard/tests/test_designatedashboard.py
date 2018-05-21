@@ -17,8 +17,6 @@
 #    under the License.
 from __future__ import unicode_literals
 
-from django.core.urlresolvers import reverse  # noqa
-
 from designatedashboard.tests import base
 
 DOMAIN_ID = '123'
