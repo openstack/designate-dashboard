@@ -27,4 +27,4 @@ django-compressor>=2.0 # MIT
 
 # OpenStack CI will install the following projects from git
 # if they are in the required-projects list for a job:
-horizon>=13.0.0  # Apache-2.0
+horizon>=14.0.0.0b1  # Apache-2.0
