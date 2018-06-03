@@ -31,6 +31,7 @@ _TRUE_VALUES = ('True', 'true', '1', 'yes')
 class TestCase(testtools.TestCase):
 
     """Test case base class for all unit tests."""
+    use_mox = False
 
     def setUp(self):
         """Run before each test method to initialize test environment."""
@@ -62,6 +63,7 @@ class BaseRecordFormCleanTests(test.TestCase):
 
     DOMAIN_NAME = 'foo.com.'
     HOSTNAME = 'www'
+    use_mox = False
 
     MSG_FIELD_REQUIRED = 'This field is required'
     MSG_INVALID_HOSTNAME = 'Enter a valid hostname. The '\
