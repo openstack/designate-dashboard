@@ -56,11 +56,11 @@
     toast,
     resourceType
   ) {
-    var scope, context, deleteZonePromise;
+    var context, deleteZonePromise;
     var notAllowedMessage = gettext("You are not allowed to delete zones: %s");
 
     var service = {
-      initScope: initScope,
+      initAction: initAction,
       allowed: allowed,
       perform: perform
     };
@@ -69,17 +69,20 @@
 
     //////////////
 
-    function initScope(newScope) {
-      scope = newScope;
-      context = { };
-      deleteZonePromise = policy.ifAllowed({rules: [['dns', 'delete_zone']]});
+    function initAction() {
+        context = { };
+        deleteZonePromise = policy.ifAllowed({rules: [['dns', 'delete_zone']]});
     }
 
-    function perform(items) {
+    function perform(items, scope) {
       var zones = angular.isArray(items) ? items : [items];
       context.labels = labelize(zones.length);
       context.deleteEntity = deleteZone;
-      return $qExtensions.allSettled(zones.map(checkPermission)).then(afterCheck);
+      return $qExtensions
+        .allSettled(zones.map(checkPermission))
+        .then(
+            afterCheck.bind(this, scope)
+        );
     }
 
     function allowed(zone) {
@@ -100,7 +103,7 @@
       return {promise: allowed(zone), context: zone};
     }
 
-    function afterCheck(result) {
+    function afterCheck(scope, result) {
       var outcome = $q.reject();  // Reject the promise by default
       if (result.fail.length > 0) {
         toast.add('error', getMessage(notAllowedMessage, result.fail));
