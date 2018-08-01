@@ -57,7 +57,7 @@
     };
 
     var service = {
-      initScope: initScope,
+      initAction: initAction,
       allowed: allowed,
       perform: perform
     };
@@ -66,7 +66,7 @@
 
     /////////////////
 
-    function initScope() {
+    function initAction() {
       createZonePolicy = policy.ifAllowed({rules: [['dns', 'create_zone']]});
       dnsServiceEnabled = serviceCatalog.ifTypeEnabled('dns');
     }

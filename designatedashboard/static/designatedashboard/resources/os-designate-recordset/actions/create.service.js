@@ -59,7 +59,7 @@
     };
 
     var service = {
-      initScope: initScope,
+      initAction: initAction,
       allowed: allowed,
       perform: perform
     };
@@ -68,7 +68,7 @@
 
     /////////////////
 
-    function initScope() {
+    function initAction() {
       createRecordSetPolicy = policy.ifAllowed({rules: [['dns', 'create_recordset']]});
       dnsServiceEnabled = serviceCatalog.ifTypeEnabled('dns');
     }
