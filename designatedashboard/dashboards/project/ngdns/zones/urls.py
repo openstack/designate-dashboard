@@ -13,10 +13,11 @@
 # under the License.
 
 from django.conf.urls import url
+from django.utils.translation import ugettext_lazy as _
+from horizon.browsers import views
 
-from designatedashboard.dashboards.project.ngdns.zones import views
-
+title = _("Zones")
 
 urlpatterns = [
-    url('', views.IndexView.as_view(), name='index'),
+    url('', views.AngularIndexView.as_view(title=title), name='index')
 ]
