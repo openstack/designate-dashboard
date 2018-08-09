@@ -98,7 +98,7 @@
     };
 
     var service = {
-      initScope: initScope,
+      initAction: initAction,
       allowed: allowed,
       perform: perform
     };
@@ -107,7 +107,7 @@
 
     /////////////////
 
-    function initScope() {
+    function initAction() {
       dnsServiceEnabled = serviceCatalog.ifTypeEnabled('dns');
     }
 

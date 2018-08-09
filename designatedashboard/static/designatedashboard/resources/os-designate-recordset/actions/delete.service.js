@@ -56,12 +56,12 @@
     deleteModal,
     toast
   ) {
-    var scope, context, deletePromise;
+    var context, deletePromise;
     var notAllowedMessage = gettext("You are not allowed to delete record sets: %s");
     var allowedRecordsets = [];
 
     var service = {
-      initScope: initScope,
+      initAction: initAction,
       allowed: allowed,
       perform: perform
     };
@@ -70,17 +70,18 @@
 
     //////////////
 
-    function initScope(newScope) {
-      scope = newScope;
+    function initAction() {
       context = { };
       deletePromise = policy.ifAllowed({rules: [['dns', 'delete_recordset']]});
     }
 
-    function perform(items) {
+    function perform(items, scope) {
       var recordsets = angular.isArray(items) ? items : [items];
       context.labels = labelize(recordsets.length);
       context.deleteEntity = deleteRecordSet;
-      return $qExtensions.allSettled(recordsets.map(checkPermission)).then(afterCheck);
+      return $qExtensions
+        .allSettled(recordsets.map(checkPermission))
+        .then(afterCheck.bind(this, scope));
     }
 
     function allowed(recordset) {
@@ -100,7 +101,7 @@
       return {promise: allowed(recordset), context: recordset};
     }
 
-    function afterCheck(result) {
+    function afterCheck(scope, result) {
       var outcome = $q.reject();  // Reject the promise by default
       if (result.fail.length > 0) {
         toast.add('error', getMessage(notAllowedMessage, result.fail));
