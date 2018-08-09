@@ -1,16 +1,18 @@
 # Frank Kloeker <eumel@arcor.de>, 2016. #zanata
 # Robert Simai <robert.simai@suse.com>, 2016. #zanata
+# Andreas Jaeger <jaegerandi@gmail.com>, 2018. #zanata
+# Frank Kloeker <eumel@arcor.de>, 2018. #zanata
 # Reik Keutterling <spielkind@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: designate-dashboard VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
-"POT-Creation-Date: 2018-03-05 03:46+0000\n"
+"POT-Creation-Date: 2018-07-22 05:02+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-02-21 07:58+0000\n"
-"Last-Translator: Reik Keutterling <spielkind@gmail.com>\n"
+"PO-Revision-Date: 2018-08-04 03:06+0000\n"
+"Last-Translator: Andreas Jaeger <jaegerandi@gmail.com>\n"
 "Language-Team: German\n"
 "Language: de\n"
 "X-Generator: Zanata 4.3.3\n"
@@ -26,6 +28,17 @@ msgstr ""
 "      Hier können Sie die E-Mail-Adresse und TTL mit dazugehöriger Domäne "
 "editieren.\n"
 "    "
+
+msgid ""
+"<p> <strong>TTL</strong> The TTL is the time-to-live for the record, in "
+"seconds. </p> <p> See <a href=\"http://en.wikipedia.org/wiki/"
+"List_of_DNS_record_types\" target=\"_designate_record_defs\">more info</a> "
+"on record types. </p>"
+msgstr ""
+"<p> <strong>TTL</strong>  Die TTL ist die time-to-live für den Datensatz,  "
+"in Sekunden. </p>  <p> Hier finden Sie <a href=\"http://en.wikipedia.org/"
+"wiki/List_of_DNS_record_types\" target=\"_designate_record_defs\">mehr "
+"Informationen</a> zu Datensatztypen.</p>"
 
 msgid "A - Address record"
 msgstr "A - Adress Datensatz"
@@ -246,6 +259,26 @@ msgstr "TXT - Text Datensatz"
 
 msgid "Text"
 msgstr "Text"
+
+msgid ""
+"The Email field should contain a valid email address to be associated with "
+"the domain."
+msgstr ""
+"Das E-Mail-Feld sollte eine gültige E-Mail-Adresse enthalten, die der Domäne "
+"zugewiesen wird."
+
+msgid ""
+"The Name field should contain a full-qualified domain name (with trailing "
+"period)."
+msgstr ""
+"Das Namensfeld sollte einen vollqualifizierten Domänennamen enthalten (mit "
+"abschließendem Punkt)."
+
+msgid ""
+"The optional TTL field can be any value between 1 and 2147483647 seconds."
+msgstr ""
+"Das optionale TTL Feld kann einen Wert zwischen 1 und 2147483647 Sekunden "
+"haben."
 
 msgid "The quotas could not be retrieved."
 msgstr "Die Kontingente konnten nicht abgerufen werden."
