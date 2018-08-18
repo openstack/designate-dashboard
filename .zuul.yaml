@@ -1,0 +1,21 @@
+- project:
+    templates:
+      - check-requirements
+      - openstack-python-jobs-horizon
+      - openstack-python35-jobs-horizon
+      - publish-openstack-sphinx-docs
+    check:
+      jobs:
+        - openstack-tox-cover:
+            voting: false
+            required-projects:
+              - openstack/horizon
+        - nodejs-npm-run-lint:
+            vars:
+              node_version: 4
+            voting: false
+        - nodejs-npm-run-test:
+            vars:
+              node_version: 4
+            voting: false
+
