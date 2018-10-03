@@ -56,6 +56,7 @@
         "AAAA",
         "CNAME",
         "MX",
+        "NS",
         "PTR",
         "SPF",
         "SRV",

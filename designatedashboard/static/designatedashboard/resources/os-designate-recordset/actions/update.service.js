@@ -93,6 +93,7 @@
 
     function editableRecordType(recordset) {
       return $qExtensions.booleanAsPromise(
+        !(recordset.type == 'NS' && recordset.name == recordset.zone_name) && // not apex NS
         editableTypes.indexOf(recordset.type) > -1
       );
     }
