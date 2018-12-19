@@ -7,15 +7,16 @@
 # vuuv <froms2008@gmail.com>, 2016. #zanata
 # zzxwill <zzxwill@gmail.com>, 2016. #zanata
 # vuuv <froms2008@gmail.com>, 2017. #zanata
+# vuuv <froms2008@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: designate-dashboard VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
-"POT-Creation-Date: 2018-02-20 06:10+0000\n"
+"POT-Creation-Date: 2018-12-04 12:28+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-03-23 08:04+0000\n"
+"PO-Revision-Date: 2018-12-19 04:15+0000\n"
 "Last-Translator: vuuv <froms2008@gmail.com>\n"
 "Language-Team: Chinese (China)\n"
 "Language: zh_CN\n"
@@ -31,6 +32,16 @@ msgstr ""
 "\n"
 "从这里可以编辑邮件地址和关联到一个域的TTL\n"
 " "
+
+msgid ""
+"<p> <strong>TTL</strong> The TTL is the time-to-live for the record, in "
+"seconds. </p> <p> See <a href=\"http://en.wikipedia.org/wiki/"
+"List_of_DNS_record_types\" target=\"_designate_record_defs\">more info</a> "
+"on record types. </p>"
+msgstr ""
+"<p> <strong>TTL</strong> TTL(time-to-live) 指的是记录的生存时间, 单位为秒. </"
+"p> <p> <a href=\"http://en.wikipedia.org/wiki/List_of_DNS_record_types\" "
+"target=\"_designate_record_defs\">查阅记录类型的更多信息</a></p>"
 
 msgid "A - Address record"
 msgstr "A-地址记录"
@@ -70,6 +81,22 @@ msgstr "创建于"
 
 msgid "Data"
 msgstr "数据"
+
+msgid "Delete Domain"
+msgid_plural "Delete Domains"
+msgstr[0] "删除域"
+
+msgid "Delete Record"
+msgid_plural "Delete Records"
+msgstr[0] "删除记录"
+
+msgid "Deleted Domain"
+msgid_plural "Deleted Domains"
+msgstr[0] "已删除的域"
+
+msgid "Deleted Record"
+msgid_plural "Deleted Records"
+msgstr[0] "已删除的记录"
 
 msgid "Description"
 msgstr "描述"
@@ -229,6 +256,20 @@ msgstr "TXT-文本记录"
 
 msgid "Text"
 msgstr "文本"
+
+msgid ""
+"The Email field should contain a valid email address to be associated with "
+"the domain."
+msgstr "Email字段应该为一个合格的Email地址以便关联到域名"
+
+msgid ""
+"The Name field should contain a full-qualified domain name (with trailing "
+"period)."
+msgstr "名称字段应该为完全合格域名(FQDN) (包括结尾的点号)"
+
+msgid ""
+"The optional TTL field can be any value between 1 and 2147483647 seconds."
+msgstr "可选的TTL字段可以是 1 到 2147483647 之间的任意秒数"
 
 msgid "The quotas could not be retrieved."
 msgstr "无法获取配额"
