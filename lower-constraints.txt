@@ -30,7 +30,7 @@ fixtures==3.0.0
 flake8==2.5.5
 futurist==1.6.0
 hacking==0.12.0
-horizon==13.0.0
+horizon==14.0.0
 idna==2.6
 imagesize==1.0.0
 iso8601==0.1.12
@@ -69,7 +69,7 @@ oslo.log==3.36.0
 oslo.policy==1.34.0
 oslo.serialization==2.25.0
 oslo.utils==3.36.0
-osprofiler==2.0.0
+osprofiler==2.3.0
 packaging==17.1
 pbr==2.0.0
 pep8==1.5.7
