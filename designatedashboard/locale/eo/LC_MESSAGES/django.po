@@ -1,0 +1,356 @@
+# Georg Hennemann <georg.hennemann@t-systems.com>, 2018. #zanata
+# Georg Hennemann <georg.hennemann@t-systems.com>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: designate-dashboard VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2018-09-09 18:17+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-02-02 10:43+0000\n"
+"Last-Translator: Georg Hennemann <georg.hennemann@t-systems.com>\n"
+"Language-Team: Esperanto\n"
+"Language: eo\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgid ""
+"\n"
+"      From here you can edit the email address and TTL associated with a "
+"domain.\n"
+"    "
+msgstr ""
+"\n"
+"      De ĉi tie vi povas redakti la retpoŝt adreso kaj TTL asociita kun  "
+"domajno.\n"
+"    "
+
+msgid ""
+"\n"
+"      The Email field should contain a valid email address to be associated\n"
+"      with the domain.\n"
+"    "
+msgstr ""
+"\n"
+"      La retpoŝta kampo devus enhavi validan retpoŝtadreson asociita kun la "
+"domajno.\n"
+"    "
+
+msgid ""
+"\n"
+"      The Name field should contain a full-qualified domain name (with\n"
+"      trailing period).\n"
+"    "
+msgstr ""
+"\n"
+"      La nomkampo devus enhavi kompletan kvalifikan domajno nomon (kun fina "
+"punkto).\n"
+"    "
+
+msgid ""
+"\n"
+"      The optional TTL field can be any value between 1 and 2147483647\n"
+"      seconds.\n"
+"    "
+msgstr ""
+"\n"
+"      La lauvola TTL kampo povas esti iu ajn valoro inter 1 kaj 2147483647 "
+"sekundoj.\n"
+"    "
+
+msgid ""
+"\n"
+"  <p>\n"
+"    <strong>TTL</strong>\n"
+"    The TTL is the time-to-live for the record, in seconds.\n"
+"  </p>\n"
+"  <p>\n"
+"    See <a href=\"http://en.wikipedia.org/wiki/List_of_DNS_record_types\" "
+"target=\"_designate_record_defs\">more info</a> on record types.\n"
+"  </p>\n"
+"  "
+msgstr ""
+"\n"
+"  <p> <strong>TTL</strong> La TTL estas la vivdaŭro en sekundoj por la "
+"rikordo. </p> <p> Vidu <a href=\"http://en.wikipedia.org/wiki/"
+"List_of_DNS_record_types\" target=\"_designate_record_defs\">pli da informo</"
+"a> je rikordo tipoj. </p>\n"
+"  "
+
+msgid "A - Address record"
+msgstr "A - Adreso rikordo"
+
+msgid "AAAA - IPv6 address record"
+msgstr "AAAA - IPv6 adreso rikordo"
+
+msgid "All Records"
+msgstr "Ĉiuj Rikordoj"
+
+msgid "CNAME - Canonical name record"
+msgstr "CNAME - Kanonikal nomo rikordo"
+
+msgid "Cancel"
+msgstr "Malfari"
+
+msgid "Canonical Name"
+msgstr "Kanonika Nomo"
+
+msgid "Create Domain"
+msgstr "Kreu Domajnon"
+
+msgid "Create Domain Record"
+msgstr "Kreu Domajno Rikordon"
+
+msgid "Create Record"
+msgstr "Kreu Rikordon"
+
+msgid "Create Record for"
+msgstr "Kreu Rikordon por"
+
+msgid "Created"
+msgstr "Kreita"
+
+msgid "Created At"
+msgstr "Kreita Je"
+
+msgid "Data"
+msgstr "Datumo"
+
+msgid "Delete Domain"
+msgid_plural "Delete Domains"
+msgstr[0] "Forigu Domajno"
+msgstr[1] "Forigu Domajnojn"
+
+msgid "Delete Record"
+msgid_plural "Delete Records"
+msgstr[0] "Forigu Rikordon"
+msgstr[1] "Forigu Rikordojn"
+
+msgid "Deleted Domain"
+msgid_plural "Deleted Domains"
+msgstr[0] "Forigita Domajno"
+msgstr[1] "Forigitaj Domajnoj"
+
+msgid "Deleted Record"
+msgid_plural "Deleted Records"
+msgstr[0] "Forigita Rikordo"
+msgstr[1] "Forigitaj Rikordoj"
+
+msgid "Description"
+msgstr "Priskribo"
+
+msgid "Domain"
+msgstr "Domajno"
+
+#, python-format
+msgid "Domain %(name)s created."
+msgstr "Domajno %(name)s kreita."
+
+#, python-format
+msgid "Domain %(name)s updated."
+msgstr "Domajno %(name)s ĝisdatigita."
+
+msgid "Domain Detail"
+msgstr "Domajno Detajlo"
+
+msgid "Domain Name"
+msgstr "Domajno Nomo"
+
+msgid "Domain Overview"
+msgstr "Domajno Superrigardo"
+
+msgid "Domain Records"
+msgstr "Domajno Rikordojn"
+
+#, python-format
+msgid "Domain record %(name)s created."
+msgstr "Domajno rikordo %(name)s kreita."
+
+#, python-format
+msgid "Domain record %(name)s updated."
+msgstr "Domajno rikordo %(name)s ĝisdatigita."
+
+msgid "Domains"
+msgstr "Domajnoj"
+
+msgid "Edit Domain"
+msgstr "Redaktu Domajno"
+
+msgid "Edit Record"
+msgstr "Redaktu Rikordon"
+
+msgid "Email"
+msgstr "Retmesaĝo"
+
+msgid "Enter a valid IPv4 address"
+msgstr "Entajpu validan IPv4 adreson"
+
+msgid "Enter a valid IPv6 address"
+msgstr "Entajpu validan IPv6 adreson"
+
+msgid "Enter a valid SRV name"
+msgstr "Entajpu validan SRV nomon"
+
+msgid "Enter a valid SRV record"
+msgstr "Entajpu validan SRV rikordon"
+
+msgid "Enter a valid SSHFP record"
+msgstr "Entajpu validan SSHFP rikordon"
+
+msgid "Enter a valid domain name."
+msgstr "Insertu validan domajno nomon."
+
+msgid "Enter a valid hostname"
+msgstr "Entajpu validan gastiganto nomon"
+
+msgid ""
+"Enter a valid hostname. The hostname should contain letters and numbers, and "
+"be no more than 63 characters."
+msgstr ""
+"Entajpu validan gastiganto nomon. La gastiganto nomo devus enhavi  literojn, "
+"numerojn kaj ne pli ol 63 signoj."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "IP Address"
+msgstr "IP Adreso"
+
+msgid "MX - Mail exchange record"
+msgstr "MX - retpoŝto interŝanĝo rikordo"
+
+msgid "Mail Server"
+msgstr "Retpoŝta Servilo"
+
+msgid "Manage Records"
+msgstr "Mastrumu Rikordojn"
+
+msgid "NS"
+msgstr "NS"
+
+msgid "Name"
+msgstr "Nomo"
+
+msgid "Name Server"
+msgstr "Nomservilo"
+
+msgid "Nameservers"
+msgstr "Nomserviloj"
+
+msgid "None"
+msgstr "Nenion"
+
+msgid "PTR - Pointer record"
+msgstr "PTR - referenco rikordo"
+
+msgid "PTR Domain Name"
+msgstr "PTR Domajno Nomo"
+
+msgid "Priority"
+msgstr "Prioritato"
+
+msgid "Record Data"
+msgstr "Rikordo Datumo"
+
+msgid "Record Detail"
+msgstr "Rikordo Detajlo"
+
+msgid "Record Type"
+msgstr "Rikordo Tipo"
+
+msgid "Records"
+msgstr "Rikordoj"
+
+msgid "Reverse DNS"
+msgstr "Inversa DNS"
+
+msgid "SOA"
+msgstr "SOA"
+
+msgid "SPF - Sender Policy Framework"
+msgstr "SPF - Sendinto Regularo Framo"
+
+msgid "SRV - Service locator"
+msgstr "SRV - Servo loktrovilo"
+
+msgid "SSHFP - SSH Public Key Fingerprint"
+msgstr "SSHFP - SSH Publika ŝlosila Fingropremaĵo"
+
+msgid "Select an IP"
+msgstr "Elektu IP-n"
+
+msgid "Serial"
+msgstr "Seria"
+
+msgid "TTL"
+msgstr "TTL"
+
+msgid "TTL (seconds)"
+msgstr "TTL / Vivdaŭro (sekundoj)"
+
+msgid "TXT"
+msgstr "TXT"
+
+msgid "TXT - Text record"
+msgstr "TXT - Teksto rikordo"
+
+msgid "Text"
+msgstr "Teksto"
+
+msgid "The quotas could not be retrieved."
+msgstr "La kvotoj  ne estis ricevebla."
+
+msgid "There are no floating IP addresses currently in use to select from."
+msgstr "Neniuj glitaj IP adresoj nuntempe uzitaj por elekti."
+
+msgid "This field is required"
+msgstr "Tiu kampo nepras"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Unable to create domain."
+msgstr "Neeblas krei domajnon."
+
+msgid "Unable to create record."
+msgstr "Neeblas krei rikordon."
+
+msgid "Unable to retrieve domain list."
+msgstr "Neeblas ricevi domajno listo."
+
+msgid "Unable to retrieve domain record."
+msgstr "Neeblas ricevi domajno rikordon."
+
+msgid "Unable to retrieve record list."
+msgstr "Neeblas ricevi rikordo liston."
+
+msgid "Unable to update domain."
+msgstr "Neeblas ĝisdatigi domajnon."
+
+msgid "Unknown"
+msgstr "Nekonata"
+
+msgid "Unknown instance name"
+msgstr "Nekonata apero nomo"
+
+msgid "Update Domain"
+msgstr "Ĝisdatigu Domajno"
+
+msgid "Update Domain Record"
+msgstr "Ĝisdatigu Domajno Rikordon"
+
+msgid "Update Record"
+msgstr "Ĝisdatigo Rikordon"
+
+msgid "Updated"
+msgstr "Ĝisdatigita"
+
+msgid "Updated At"
+msgstr "Ĝisdatigita  Je"
+
+msgid "Value"
+msgstr "Valoro"
+
+msgid "Zones"
+msgstr "Zonoj"
