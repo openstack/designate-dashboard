@@ -1,6 +1,7 @@
 - project:
     templates:
       - check-requirements
+      - horizon-nodejs4-jobs-nonvoting
       - designate-devstack-jobs
       - openstack-cover-jobs-horizon
       - openstack-lower-constraints-jobs
@@ -12,14 +13,6 @@
     check:
       jobs:
         - horizon-openstack-tox-python3-django111
-        - nodejs-npm-run-lint:
-            vars:
-              node_version: 4
-            voting: false
-        - nodejs-npm-run-test:
-            vars:
-              node_version: 4
-            voting: false
     gate:
       queue: designate
       jobs:
