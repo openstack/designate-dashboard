@@ -1,7 +1,6 @@
 - project:
     templates:
       - check-requirements
-      - horizon-nodejs4-jobs-nonvoting
       - horizon-nodejs10-jobs-nonvoting
       - designate-devstack-jobs
       - openstack-cover-jobs-horizon
