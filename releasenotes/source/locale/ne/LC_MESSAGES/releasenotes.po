@@ -1,0 +1,54 @@
+# Surit Aryal <aryalsurit@gmail.com>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: designate-dashboard\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-07 02:30+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-06-12 04:27+0000\n"
+"Last-Translator: Surit Aryal <aryalsurit@gmail.com>\n"
+"Language-Team: Nepali\n"
+"Language: ne\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgid ":ref:`genindex`"
+msgstr ":ref:`genindex`"
+
+msgid ":ref:`search`"
+msgstr ":ref:`search`"
+
+msgid "Contents"
+msgstr "सामग्रीहरू"
+
+msgid "Current Series Release Notes"
+msgstr "Current Series रिलीज नोट्स"
+
+msgid "Indices and tables"
+msgstr "सूचकांक र तालिकाहरू"
+
+msgid "Mitaka Series Release Notes"
+msgstr "Mitaka Series रिलीज नोट्स"
+
+msgid "Newton Series Release Notes"
+msgstr "Newton Series रिलीज नोट्स"
+
+msgid "Ocata Series Release Notes"
+msgstr "Ocata Series रिलीज नोट्स"
+
+msgid "Pike Series Release Notes"
+msgstr "Pike Series रिलीज नोट्स"
+
+msgid "Queens Series Release Notes"
+msgstr "Queens Series रिलीज नोट्स"
+
+msgid "Rocky Series Release Notes"
+msgstr "Rocky Series रिलीज नोट्स"
+
+msgid "Stein Series Release Notes"
+msgstr "Stein Series रिलीज नोट्स"
+
+msgid "Welcome to Designate dashboard Agent Release Notes documentation!"
+msgstr "डिजाइन ड्यासबोर्ड एजेन्ट रिलीज नोट्स कागजातमा स्वागत छ!"
