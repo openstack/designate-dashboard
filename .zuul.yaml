@@ -5,8 +5,7 @@
       - openstack-cover-jobs-horizon
       - openstack-lower-constraints-jobs
       - openstack-python-jobs-horizon
-      - openstack-python36-jobs-horizon
-      - openstack-python37-jobs-horizon
+      - openstack-python3-train-jobs-horizon
       - publish-openstack-docs-pti
     check:
       jobs:
