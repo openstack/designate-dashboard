@@ -1,0 +1,4 @@
+---
+upgrade:
+  - |
+    Removed the long deprecated v1 API dashboard.
