@@ -1,5 +1,6 @@
-Welcome to Designate dashboard Agent Release Notes documentation!
-=================================================================
+===========================================================
+Welcome to Designate dashboard Release Notes documentation!
+===========================================================
 
 Contents
 ========
