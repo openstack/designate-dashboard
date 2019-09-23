@@ -54,8 +54,8 @@ master_doc = 'index'
 
 # General information about the project.
 
-project = u'Designate dashboard Client Release Notes'
-copyright = u'2016, Designate dashboard developers'
+project = u'Designate dashboard Release Notes'
+copyright = u'2019, Designate dashboard developers'
 
 # Release notes are version independent
 # The short X.Y version.
