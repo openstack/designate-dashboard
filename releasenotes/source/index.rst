@@ -9,6 +9,7 @@ Contents
    :maxdepth: 2
 
    unreleased
+   train
 
 Indices and tables
 ==================
