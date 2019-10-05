@@ -1,6 +1,7 @@
 - project:
     templates:
       - check-requirements
+      - horizon-non-primary-django-jobs
       - horizon-nodejs10-jobs
       - openstack-cover-jobs-horizon
       - openstack-lower-constraints-jobs
@@ -8,10 +9,3 @@
       - openstack-python3-train-jobs-horizon
       - publish-openstack-docs-pti
       - release-notes-jobs-python3
-    check:
-      jobs:
-        - horizon-openstack-tox-python3-django111
-    gate:
-      queue: designate
-      jobs:
-        - horizon-openstack-tox-python3-django111
