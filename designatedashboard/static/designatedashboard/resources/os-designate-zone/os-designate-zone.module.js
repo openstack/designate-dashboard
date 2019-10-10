@@ -194,7 +194,7 @@
         // listFunctions are expected to return data in "items"
         response.data.items = response.data.zones;
 
-        util.addTimestampIds(response.data.items, 'updated_at');
+        util.addTimestampIds(response.data.items, 'id', 'updated_at');
 
         return response;
       });
