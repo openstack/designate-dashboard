@@ -47,7 +47,8 @@
         'SSHFP': gettext('SSHFP - SSH Public Key Fingerprint'),
         'TXT': gettext('TXT - Text record'),
         'SOA': gettext('SOA - Start of authority record'),
-        'NS': gettext('NS - Name server')
+        'NS': gettext('NS - Name server'),
+        'CAA': gettext('CAA - Certificate Authority Authorization record'),
       })
     .constant(
       'designatedashboard.resources.os-designate-recordset.editableTypes',
@@ -61,7 +62,8 @@
         "SPF",
         "SRV",
         "SSHFP",
-        "TXT"
+        "TXT",
+        "CAA",
       ])
     .config(config)
     .run(run);
