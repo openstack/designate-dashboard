@@ -22,4 +22,5 @@ class Zones(horizon.Panel):
     slug = 'dnszones'
     permissions = ('openstack.services.dns',)
 
+
 dashboard.Project.register(Zones)

@@ -31,7 +31,6 @@ extensions = [
 repository_name = 'openstack/designate-dashboard'
 bug_project = 'designate-dashboard'
 bug_tag = ''
-html_last_updated_fmt = '%Y-%m-%d %H:%M'
 html_theme = 'openstackdocs'
 
 # autodoc generation is a bit aggressive and a ndashboardsance when doing heavy
