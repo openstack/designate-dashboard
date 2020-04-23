@@ -9,6 +9,7 @@ Contents
    :maxdepth: 2
 
    unreleased
+   ussuri
    train
 
 Indices and tables
