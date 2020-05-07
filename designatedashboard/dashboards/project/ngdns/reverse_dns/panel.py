@@ -22,4 +22,5 @@ class ReverseDns(horizon.Panel):
     slug = 'reverse_dns'
     permissions = ('openstack.services.dns',)
 
+
 dashboard.Project.register(ReverseDns)
