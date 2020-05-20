@@ -31,9 +31,10 @@ extensions = [
 ]
 
 # openstackdocstheme options
-repository_name = 'openstack/designate-dashboard'
-bug_project = 'designate-dashboard'
-bug_tag = ''
+openstackdocs_repo_name = 'openstack/designate-dashboard'
+openstackdocs_bug_project = 'designate-dashboard'
+openstackdocs_bug_tag = ''
+openstackdocs_auto_name = False
 html_theme = 'openstackdocs'
 
 # Add any paths that contain templates here, relative to this directory.
@@ -94,7 +95,7 @@ exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
 
-pygments_style = 'sphinx'
+pygments_style = 'native'
 
 # A list of ignored prefixes for module index sorting.
 # modindex_common_prefix = []

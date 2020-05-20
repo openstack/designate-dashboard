@@ -28,9 +28,10 @@ extensions = [
 ]
 
 # openstackdocstheme options
-repository_name = 'openstack/designate-dashboard'
-bug_project = 'designate-dashboard'
-bug_tag = ''
+openstackdocs_repo_name = 'openstack/designate-dashboard'
+openstackdocs_pdf_link = True
+openstackdocs_bug_project = 'designate-dashboard'
+openstackdocs_bug_tag = ''
 html_theme = 'openstackdocs'
 
 # autodoc generation is a bit aggressive and a ndashboardsance when doing heavy
@@ -55,7 +56,7 @@ add_function_parentheses = True
 add_module_names = True
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'native'
 
 # -- Options for HTML output --------------------------------------------------
 
