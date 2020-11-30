@@ -62,6 +62,7 @@
     var resourceType = registry.getResourceType(resourceTypeString);
     resourceType
       .setNames(gettext('Floating IP'), gettext('Floating IPs'))
+      .setDefaultIndexUrl('/resources/floatingips/')
       .setListFunction(listFloatingIps)
       .setProperty('id', {
         label: gettext('ID')
