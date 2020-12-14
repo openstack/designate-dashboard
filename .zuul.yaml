@@ -2,7 +2,7 @@
     templates:
       - check-requirements
       - horizon-non-primary-django-jobs
-      # - horizon-nodejs10-jobs
+      - horizon-nodejs10-jobs
       - openstack-cover-jobs-horizon
       - openstack-python3-victoria-jobs-horizon
       - publish-openstack-docs-pti
