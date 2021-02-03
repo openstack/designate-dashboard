@@ -38,7 +38,7 @@ keystoneauth1==3.4.0
 linecache2==1.0.0
 logilab-common==1.4.1
 MarkupSafe==1.0
-mccabe==0.2.1
+mccabe==0.6.0
 monotonic==1.4
 msgpack==0.5.6
 munch==2.2.0
@@ -63,7 +63,7 @@ pep8==1.5.7
 Pint==0.8.1
 prettytable==0.7.2
 pycparser==2.18
-pyflakes==0.8.1
+pyflakes==2.1.0
 Pygments==2.2.0
 pyinotify==0.9.6
 pylint==1.4.5
@@ -82,7 +82,7 @@ python-novaclient==10.1.0
 python-subunit==1.2.0
 python-swiftclient==3.5.0
 pytz==2018.3
-PyYAML==3.12
+PyYAML==3.13
 rcssmin==1.0.6
 requests==2.18.4
 requestsexceptions==1.4.0
