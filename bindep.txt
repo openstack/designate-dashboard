@@ -2,3 +2,6 @@
 # see https://docs.openstack.org/infra/bindep/ for additional information.
 
 libfontconfig1 [nodejs platform:dpkg]
+
+# PDF Docs package dependencies
+tex-gyre [doc platform:dpkg]
