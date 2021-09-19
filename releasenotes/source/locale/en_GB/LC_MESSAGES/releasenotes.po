@@ -1,15 +1,16 @@
 # Andi Chandler <andi@gowling.com>, 2017. #zanata
 # Andi Chandler <andi@gowling.com>, 2019. #zanata
 # Andi Chandler <andi@gowling.com>, 2020. #zanata
+# Andi Chandler <andi@gowling.com>, 2021. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: Designate dashboard Release Notes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-14 12:47+0000\n"
+"POT-Creation-Date: 2021-07-07 16:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-10-28 01:29+0000\n"
+"PO-Revision-Date: 2021-09-18 07:35+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>\n"
 "Language-Team: English (United Kingdom)\n"
 "Language: en_GB\n"
@@ -60,6 +61,9 @@ msgstr "Ussuri Series Release Notes"
 
 msgid "Victoria Series Release Notes"
 msgstr "Victoria Series Release Notes"
+
+msgid "Wallaby Series Release Notes"
+msgstr "Wallaby Series Release Notes"
 
 msgid "Welcome to Designate dashboard Release Notes documentation!"
 msgstr "Welcome to Designate dashboard Release Notes documentation!"
