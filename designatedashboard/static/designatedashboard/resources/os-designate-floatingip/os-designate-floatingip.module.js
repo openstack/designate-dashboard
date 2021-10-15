@@ -72,7 +72,7 @@
         filters: ['noName']
       })
       .setProperty('description', {
-        label: gettext('Description'),
+        label: gettext('PTR Description'),
         filters: ['noName']
       })
       .setProperty('ttl', {
