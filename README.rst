@@ -48,12 +48,14 @@ Howto
    and should be copied to /usr/share/openstack-dashboard/openstack_dashboard/local/enabled or the
    equivalent directory for your openstack-dashboard install.
 
+3. Copy default config file into your Horizon config. The file can be found in designatedashboard/local_settings.d
+   and should be copied to /etc/openstack-dashboard/local_settings.d or the equivalent directory
+   for your openstack-dashboard install.
+
 3. Make sure your keystone catalog contains endpoints for service type 'dns'.  If no such endpoints are
    found, the designatedashboard panels will not render.
 
-4. (Optional) Copy the designate policy file into horizon's policy files folder, and add this config::
-
-    'dns': 'designate_policy.json',
+4. (Optional) Copy the designate policy file into horizon's policy files folder.
 
 
 Test
