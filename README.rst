@@ -55,12 +55,6 @@ Howto
 
     'dns': 'designate_policy.json',
 
-5. (Optional) Within your horizon settings file(s) (either the local settings or the other settings.py), add
-   the line below.  This will make it so the record create/update screen uses a drop down of your floating ip
-   addresses instead of a free form text field::
-
-    DESIGNATE = { 'records_use_fips': True }
-
 
 Test
 ----
