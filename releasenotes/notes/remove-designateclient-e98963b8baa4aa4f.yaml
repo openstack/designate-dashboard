@@ -1,0 +1,4 @@
+---
+upgrade:
+  - |
+    The ``python-designateclient`` library is no longer required.

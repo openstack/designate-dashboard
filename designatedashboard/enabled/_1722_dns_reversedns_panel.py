@@ -12,20 +12,12 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-from designatedashboard import exceptions
-
 # The name of the panel to be added to HORIZON_CONFIG. Required.
 PANEL = 'reverse_dns'
 # The name of the dashboard the PANEL associated with. Required.
 PANEL_DASHBOARD = 'project'
 # The name of the panel group the PANEL is associated with.
 PANEL_GROUP = 'dns'
-
-ADD_EXCEPTIONS = {
-    'recoverable': exceptions.RECOVERABLE,
-    'not_found': exceptions.NOT_FOUND,
-    'unauthorized': exceptions.UNAUTHORIZED,
-}
 
 # Python panel class of the PANEL to be added.
 ADD_PANEL = (
