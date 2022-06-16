@@ -21,12 +21,3 @@ settings.POLICY_FILES.update({
 settings.DEFAULT_POLICY_FILES.update({
     'dns': 'default_policies/designate.yaml'
 })
-
-# Sample
-# settings.LOGGING['loggers'].update({
-#     'designateclient': {
-#         'handlers': ['console'],
-#         'level': 'DEBUG',
-#         'propagate': False,
-#     }
-# })
