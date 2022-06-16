@@ -1,0 +1,4 @@
+---
+upgrade:
+  - |
+    The ``oslo.log`` library is no longer required.
