@@ -63,7 +63,7 @@
      */
     function list(zoneId, params) {
       return httpService.get(apiPassthroughUrl + 'v2/zones/' + zoneId + '/recordsets/', params)
-        .error(function () {
+        .catch(function () {
           toastService.add('error', gettext('Unable to retrieve the record sets.'));
         });
     }
@@ -107,14 +107,14 @@
      */
     function deleteRecordSet(zoneId, recordSetId) {
       return httpService.delete(apiPassthroughUrl + 'v2/zones/' + zoneId + '/recordsets/' + recordSetId + '/')
-        .error(function () {
+        .catch(function () {
           toastService.add('error', gettext('Unable to delete the record set.'));
         });
     }
 
     function create(zoneId, data) {
       return httpService.post(apiPassthroughUrl + 'v2/zones/' + zoneId + '/recordsets/', data)
-        .error(function () {
+        .catch(function () {
           toastService.add('error', gettext('Unable to create the record set.'));
         });
     }
@@ -128,7 +128,7 @@
         records: data.records
       };
       return httpService.put(apiPassthroughUrl + 'v2/zones/' + zoneId + '/recordsets/' + recordSetId, apiData)
-        .error(function () {
+        .catch(function () {
           toastService.add('error', gettext('Unable to update the record set.'));
         });
     }

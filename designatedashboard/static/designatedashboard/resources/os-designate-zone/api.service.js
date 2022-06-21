@@ -64,14 +64,14 @@
     function list(params) {
       var config = params ? {'params': params} : {};
       return httpService.get('/api/designate/zones/', config)
-        .error(function () {
+        .catch(function () {
           toastService.add('error', gettext('Unable to retrieve the zone.'));
         });
     }*/
     function list(params) {
       var config = params ? {'params': params} : {};
       return httpService.get(apiPassthroughUrl + 'v2/zones/', config)
-        .error(function () {
+        .catch(function () {
           toastService.add('error', gettext('Unable to retrieve the zone.'));
         });
     }
@@ -88,7 +88,7 @@
      */
     function get(id) {
       return httpService.get(apiPassthroughUrl + 'v2/zones/' + id + '/')
-        .error(function () {
+        .catch(function () {
           toastService.add('error', gettext('Unable to retrieve the zone.'));
         });
     }
@@ -102,7 +102,7 @@
      */
     function deleteZone(id) {
       return httpService.delete(apiPassthroughUrl + 'v2/zones/' + id + '/')
-        .error(function () {
+        .catch(function () {
           toastService.add('error', gettext('Unable to delete the zone.'));
         });
     }
@@ -119,7 +119,7 @@
      */
     function create(data) {
       return httpService.post(apiPassthroughUrl + 'v2/zones/', data)
-        .error(function() {
+        .catch(function() {
           toastService.add('error', gettext('Unable to create the zone.'));
         })
     }
@@ -144,7 +144,7 @@
         description: data.description
       };
       return httpService.patch(apiPassthroughUrl + 'v2/zones/' + id + '/', apiData )
-        .error(function() {
+        .catch(function() {
           toastService.add('error', gettext('Unable to update the zone.'));
         })
     }
