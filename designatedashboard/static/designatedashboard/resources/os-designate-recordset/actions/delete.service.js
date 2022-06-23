@@ -1,6 +1,6 @@
 /**
  * (c) Copyright 2016 Hewlett Packard Enterprise Development LP
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use self file except in compliance with the License. You may obtain
  * a copy of the License at
@@ -111,7 +111,7 @@
         // Remember the record sets we are allowed to delete so that on delete modal submit
         // we can map the recordset ID back to the full recordset. Then we can fetch the
         // corresponding zone ID
-        allowedRecordsets = result.pass.map(getEntity)
+        allowedRecordsets = result.pass.map(getEntity);
         outcome = deleteModal.open(scope, allowedRecordsets, context).then(createResult);
       }
       return outcome;
@@ -157,7 +157,7 @@
 
     function editableRecordType(recordset) {
       return $qExtensions.booleanAsPromise(
-        !(recordset.type == 'NS' && recordset.name == recordset.zone_name) && // not apex NS
+        !(recordset.type === 'NS' && recordset.name === recordset.zone_name) && // not apex NS
         editableTypes.indexOf(recordset.type) > -1
       );
     }
@@ -165,7 +165,7 @@
     function deleteRecordSet(recordSetId) {
       var recordSet = allowedRecordsets.find(function(element) {
         return element.id === recordSetId;
-      })
+      });
       return recordsetApi.deleteRecordSet(recordSet.zone_id, recordSet.id);
     }
 

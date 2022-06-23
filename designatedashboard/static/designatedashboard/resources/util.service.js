@@ -21,9 +21,8 @@
     .factory('designatedashboard.resources.util', utilService);
 
   utilService.$inject = [
-    'horizon.framework.util.q.extensions',
+    'horizon.framework.util.q.extensions'
   ];
-
 
   function utilService($qExtensions) {
     var service = {
@@ -47,9 +46,9 @@
       return $qExtensions.booleanAsPromise(resource.status !== 'PENDING');
     }
 
-    /**
-     * Build a model object based on the given item, using only the fields present in the form config 'key's.
-     * Only 'truthy' values are copied.
+    /*
+     * Build a model object based on the given item, using only the fields
+     * present in the form config 'key's. Only 'truthy' values are copied.
      *
      * @param form - an array of objects describing the form. Must have a 'key' attribute.
      * @param item - the data to copy into the model
@@ -68,19 +67,19 @@
 
     function actionMap() {
       return {
-        'none': gettext('None'),
-        'create': gettext('Create')
-      }
+        none: gettext('None'),
+        create: gettext('Create')
+      };
     }
 
     function statusMap() {
       return {
-        'active': gettext('Active'),
-        'pending': gettext('Pending')
-      }
+        active: gettext('Active'),
+        pending: gettext('Pending')
+      };
     }
 
-    /**
+    /*
      * hz-resource-table tracks by 'id' which doesn't change when an individual item is updated.
      * Create a synthetic '_timestampId' using the item id plus the specified timestamp field.
      * When this field is used as a track-by in hz-resource-table, items in the table to update
@@ -97,7 +96,7 @@
       var _idField = idField || 'id';
       var timestamp = Date.now();
       items.map(function annotateFloatingIp(item) {
-        if ( angular.isDefined(timestampField) ) {
+        if (angular.isDefined(timestampField)) {
           timestamp = item[timestampField];
         }
         item._timestampId = item[_idField] + timestamp;

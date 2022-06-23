@@ -41,7 +41,7 @@
 
     /////////////////
 
-    /**
+    /*
      * Returns the create zone form config
      * @returns {{schema, form, model}|*}
      */
@@ -49,7 +49,7 @@
       return getCreateUpdateFormConfig(false);
     }
 
-    /**
+    /*
      * Return the update zone form config
      * @returns {{schema, form, model}|*}
      */
@@ -57,7 +57,7 @@
       return getCreateUpdateFormConfig(true);
     }
 
-    /**
+    /*
      * Return the create/update zone form.  The two forms are identical except for
      * during update, some fields are read-only.
      *
@@ -66,118 +66,118 @@
      */
     function getCreateUpdateFormConfig(readonly) {
       return {
-        "schema": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string",
-              "pattern": /^.+\.$/
+        schema: {
+          type: "object",
+          properties: {
+            name: {
+              type: "string",
+              pattern: /^.+\.$/
             },
-            "description": {
-              "type": "string"
+            description: {
+              type: "string"
             },
-            "email": {
-              "type": "string",
-              "format": "email",
-              "pattern": /^[^@]+@[^@]+$/
+            email: {
+              type: "string",
+              format: "email",
+              pattern: /^[^@]+@[^@]+$/
             },
-            "type": {
-              "type": "string",
-              "enum": [
+            type: {
+              type: "string",
+              enum: [
                 "PRIMARY",
                 "SECONDARY"
               ]
             },
-            "ttl": {
-              "type": "integer",
-              "minimum": 1,
-              "maximum": 2147483647
+            ttl: {
+              type: "integer",
+              minimum: 1,
+              maximum: 2147483647
             },
-            "masters": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "address": {
-                    "type": "string"
+            masters: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  address: {
+                    type: "string"
                   }
                 }
               },
-              "minItems": 1,
-              "uniqueItems": true
+              minItems: 1,
+              uniqueItems: true
             }
           }
         },
-        "form": [
+        form: [
           {
-            "key": "name",
-            "readonly": readonly,
-            "title": gettext("Name"),
-            "description": gettext("Zone name ending in '.'"),
-            "validationMessage": gettext("Zone must end with '.'"),
-            "placeholder": "example.com.",
-            "type": "text",
-            "required": true
+            key: "name",
+            readonly: readonly,
+            title: gettext("Name"),
+            description: gettext("Zone name ending in '.'"),
+            validationMessage: gettext("Zone must end with '.'"),
+            placeholder: "example.com.",
+            type: "text",
+            required: true
           },
           {
-            "key": "description",
-            "type": "textarea",
-            "title": gettext("Description"),
-            "description": gettext("Details about the zone.")
+            key: "description",
+            type: "textarea",
+            title: gettext("Description"),
+            description: gettext("Details about the zone.")
           },
           {
-            "key": "email",
-            "title": gettext("Email Address"),
-            "description": gettext("Email address to contact the zone owner."),
-            "validationMessage": gettext("Email address must contain a single '@' character"),
-            "type": "text",
-            "condition": "model.type == 'PRIMARY'",
-            "required": true
+            key: "email",
+            title: gettext("Email Address"),
+            description: gettext("Email address to contact the zone owner."),
+            validationMessage: gettext("Email address must contain a single '@' character"),
+            type: "text",
+            condition: "model.type == 'PRIMARY'",
+            required: true
           },
           {
-            "key": "ttl",
-            "title": gettext("TTL"),
-            "description": gettext("Time To Live in seconds."),
-            "type": "number",
-            "condition": "model.type == 'PRIMARY'",
-            "required": true
+            key: "ttl",
+            title: gettext("TTL"),
+            description: gettext("Time To Live in seconds."),
+            type: "number",
+            condition: "model.type == 'PRIMARY'",
+            required: true
           },
           {
-            "key": "type",
-            "readonly": readonly,
-            "title": gettext("Type"),
-            "description": gettext("Select the type of zone"),
-            "type": "select",
-            "titleMap": [
+            key: "type",
+            readonly: readonly,
+            title: gettext("Type"),
+            description: gettext("Select the type of zone"),
+            type: "select",
+            titleMap: [
               {
-                "value": "PRIMARY",
-                "name": gettext("Primary")
+                value: "PRIMARY",
+                name: gettext("Primary")
               },
               {
-                "value": "SECONDARY",
-                "name": gettext("Secondary")
+                value: "SECONDARY",
+                name: gettext("Secondary")
               }
             ]
           },
           {
-            "key": "masters",
-            "readonly": readonly,
-            "title": gettext("Masters"),
-            "type": "array",
-            "description": gettext("DNS master(s) for the Secondary zone."),
-            "condition": "model.type == 'SECONDARY'",
-            "add": gettext("Add Master"),
-            "items": [
+            key: "masters",
+            readonly: readonly,
+            title: gettext("Masters"),
+            type: "array",
+            description: gettext("DNS master(s) for the Secondary zone."),
+            condition: "model.type == 'SECONDARY'",
+            add: gettext("Add Master"),
+            items: [
               {
-                "key": "masters[].address",
-                "title": gettext("IP Address")
+                key: "masters[].address",
+                title: gettext("IP Address")
               }
             ]
           }
         ],
-        "model": {
-          "type": "PRIMARY",
-          "ttl": 3600
+        model: {
+          type: "PRIMARY",
+          ttl: 3600
         }
       };
     }

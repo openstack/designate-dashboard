@@ -32,7 +32,7 @@
     'designatedashboard.resources.os-designate-recordset.resourceType',
     'designatedashboard.resources.os-designate-recordset.api',
     'designatedashboard.resources.os-designate-recordset.basePath',
-    'horizon.framework.conf.resource-type-registry.service',
+    'horizon.framework.conf.resource-type-registry.service'
   ];
 
   function run(
@@ -48,7 +48,7 @@
       .setPathParser(pathParser)
       .setSummaryTemplateUrl(basePath + 'details/drawer.html');
 
-    /**
+    /*
      *
      * @param identifier
      * The object returned by the pathParser containing the zone ID and record set ID to load
@@ -57,11 +57,11 @@
       return recordSetApi.get(identifier.zoneId, identifier.recordSetId);
     }
 
-    /**
+    /*
      * Because a record set is contained by a zone, we implement a custom
      * pathGenerator to encode the zone ID and record set ID for the generic
      * details panel.
-     * 
+     *
      * @param item
      * A record set
      *
@@ -71,7 +71,7 @@
       return item.zone_id + '/' + item.id;
     }
 
-    /**
+    /*
      * Given a path, extract the zone and record set ids
      *
      * @param path
@@ -86,14 +86,14 @@
       return {
         zoneId: split[0],
         recordSetId: split[1]
-      }
+      };
     }
 
     resourceType.detailsViews
       .prepend({
         id: 'recordsetDetailsOverview',
         name: gettext('Overview'),
-        template: basePath + 'details/overview.html',
+        template: basePath + 'details/overview.html'
       }, 0);
 
     // Append a record set view to the zones resource view
@@ -102,7 +102,7 @@
       .append({
         id: 'zoneRecordSets',
         name: gettext('Record Sets'),
-        template: basePath + 'details/zone-recordsets.html',
+        template: basePath + 'details/zone-recordsets.html'
       });
   }
 

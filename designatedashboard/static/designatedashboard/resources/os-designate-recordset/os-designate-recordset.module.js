@@ -36,42 +36,43 @@
       'OS::Designate::RecordSet')
     .constant(
       'designatedashboard.resources.os-designate-recordset.typeMap',
-      {
-        'A': gettext('A - Address record'),
-        'AAAA': gettext('AAAA - IPv6 address record'),
-        'CNAME': gettext('CNAME - Canonical name record'),
-        'MX': gettext('MX - Mail exchange record'),
-        'PTR': gettext('PTR - Pointer record'),
-        'SPF': gettext('SPF - Sender Policy Framework'),
-        'SRV': gettext('SRV - Service locator'),
-        'SSHFP': gettext('SSHFP - SSH Public Key Fingerprint'),
-        'TXT': gettext('TXT - Text record'),
-        'SOA': gettext('SOA - Start of authority record'),
-        'NS': gettext('NS - Name server'),
-        'CAA': gettext('CAA - Certificate Authority Authorization record'),
-      })
+    {
+      A: gettext('A - Address record'),
+      AAAA: gettext('AAAA - IPv6 address record'),
+      CNAME: gettext('CNAME - Canonical name record'),
+      MX: gettext('MX - Mail exchange record'),
+      PTR: gettext('PTR - Pointer record'),
+      SPF: gettext('SPF - Sender Policy Framework'),
+      SRV: gettext('SRV - Service locator'),
+      SSHFP: gettext('SSHFP - SSH Public Key Fingerprint'),
+      TXT: gettext('TXT - Text record'),
+      SOA: gettext('SOA - Start of authority record'),
+      NS: gettext('NS - Name server'),
+      CAA: gettext('CAA - Certificate Authority Authorization record')
+    })
     .constant(
       'designatedashboard.resources.os-designate-recordset.editableTypes',
-      [
-        "A",
-        "AAAA",
-        "CNAME",
-        "MX",
-        "NS",
-        "PTR",
-        "SPF",
-        "SRV",
-        "SSHFP",
-        "TXT",
-        "CAA",
-      ])
+    [
+      "A",
+      "AAAA",
+      "CNAME",
+      "MX",
+      "NS",
+      "PTR",
+      "SPF",
+      "SRV",
+      "SSHFP",
+      "TXT",
+      "CAA"
+    ])
     .config(config)
     .run(run);
 
   config.$inject = ['$provide', '$windowProvider'];
 
   function config($provide, $windowProvider) {
-    var path = $windowProvider.$get().STATIC_URL + 'designatedashboard/resources/os-designate-recordset/';
+    var path = $windowProvider.$get().STATIC_URL +
+               'designatedashboard/resources/os-designate-recordset/';
     $provide.constant('designatedashboard.resources.os-designate-recordset.basePath', path);
   }
 
@@ -166,7 +167,9 @@
         sortDefault: true,
         filters: ['noName'],
         // For link format, see pathGenerator in details.module.js
-        template: '<a ng-href="{$ \'' + detailRoute + 'OS::Designate::RecordSet/\' + item.zone_id + \'/\' + item.id $}">{$ item.name $}</a>'
+        template: '<a ng-href="{$ \'' + detailRoute +
+                  'OS::Designate::RecordSet/\' + item.zone_id + \'/\' +' +
+                  'item.id $}">{$ item.name $}</a>'
       })
       .append({
         id: 'type',
@@ -198,7 +201,7 @@
           return {
             label: typeMap[key],
             key: key
-          }
+          };
         })
       })
       .append({
@@ -220,7 +223,7 @@
         ]
       });
 
-    /**
+    /*
      * list all recordsets within a zone. Requires "zoneId" in the params. All other
      * params will be passed unmodified as URL params to the API.
      *

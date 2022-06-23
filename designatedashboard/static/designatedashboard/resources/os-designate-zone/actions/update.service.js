@@ -35,7 +35,7 @@
     'horizon.framework.widgets.modal-wait-spinner.service'
   ];
 
-  /**
+  /*
    * @ngDoc factory
    * @name designatedashboard.resources.os-designate-zone.actions.update
    *
@@ -52,7 +52,7 @@
                   schemaFormModalService,
                   toast,
                   waitSpinner) {
-    var updateZonePolicy, dnsServiceEnabled;
+    var updateZonePolicy;
     var title = gettext("Update Zone");
     var message = {
       success: gettext('Zone %s was successfully updated.')
@@ -98,8 +98,8 @@
       // Map the masters objects to address objects
       if (item.hasOwnProperty("masters")) {
         var masters = item.masters.map(function (item) {
-          return { "address": item }
-        })
+          return { address: item };
+        });
         formConfig.masters = masters;
       }
       return schemaFormModalService.open(formConfig).then(onSubmit, onCancel);
@@ -112,7 +112,7 @@
       if (context.model.hasOwnProperty("masters")) {
         var masters = context.model.masters.map(function (item) {
           return item.address;
-        })
+        });
         zoneModel.masters = masters;
       }
 

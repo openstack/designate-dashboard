@@ -40,7 +40,8 @@
   config.$inject = [ '$provide', '$windowProvider' ];
 
   function config($provide, $windowProvider) {
-    var path = $windowProvider.$get().STATIC_URL + 'designatedashboard/resources/os-designate-floatingip/';
+    var path = $windowProvider.$get().STATIC_URL +
+               'designatedashboard/resources/os-designate-floatingip/';
     $provide.constant('designatedashboard.resources.os-designate-floatingip.basePath', path);
   }
 
@@ -52,13 +53,7 @@
     'designatedashboard.resources.util'
   ];
 
-  function run(
-    detailRoute,
-    registry,
-    api,
-    resourceTypeString,
-    util)
-  {
+  function run(detailRoute, registry, api, resourceTypeString, util) {
     var resourceType = registry.getResourceType(resourceTypeString);
     resourceType
       .setNames(gettext('Floating IP'), gettext('Floating IPs'))
@@ -100,12 +95,13 @@
         id: 'address',
         priority: 1,
         sortDefault: true,
-        template: '<a ng-href="{$ \'' + detailRoute + 'OS::Designate::FloatingIp/\' + item.id $}">{$ item.address $}</a>'
+        template: '<a ng-href="{$ \'' + detailRoute +
+                  'OS::Designate::FloatingIp/\' + item.id $}">{$ item.address $}</a>'
       })
       .append({
         id: 'ptrdname',
         filters: ['noValue'],
-        priority: 1,
+        priority: 1
       })
       .append({
         id: 'status',

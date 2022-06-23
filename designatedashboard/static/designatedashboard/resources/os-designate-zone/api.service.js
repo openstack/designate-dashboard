@@ -26,7 +26,7 @@
     'horizon.framework.widgets.toast.service'
   ];
 
-  /**
+  /*
    * @ngdoc service
    * @param {Object} httpService
    * @param {Object} toastService
@@ -46,7 +46,7 @@
     return service;
 
     ///////////////
-    
+
     /**
      * @name list
      * @description
@@ -57,7 +57,7 @@
      *
      * @param {Object} params
      * Query parameters. Optional.
-     * 
+     *
      * @returns {Object} The result of the API call
      */
     /*
@@ -69,7 +69,7 @@
         });
     }*/
     function list(params) {
-      var config = params ? {'params': params} : {};
+      var config = params ? {params: params} : {};
       return httpService.get(apiPassthroughUrl + 'v2/zones/', config)
         .catch(function () {
           toastService.add('error', gettext('Unable to retrieve the zone.'));
@@ -93,7 +93,7 @@
         });
     }
 
-    /**
+    /*
      * @name deleteZone
      * @description
      * Delete a single zone by ID
@@ -121,7 +121,7 @@
       return httpService.post(apiPassthroughUrl + 'v2/zones/', data)
         .catch(function() {
           toastService.add('error', gettext('Unable to create the zone.'));
-        })
+        });
     }
 
     /**
@@ -143,10 +143,10 @@
         ttl: data.ttl,
         description: data.description
       };
-      return httpService.patch(apiPassthroughUrl + 'v2/zones/' + id + '/', apiData )
+      return httpService.patch(apiPassthroughUrl + 'v2/zones/' + id + '/', apiData)
         .catch(function() {
           toastService.add('error', gettext('Unable to update the zone.'));
-        })
+        });
     }
   }
 }());

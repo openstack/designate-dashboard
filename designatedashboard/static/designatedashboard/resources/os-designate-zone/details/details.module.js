@@ -50,7 +50,7 @@
       .prepend({
         id: 'zoneDetailsOverview',
         name: gettext('Overview'),
-        template: basePath + 'details/overview.html',
+        template: basePath + 'details/overview.html'
       }, 0);
 
     function loadFunction(identifier) {

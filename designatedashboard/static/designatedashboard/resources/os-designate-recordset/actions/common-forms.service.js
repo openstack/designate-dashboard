@@ -27,7 +27,7 @@
     'designatedashboard.resources.os-designate-recordset.typeMap'
   ];
 
-  /**
+  /*
    * Service to return a schema form config for action forms. Especially useful for forms
    * like create and update that differ only in the readonly state of certain form fields.
    *
@@ -43,7 +43,7 @@
 
     /////////////////
 
-    /**
+    /*
      * Returns the create form config
      * @returns {{schema, form, model}|*}
      */
@@ -51,7 +51,7 @@
       return getCreateUpdateFormConfig(false);
     }
 
-    /**
+    /*
      * Return the update form config
      * @returns {{schema, form, model}|*}
      */
@@ -59,7 +59,7 @@
       return getCreateUpdateFormConfig(true);
     }
 
-    /**
+    /*
      * Return the create/update form.  The two forms are identical except for
      * during update, some fields are read-only.
      *
@@ -68,96 +68,96 @@
      */
     function getCreateUpdateFormConfig(readonly) {
       return {
-        "schema": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string",
-              "pattern": /^.+\.$/
+        schema: {
+          type: "object",
+          properties: {
+            name: {
+              type: "string",
+              pattern: /^.+\.$/
             },
-            "description": {
-              "type": "string"
+            description: {
+              type: "string"
             },
-            "type": {
-              "type": "string",
-              "enum": editableTypes
+            type: {
+              type: "string",
+              enum: editableTypes
             },
-            "ttl": {
-              "type": "integer",
-              "minimum": 1,
-              "maximum": 2147483647
+            ttl: {
+              type: "integer",
+              minimum: 1,
+              maximum: 2147483647
             },
-            "records": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "record": {
-                    "type": "string"
+            records: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  record: {
+                    type: "string"
                   }
                 }
               },
-              "minItems": 1,
-              "uniqueItems": true
+              minItems: 1,
+              uniqueItems: true
             }
           }
         },
-        "form": [
+        form: [
           {
-            "key": "type",
-            "readonly": readonly,
-            "title": gettext("Type"),
-            "description": gettext("Select the type of record set"),
-            "type": "select",
-            "titleMap": editableTypes.map(function toTitleMap(type) {
+            key: "type",
+            readonly: readonly,
+            title: gettext("Type"),
+            description: gettext("Select the type of record set"),
+            type: "select",
+            titleMap: editableTypes.map(function toTitleMap(type) {
               return {
-                "value": type,
-                "name": typeMap[type]
-              }
+                value: type,
+                name: typeMap[type]
+              };
             }),
-            "required": true
+            required: true
           },
           {
-            "key": "name",
-            "readonly": readonly,
-            "type": "text",
-            "title": gettext("Name"),
-            "description": gettext("DNS name for the record set, ending in '.'"),
-            "validationMessage": gettext("DNS name must end with '.'"),
-            "placeholder": "www.example.com.",
-            "required": true
+            key: "name",
+            readonly: readonly,
+            type: "text",
+            title: gettext("Name"),
+            description: gettext("DNS name for the record set, ending in '.'"),
+            validationMessage: gettext("DNS name must end with '.'"),
+            placeholder: "www.example.com.",
+            required: true
           },
           {
-            "key": "description",
-            "type": "textarea",
-            "title": gettext("Description"),
-            "description": gettext("Details about the zone.")
+            key: "description",
+            type: "textarea",
+            title: gettext("Description"),
+            description: gettext("Details about the zone.")
           },
           {
-            "key": "ttl",
-            "title": gettext("TTL"),
-            "description": gettext("Time To Live in seconds."),
-            "type": "number",
-            "required": true
+            key: "ttl",
+            title: gettext("TTL"),
+            description: gettext("Time To Live in seconds."),
+            type: "number",
+            required: true
           },
           {
-            "key": "records",
-            "title": gettext("Records"),
-            "type": "array",
-            "description": gettext("Records for the record set."),
-            "add": gettext("Add Record"),
-            "items": [
+            key: "records",
+            title: gettext("Records"),
+            type: "array",
+            description: gettext("Records for the record set."),
+            add: gettext("Add Record"),
+            items: [
               {
-                "key": "records[].record",
-                "title": gettext("Record")
+                key: "records[].record",
+                title: gettext("Record")
               }
             ],
-            "required": true
+            required: true
           }
         ],
-        "model": {
-          "type": "A",
-          "ttl": 3600
+        model: {
+          type: "A",
+          ttl: 3600
         }
       };
     }

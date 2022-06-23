@@ -71,7 +71,8 @@
     'designatedashboard.basePath'
   ];
 
-  function run(registry, basePath) {
+  function run() {
+//  function run(registry, basePath) {
     //registry.setDefaultSummaryTemplateUrl(basePath + 'table/default-drawer.html');
   }
 

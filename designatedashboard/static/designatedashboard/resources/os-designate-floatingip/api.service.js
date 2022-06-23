@@ -26,7 +26,7 @@
     'horizon.framework.widgets.toast.service'
   ];
 
-  /**
+  /*
    * @ngdoc service
    * @param {Object} httpService
    * @param {Object} toastService
@@ -60,7 +60,7 @@
      * @returns {Object} The result of the API call
      */
     function list(params) {
-      var config = params ? {'params': params} : {};
+      var config = params ? {params: params} : {};
       return httpService.get(apiPassthroughUrl + 'v2/reverse/floatingips', config)
         .catch(function () {
           toastService.add('error', gettext('Unable to retrieve the floating ip PTRs.'));
@@ -68,7 +68,7 @@
     }
 
     function get(id, params) {
-      var config = params ? {'params': params} : {};
+      var config = params ? {params: params} : {};
       return httpService.get(apiPassthroughUrl + 'v2/reverse/floatingips/' + id, config)
         .catch(function () {
           toastService.add('error', gettext('Unable to get the floating ip PTR ' + id));
@@ -94,10 +94,11 @@
         description: data.description,
         ttl: data.ttl
       };
-      return httpService.patch(apiPassthroughUrl + 'v2/reverse/floatingips/' + floatingIpID, apiData)
+      return httpService.patch(
+          apiPassthroughUrl + 'v2/reverse/floatingips/' + floatingIpID, apiData)
         .catch(function () {
           toastService.add('error', gettext('Unable to set the floating IP PTR record.'));
-        })
+        });
     }
 
     /**
@@ -115,7 +116,7 @@
         ptrdname: null,
         description: null,
         ttl: null
-      })
+      });
     }
   }
 }());

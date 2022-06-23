@@ -1,6 +1,6 @@
 /**
  * (c) Copyright 2016 Hewlett Packard Enterprise Development LP
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use self file except in compliance with the License. You may obtain
  * a copy of the License at
@@ -70,8 +70,8 @@
     //////////////
 
     function initAction() {
-        context = { };
-        deleteZonePromise = policy.ifAllowed({rules: [['dns', 'delete_zone']]});
+      context = { };
+      deleteZonePromise = policy.ifAllowed({rules: [['dns', 'delete_zone']]});
     }
 
     function perform(items, scope) {

@@ -34,7 +34,7 @@
     'horizon.framework.widgets.modal-wait-spinner.service'
   ];
 
-  /**
+  /*
    * @ngDoc factory
    * @name designatedashboard.resources.os-designate-zone.actions.create
    *

@@ -34,7 +34,7 @@
     'horizon.framework.widgets.modal-wait-spinner.service'
   ];
 
-  /**
+  /*
    * @ngDoc factory
    * @name designatedashboard.resources.os-designate-floatingip.actions.unset
    *
@@ -50,20 +50,21 @@
                   schemaFormModalService,
                   toast,
                   waitSpinner) {
-    var dnsServiceEnabled;
     var title = null; // Set on perform
-    var currentFloatingIpId;  // Used to remember the ID we are modifying since it isn't returned by the unset API call
+    // currentFloatingIpId is used to remember the ID we are modifying since
+    // it isn't returned by the unset API call
+    var dnsServiceEnabled, currentFloatingIpId;
 
     // Unset it just a simple case of "set", but with ptrdname of 'null'
     var formConfig = {
-      "schema": {
-        "type": "object",
-        "properties": {
+      schema: {
+        type: "object",
+        properties: {
         }
       },
-      "form": [
+      form: [
       ],
-      "model": {
+      model: {
       }
     };
 
@@ -118,7 +119,7 @@
       waitSpinner.hideModalSpinner();
     }
 
-    function onSuccess(response) {
+    function onSuccess() {
       waitSpinner.hideModalSpinner();
       toast.add('success', message.success);
 

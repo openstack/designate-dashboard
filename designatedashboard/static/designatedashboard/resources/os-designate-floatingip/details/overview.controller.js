@@ -1,6 +1,6 @@
 /**
  * (c) Copyright 2016 Hewlett Packard Enterprise Development LP
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the 'License');
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -18,7 +18,9 @@
 
   angular
     .module('designatedashboard.resources.os-designate-floatingip.details')
-    .controller('designatedashboard.resources.os-designate-floatingip.details.overviewController', controller);
+    .controller(
+        'designatedashboard.resources.os-designate-floatingip.details.overviewController',
+        controller);
 
   controller.$inject = [
     'designatedashboard.resources.os-designate-floatingip.resourceType',
@@ -33,7 +35,7 @@
   ) {
     var ctrl = this;
 
-    ctrl.item;
+    ctrl.item = {};
     ctrl.resourceType = registry.getResourceType(resourceTypeCode);
 
     $scope.context.loadPromise.then(onGetResponse);

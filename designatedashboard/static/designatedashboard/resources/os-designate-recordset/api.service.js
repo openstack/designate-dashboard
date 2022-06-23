@@ -27,7 +27,7 @@
     'horizon.framework.widgets.toast.service'
   ];
 
-  /**
+  /*
    * @ngdoc service
    * @param {Object} httpService
    * @param {Object} toastService
@@ -48,7 +48,7 @@
 
     ///////////////
 
-    /**
+    /*
      * @name list
      * @description
      * Get a list of record sets.
@@ -68,7 +68,7 @@
         });
     }
 
-    /**
+    /*
      * @name get
      * @description
      * Get a single record set by ID.
@@ -86,14 +86,15 @@
       // common when then delete action removes a record set. Mask this failure by
       // always returning a successful promise instead of terminating the $http promise
       // in the .error handler.
-      return httpService.get(apiPassthroughUrl + 'v2/zones/' + zoneId + '/recordsets/' + recordSetId + '/')
+      return httpService.get(
+          apiPassthroughUrl + 'v2/zones/' + zoneId + '/recordsets/' + recordSetId + '/')
         .then(undefined, function onError() {
           toastService.add('error', gettext('Unable to retrieve the record set.'));
           return $q.when({});
         });
     }
 
-    /**
+    /*
      * @name delete
      * @description
      * Delete a single record set by ID
@@ -106,7 +107,8 @@
      * @returns {*}
      */
     function deleteRecordSet(zoneId, recordSetId) {
-      return httpService.delete(apiPassthroughUrl + 'v2/zones/' + zoneId + '/recordsets/' + recordSetId + '/')
+      return httpService.delete(
+          apiPassthroughUrl + 'v2/zones/' + zoneId + '/recordsets/' + recordSetId + '/')
         .catch(function () {
           toastService.add('error', gettext('Unable to delete the record set.'));
         });
@@ -127,7 +129,8 @@
         description: data.description,
         records: data.records
       };
-      return httpService.put(apiPassthroughUrl + 'v2/zones/' + zoneId + '/recordsets/' + recordSetId, apiData)
+      return httpService.put(
+          apiPassthroughUrl + 'v2/zones/' + zoneId + '/recordsets/' + recordSetId, apiData)
         .catch(function () {
           toastService.add('error', gettext('Unable to update the record set.'));
         });

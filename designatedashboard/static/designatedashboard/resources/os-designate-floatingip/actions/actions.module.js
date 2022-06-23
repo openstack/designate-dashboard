@@ -37,12 +37,7 @@
     'designatedashboard.resources.os-designate-floatingip.actions.unset'
   ];
 
-  function run(
-    registry,
-    resourceTypeString,
-    setAction,
-    unsetAction)
-  {
+  function run(registry, resourceTypeString, setAction, unsetAction) {
     var resourceType = registry.getResourceType(resourceTypeString);
 
     resourceType

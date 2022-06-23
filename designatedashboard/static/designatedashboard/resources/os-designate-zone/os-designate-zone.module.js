@@ -40,7 +40,8 @@
   config.$inject = ['$provide', '$windowProvider'];
 
   function config($provide, $windowProvider) {
-    var path = $windowProvider.$get().STATIC_URL + 'designatedashboard/resources/os-designate-zone/';
+    var path = $windowProvider.$get().STATIC_URL +
+               'designatedashboard/resources/os-designate-zone/';
     $provide.constant('designatedashboard.resources.os-designate-zone.basePath', path);
   }
 
@@ -136,7 +137,8 @@
         id: 'name',
         priority: 1,
         sortDefault: true,
-        template: '<a ng-href="{$ \'' + detailRoute + 'OS::Designate::Zone/\' + item.id $}">{$ item.name $}</a>'
+        template: '<a ng-href="{$ \'' + detailRoute +
+                  'OS::Designate::Zone/\' + item.id $}">{$ item.name $}</a>'
       })
       .append({
         id: 'type',
@@ -185,9 +187,9 @@
 
     function typeMap() {
       return {
-        'primary': gettext('Primary'),
-        'secondary': gettext('Secondary')
-      }
+        primary: gettext('Primary'),
+        secondary: gettext('Secondary')
+      };
     }
 
     function listZones() {

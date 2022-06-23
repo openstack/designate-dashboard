@@ -33,7 +33,7 @@
     'horizon.framework.widgets.modal-wait-spinner.service'
   ];
 
-  /**
+  /*
    * @ngDoc factory
    * @name designatedashboard.resources.os-designate-floatingip.actions.set
    *
@@ -51,44 +51,44 @@
     var dnsServiceEnabled;
     var title = null; // Set once perform is called
     var formConfig = {
-      "schema": {
-        "type": "object",
-        "properties": {
-          "ptrdname": {
-            "type": "string",
-            "pattern": /^.+\.$/
+      schema: {
+        type: "object",
+        properties: {
+          ptrdname: {
+            type: "string",
+            pattern: /^.+\.$/
           },
-          "description": {
-            "type": "string"
+          description: {
+            type: "string"
           },
-          "ttl": {
-            "type": "integer",
-            "minimum": 0,
-            "maximum": 2147483647
-          },
+          ttl: {
+            type: "integer",
+            minimum: 0,
+            maximum: 2147483647
+          }
         }
       },
-      "form": [
+      form: [
         {
-          "key": "ptrdname",
-          "title": gettext("Domain Name"),
-          "description": gettext("Domain name ending in '.'"),
-          "validationMessage": gettext("Domain must end with '.'"),
-          "placeholder": "smtp.example.com.",
-          "type": "text",
-          "required": true
+          key: "ptrdname",
+          title: gettext("Domain Name"),
+          description: gettext("Domain name ending in '.'"),
+          validationMessage: gettext("Domain must end with '.'"),
+          placeholder: "smtp.example.com.",
+          type: "text",
+          required: true
         },
         {
-          "key": "description",
-          "type": "textarea",
-          "title": gettext("Description"),
-          "description": gettext("Details about the PTR record.")
+          key: "description",
+          type: "textarea",
+          title: gettext("Description"),
+          description: gettext("Details about the PTR record.")
         },
         {
-          "key": "ttl",
-          "title": gettext("TTL"),
-          "description": gettext("Time To Live in seconds."),
-          "type": "number"
+          key: "ttl",
+          title: gettext("TTL"),
+          description: gettext("Time To Live in seconds."),
+          type: "number"
         }
       ]
     };

@@ -37,7 +37,7 @@
     'horizon.framework.widgets.modal-wait-spinner.service'
   ];
 
-  /**
+  /*
    * @ngDoc factory
    * @name designatedashboard.resources.os-designate-recordset.actions.update
    *
@@ -56,7 +56,7 @@
                   schemaFormModalService,
                   toast,
                   waitSpinner) {
-    var updateRecordSetPolicy, dnsServiceEnabled;
+    var updateRecordSetPolicy;
     var title = gettext("Update Record Set");
     var message = {
       success: gettext('Record Set %s was successfully updated.')
@@ -93,7 +93,7 @@
 
     function editableRecordType(recordset) {
       return $qExtensions.booleanAsPromise(
-        !(recordset.type == 'NS' && recordset.name == recordset.zone_name) && // not apex NS
+        !(recordset.type === 'NS' && recordset.name === recordset.zone_name) && // not apex NS
         editableTypes.indexOf(recordset.type) > -1
       );
     }
@@ -111,7 +111,7 @@
       // Map the records objects to record objects
       if (item.hasOwnProperty("records")) {
         var records = item.records.map(function (item) {
-          return {"record": item}
+          return {record: item};
         });
         formConfig.model.records = records;
       }

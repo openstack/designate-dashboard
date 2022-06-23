@@ -35,7 +35,7 @@
     'horizon.framework.widgets.modal-wait-spinner.service'
   ];
 
-  /**
+  /*
    * @ngDoc factory
    * @name designatedashboard.resources.os-designate-recordset.actions.create
    *
@@ -73,7 +73,7 @@
       dnsServiceEnabled = serviceCatalog.ifTypeEnabled('dns');
     }
 
-    function allowed(item) {
+    function allowed() {
       return $q.all([
         createRecordSetPolicy,
         dnsServiceEnabled
