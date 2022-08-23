@@ -70,7 +70,6 @@
 
     function initAction() {
       updateZonePolicy = policy.ifAllowed({rules: [['dns', 'update_zone']]});
-      dnsServiceEnabled = serviceCatalog.ifTypeEnabled('dns');
     }
 
     function allowed(zone) {

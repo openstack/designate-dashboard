@@ -74,7 +74,6 @@
 
     function initAction() {
       updateRecordSetPolicy = policy.ifAllowed({rules: [['dns', 'update_recordset']]});
-      dnsServiceEnabled = serviceCatalog.ifTypeEnabled('dns');
     }
 
     function allowed(recordset) {
