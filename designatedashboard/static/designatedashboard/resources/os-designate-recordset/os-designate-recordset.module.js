@@ -93,7 +93,7 @@
     var resourceType = registry.getResourceType(resourceTypeString);
     resourceType
       .setNames(gettext('DNS Record Set'), gettext('DNS Record Sets'))
-      .setDefaultIndexUrl('/resources/recordsets/')
+      .setDefaultIndexUrl('/project/dnszones/')
       .setListFunction(list)
       .setProperty('id', {
         label: gettext('ID')
