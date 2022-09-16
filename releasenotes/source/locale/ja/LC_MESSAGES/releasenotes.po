@@ -1,0 +1,30 @@
+# Akihiro Motoki <amotoki@gmail.com>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Designate dashboard Release Notes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-13 22:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-02-08 08:46+0000\n"
+"Last-Translator: Akihiro Motoki <amotoki@gmail.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+msgid ":ref:`genindex`"
+msgstr ":ref:`genindex`"
+
+msgid ":ref:`search`"
+msgstr ":ref:`search`"
+
+msgid "Contents"
+msgstr "内容"
+
+msgid "Current Series Release Notes"
+msgstr "開発中バージョンのリリースノート"
+
+msgid "Indices and tables"
+msgstr "目次と表"
