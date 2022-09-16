@@ -1,0 +1,30 @@
+# Surit Aryal <aryalsurit@gmail.com>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: Designate dashboard Release Notes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-13 22:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-06-12 04:27+0000\n"
+"Last-Translator: Surit Aryal <aryalsurit@gmail.com>\n"
+"Language-Team: Nepali\n"
+"Language: ne\n"
+"X-Generator: Zanata 4.3.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgid ":ref:`genindex`"
+msgstr ":ref:`genindex`"
+
+msgid ":ref:`search`"
+msgstr ":ref:`search`"
+
+msgid "Contents"
+msgstr "सामग्रीहरू"
+
+msgid "Current Series Release Notes"
+msgstr "Current Series रिलीज नोट्स"
+
+msgid "Indices and tables"
+msgstr "सूचकांक र तालिकाहरू"
