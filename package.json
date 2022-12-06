@@ -17,7 +17,7 @@
     "karma-ng-html2js-preprocessor": "1.0.0"
   },
   "scripts": {
-    "postinstall": "if [ ! -d .tox/py38 ]; then tox -epy38 --notest; fi",
+    "postinstall": "if [ ! -d .tox/npm ]; then tox -e npm --notest; fi",
     "lint": "eslint --no-color designatedashboard/static",
     "lintq": "eslint --quiet designatedashboard/static",
     "test": "karma start karma.conf.js --single-run"
