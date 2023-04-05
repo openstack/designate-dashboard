@@ -99,7 +99,7 @@
         var masters = item.masters.map(function (item) {
           return { address: item };
         });
-        formConfig.masters = masters;
+        formConfig.model.masters = masters;
       }
       return schemaFormModalService.open(formConfig).then(onSubmit, onCancel);
     }
