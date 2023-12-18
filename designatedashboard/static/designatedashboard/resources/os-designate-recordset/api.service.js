@@ -130,7 +130,7 @@
         records: data.records
       };
       return httpService.put(
-          apiPassthroughUrl + 'v2/zones/' + zoneId + '/recordsets/' + recordSetId, apiData)
+          apiPassthroughUrl + 'v2/zones/' + zoneId + '/recordsets/' + recordSetId + '/', apiData)
         .catch(function () {
           toastService.add('error', gettext('Unable to update the record set.'));
         });
