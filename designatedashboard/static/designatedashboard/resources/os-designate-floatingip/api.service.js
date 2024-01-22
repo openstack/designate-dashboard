@@ -61,7 +61,7 @@
      */
     function list(params) {
       var config = params ? {params: params} : {};
-      return httpService.get(apiPassthroughUrl + 'v2/reverse/floatingips', config)
+      return httpService.get(apiPassthroughUrl + 'v2/reverse/floatingips/', config)
         .catch(function () {
           toastService.add('error', gettext('Unable to retrieve the floating ip PTRs.'));
         });
@@ -69,7 +69,7 @@
 
     function get(id, params) {
       var config = params ? {params: params} : {};
-      return httpService.get(apiPassthroughUrl + 'v2/reverse/floatingips/' + id, config)
+      return httpService.get(apiPassthroughUrl + 'v2/reverse/floatingips/' + id + '/', config)
         .catch(function () {
           toastService.add('error', gettext('Unable to get the floating ip PTR ' + id));
         });
@@ -95,7 +95,7 @@
         ttl: data.ttl
       };
       return httpService.patch(
-          apiPassthroughUrl + 'v2/reverse/floatingips/' + floatingIpID, apiData)
+          apiPassthroughUrl + 'v2/reverse/floatingips/' + floatingIpID + '/', apiData)
         .catch(function () {
           toastService.add('error', gettext('Unable to set the floating IP PTR record.'));
         });

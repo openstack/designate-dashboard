@@ -13,4 +13,4 @@
 # limitations under the License.
 """REST API for Horizon dashboard Javascript code.
 """
-from . import passthrough  # noqa
+from . import designate  # noqa
