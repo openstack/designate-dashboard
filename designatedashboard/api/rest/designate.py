@@ -19,8 +19,6 @@ import logging
 from openstack_dashboard.api.rest import urls
 from openstack_dashboard.api.rest import utils as rest_utils
 
-from openstack.dns.v2 import floating_ip as _fip
-
 
 LOG = logging.getLogger(__name__)
 
@@ -240,16 +238,8 @@ def update_dns_floatingip(request, **kwargs):
     if data.get('ttl', None):
         build_kwargs['ttl'] = data['ttl']
 
-    # TODO(tobias-urdin): Bug in openstacksdk
-    # https://review.opendev.org/c/openstack/openstacksdk/+/903879
-    obj = conn.dns._get_resource(
-        _fip.FloatingIP, fip_id, **build_kwargs)
-    obj.resource_key = None
-    has_body = True
-    if build_kwargs['ptrdname'] is None:
-        has_body = False
-    fip = obj.commit(conn.dns, has_body=has_body)
-
+    fip = conn.dns.update_floating_ip(
+        fip_id, **build_kwargs)
     return fip.to_dict()
 
 
