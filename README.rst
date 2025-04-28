@@ -1,25 +1,14 @@
-========================
-Team and repository tags
-========================
+===================
+Designate Dashboard
+===================
 
 .. image:: https://governance.openstack.org/tc/badges/designate-dashboard.svg
-    :target: https://governance.openstack.org/tc/reference/tags/index.html
 
 .. Change things from this point on
-
-===================
-designate dashboard
-===================
 
 Designate Horizon UI bits
 
 * Free software: Apache license
-
-Features
---------
-
-* TODO
-
 
 Howto
 -----
