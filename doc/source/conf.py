@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -45,8 +44,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'designate_dashboard'
-copyright = u'2013, OpenStack Foundation'
+project = 'designate_dashboard'
+copyright = '2013, OpenStack Foundation'
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
 add_function_parentheses = True
@@ -75,8 +74,8 @@ htmlhelp_basename = '%sdoc' % project
 latex_documents = [
     ('index',
      'doc-designate-dashboard.tex',
-     u'Designate Dashboard Documentation',
-     u'OpenStack Foundation', 'manual', True),
+     'Designate Dashboard Documentation',
+     'OpenStack Foundation', 'manual', True),
 ]
 
 latex_domain_indices = False
@@ -91,4 +90,4 @@ latex_elements = {
 }
 
 # Example configuration for intersphinx: refer to the Python standard library.
-#intersphinx_mapping = {'http://docs.python.org/': None}
+#intersphinx_mapping = {'https://docs.python.org/': None}

@@ -1,3 +1,4 @@
-openstackdocstheme>=2.2.0 # Apache-2.0
-sphinxcontrib-svg2pdfconverter>=0.1.0 # BSD
-reno>=3.1.0 # Apache-2.0
+sphinxcontrib-svg2pdfconverter>=1.2.3 # BSD
+openstackdocstheme>=3.5.0 # Apache-2.0
+doc8>=1.1.2 # Apache-2.0
+reno>=4.1.0 # Apache-2.0
