@@ -1,19 +1,42 @@
 # Fedor Tarasenko <feodor.tarasenko@gmail.com>, 2017. #zanata
+# Dmitriy Chubinidze <dcu995@gmail.com>, 2025. #zanata
+# Ivan Anfimov <lazekteam@gmail.com>, 2025. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: Designate dashboard Release Notes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-13 22:31+0000\n"
+"POT-Creation-Date: 2024-05-01 19:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-02-03 08:41+0000\n"
-"Last-Translator: Fedor Tarasenko <feodor.tarasenko@gmail.com>\n"
+"PO-Revision-Date: 2025-07-14 09:33+0000\n"
+"Last-Translator: Ivan Anfimov <lazekteam@gmail.com>\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
 "X-Generator: Zanata 4.3.3\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+msgid "10.0.0"
+msgstr "10.0.0"
+
+msgid "15.0.0"
+msgstr "15.0.0"
+
+msgid "18.0.0"
+msgstr "18.0.0"
+
+msgid "2023.1 Series Release Notes"
+msgstr "Примечания к выпуску 2023.1"
+
+msgid "2023.2 Series Release Notes"
+msgstr "Примечания к выпуску 2023.2"
+
+msgid "2024.1 Series Release Notes"
+msgstr "Примечания к выпуску 2024.1"
+
+msgid "9.0.0"
+msgstr "9.0.0"
 
 msgid ":ref:`genindex`"
 msgstr ":ref:`genindex`"
@@ -25,4 +48,64 @@ msgid "Contents"
 msgstr "Содержание"
 
 msgid "Current Series Release Notes"
-msgstr "Примечания к текущему релизу"
+msgstr "Примечания к текущему выпуску"
+
+msgid "Indices and tables"
+msgstr "Индексы и таблицы"
+
+msgid ""
+"Python 2.7 support has been dropped. Last release of designate-dashboard to "
+"support python 2.7 is OpenStack Train. The minimum version of Python now "
+"supported by designate-dashboard is Python 3.6."
+msgstr ""
+"Поддержка Python 2.7 прекращена. Последний релиз designate-dashboard, "
+"поддерживающий python 2.7 — OpenStack Train. Минимальная версия Python, "
+"поддерживаемая designate-dashboard — Python 3.6. "
+
+msgid ""
+"Python 3.6 & 3.7 support has been dropped. The minimum version of Python now "
+"supported is Python 3.8."
+msgstr ""
+"Поддержка Python 3.6 и 3.7 прекращена. Минимальная версия Python, которая "
+"теперь поддерживается — Python 3.8."
+
+msgid "Removed the long deprecated v1 API dashboard."
+msgstr "Удалена давно устаревшая панель инструментов API v1."
+
+msgid "The ``oslo.log`` library is no longer required."
+msgstr "Библиотека ``oslo.log`` больше не требуется."
+
+msgid "The ``python-designateclient`` library is no longer required."
+msgstr "Библиотека ``python-designateclient`` больше не требуется."
+
+msgid "The designate dashboard now needs openstacksdk"
+msgstr "Для панели управления designate теперь требуется openstacksdk"
+
+msgid "Train Series Release Notes"
+msgstr "Примечания к выпуску Train"
+
+msgid "Upgrade Notes"
+msgstr "Заметки об обновлении"
+
+msgid "Ussuri Series Release Notes"
+msgstr "Примечания к выпуску Ussuri"
+
+msgid "Victoria Series Release Notes"
+msgstr "Примечания к выпуску Victoria"
+
+msgid "Wallaby Series Release Notes"
+msgstr "Примечания к выпуску Wallaby"
+
+msgid "Welcome to Designate dashboard Release Notes documentation!"
+msgstr ""
+"Добро пожаловать в документацию по примечаниям к выпуску панели управления "
+"Designate!"
+
+msgid "Xena Series Release Notes"
+msgstr "Примечания к выпуску Xena"
+
+msgid "Yoga Series Release Notes"
+msgstr "Примечания к выпуску Yoga"
+
+msgid "Zed Series Release Notes"
+msgstr "Примечания к выпуску Zed"
