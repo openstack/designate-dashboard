@@ -55,7 +55,7 @@
     var updateZonePolicy;
     var title = gettext("Update Zone");
     var message = {
-      success: gettext('Zone %s was successfully updated.')
+      success: gettext('Zone was successfully updated.')
     };
 
     var service = {
@@ -127,7 +127,7 @@
     function onSuccess(response) {
       waitSpinner.hideModalSpinner();
       var zone = response.data;
-      toast.add('success', interpolate(message.success, [zone.name]));
+      toast.add('success', message.success);
 
       // To make the result of this action generically useful, reformat the return
       // from the deleteModal into a standard form
