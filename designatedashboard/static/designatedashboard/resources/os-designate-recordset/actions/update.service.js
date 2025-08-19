@@ -59,7 +59,7 @@
     var updateRecordSetPolicy;
     var title = gettext("Update Record Set");
     var message = {
-      success: gettext('Record Set %s was successfully updated.')
+      success: gettext('Record Set was successfully updated.')
     };
 
     var service = {
@@ -140,7 +140,7 @@
     function onSuccess(response) {
       waitSpinner.hideModalSpinner();
       var recordset = response.data;
-      toast.add('success', interpolate(message.success, [recordset.name]));
+      toast.add('success', message.success);
 
       // To make the result of this action generically useful, reformat the return
       // from the deleteModal into a standard form
