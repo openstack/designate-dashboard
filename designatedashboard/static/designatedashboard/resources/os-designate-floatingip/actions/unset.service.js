@@ -102,7 +102,7 @@
     }
 
     function perform(item) {
-      title = gettext("Unset Domain Name PTR for ") + item.address;
+      title = interpolate(gettext("Unset Domain Name PTR for %s"), [item.address]);
       // Store the zone ID so it can be used on submit
       formConfig.model.floatingIpId = item.id;
       formConfig.title = title;

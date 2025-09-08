@@ -49,7 +49,7 @@
     /**
      * @name list
      * @description
-     * Get a list of DNS floating ips.
+     * Get a list of DNS floating IPs.
      *
      * The listing result is an object with property "items." Each item is
      * a floating IP PTR record.
@@ -63,7 +63,7 @@
       var config = params ? {params: params} : {};
       return httpService.get(apiPassthroughUrl + 'v2/reverse/floatingips/', config)
         .catch(function () {
-          toastService.add('error', gettext('Unable to retrieve the floating ip PTRs.'));
+          toastService.add('error', gettext('Unable to retrieve the floating IP PTRs.'));
         });
     }
 
@@ -71,14 +71,17 @@
       var config = params ? {params: params} : {};
       return httpService.get(apiPassthroughUrl + 'v2/reverse/floatingips/' + id + '/', config)
         .catch(function () {
-          toastService.add('error', gettext('Unable to get the floating ip PTR ' + id));
+          toastService.add(
+            'error',
+            interpolate(gettext('Unable to get the floating IP PTR %s'), [id])
+          );
         });
     }
 
     /**
      * @name set
      * @description
-     * Set a floating ip PTR record
+     * Set a floating IP PTR record
      *
      * @param {string} floatingIpID - ID of PTR record to unset
      * @param {Object} data
@@ -104,7 +107,7 @@
     /**
      * @name unset
      * @description
-     * Unset a floating ip PTR record
+     * Unset a floating IP PTR record
      *
      * @param {string} floatingIpID - ID of PTR record to unset
      *
