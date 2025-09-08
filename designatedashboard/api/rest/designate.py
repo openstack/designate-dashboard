@@ -64,9 +64,10 @@ def update_zone(request, **kwargs):
     conn = get_sdk_connection(request)
     build_kwargs = dict(
         email=data['email'],
-        description=data['description'],
         ttl=data['ttl'],
     )
+    if data.get('description', None):
+        build_kwargs['description'] = data['description']
     zone = conn.dns.update_zone(
         zone_id, **build_kwargs)
     return zone.to_dict()
