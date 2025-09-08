@@ -121,7 +121,7 @@
 
     function perform(item) {
       // Initialize the per-item title for use now and during submit
-      title = gettext("Set Domain Name PTR for ") + item.address;
+      title = interpolate(gettext("Set Domain Name PTR for %s"), [item.address]);
       formConfig.title = title;
 
       // Get a form model based on the current item
