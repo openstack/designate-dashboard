@@ -94,7 +94,7 @@
     };
 
     var message = {
-      success: gettext('Domain name PTR %s was successfully set.')
+      success: gettext('Domain name PTR was successfully set.')
     };
 
     var service = {
@@ -151,7 +151,7 @@
     function onSuccess(response) {
       waitSpinner.hideModalSpinner();
       var floatingIp = response.data;
-      toast.add('success', interpolate(message.success, [floatingIp.ptrdname]));
+      toast.add('success', message.success);
 
       // To make the result of this action generically useful, reformat the return
       // from the deleteModal into a standard form
