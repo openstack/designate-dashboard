@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Designate dashboard Release Notes documentation build configuration file.
 #
 # This file is execfile()d with the current directory set to its
@@ -54,8 +52,8 @@ master_doc = 'index'
 
 # General information about the project.
 
-project = u'Designate dashboard Release Notes'
-copyright = u'2019, Designate dashboard developers'
+project = 'Designate dashboard Release Notes'
+copyright = '2019, Designate dashboard developers'
 
 # Release notes are version independent
 # The short X.Y version.
@@ -212,8 +210,8 @@ latex_elements = {
 
 latex_documents = [
     ('index', 'PythonDesignatedashboard.tex',
-     u'Designate dashboard Release Notes Documentation',
-     u'Designate dashboard developers', 'manual'),
+     'Designate dashboard Release Notes Documentation',
+     'Designate dashboard developers', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -244,8 +242,8 @@ latex_documents = [
 
 man_pages = [
     ('index', 'designatedashboard',
-     u'Designate dashboard Release Notes Documentation',
-     [u'Designate dashboard developers'], 1)
+     'Designate dashboard Release Notes Documentation',
+     ['Designate dashboard developers'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -260,8 +258,8 @@ man_pages = [
 
 texinfo_documents = [
     ('index', 'Designate dashboard',
-     u'Designate dashboard Release Notes Documentation',
-     u'Designate dashboard developers', 'Designate dashboard',
+     'Designate dashboard Release Notes Documentation',
+     'Designate dashboard developers', 'Designate dashboard',
      'One line description of project.', 'Miscellaneous'),
 ]
 
