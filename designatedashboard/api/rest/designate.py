@@ -42,14 +42,15 @@ def create_zone(request):
     conn = get_sdk_connection(request)
     build_kwargs = dict(
         name=data['name'],
-        email=data['email'],
         type=data['type'],
     )
     if data.get('description', None):
         build_kwargs['description'] = data['description']
-    if data.get('ttl', None):
-        build_kwargs['ttl'] = data['ttl']
-    if data.get('masters', None):
+    if data['type'] == 'PRIMARY':
+        build_kwargs['email'] = data['email']
+        if data.get('ttl', None):
+            build_kwargs['ttl'] = data['ttl']
+    elif data['type'] == 'SECONDARY':
         build_kwargs['masters'] = data['masters']
 
     zone = conn.dns.create_zone(**build_kwargs)
