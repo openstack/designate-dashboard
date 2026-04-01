@@ -95,6 +95,15 @@
         zoneModel.masters = masters;
       }
 
+      if (context.model.hasOwnProperty("attributes") &&
+          context.model.attributes.length > 0) {
+        var attributes = {};
+        context.model.attributes.forEach(function (item) {
+          attributes[item.key] = item.value;
+        });
+        zoneModel.attributes = attributes;
+      }
+
       waitSpinner.showModalSpinner(gettext('Creating Zone'));
 
       return api.create(zoneModel).then(onSuccess, onFailure);

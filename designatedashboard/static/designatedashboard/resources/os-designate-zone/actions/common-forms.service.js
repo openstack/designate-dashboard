@@ -105,6 +105,20 @@
               },
               minItems: 1,
               uniqueItems: true
+            },
+            attributes: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  key: {
+                    type: "string"
+                  },
+                  value: {
+                    type: "string"
+                  }
+                }
+              }
             }
           }
         },
@@ -171,6 +185,25 @@
               {
                 key: "masters[].address",
                 title: gettext("IP Address")
+              }
+            ]
+          },
+          {
+            key: "attributes",
+            readonly: readonly,
+            title: gettext("Attributes"),
+            type: "array",
+            description: gettext("Key-value pairs for pool scheduling " +
+              "(e.g. pool_id, az)."),
+            add: gettext("Add Attribute"),
+            items: [
+              {
+                key: "attributes[].key",
+                title: gettext("Key")
+              },
+              {
+                key: "attributes[].value",
+                title: gettext("Value")
               }
             ]
           }

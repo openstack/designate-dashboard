@@ -51,6 +51,8 @@ def create_zone(request):
         build_kwargs['ttl'] = data['ttl']
     if data.get('masters', None):
         build_kwargs['masters'] = data['masters']
+    if data.get('attributes', None):
+        build_kwargs['attributes'] = data['attributes']
 
     zone = conn.dns.create_zone(**build_kwargs)
     return zone.to_dict()
