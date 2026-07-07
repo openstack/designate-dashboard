@@ -1,0 +1,7 @@
+---
+features:
+  - |
+    Added batch delete support for record sets. Users can now select
+    multiple record sets and delete them at once, similar to other
+    OpenStack Dashboard resource panels.
+    `LP#1759750 <https://bugs.launchpad.net/designate-dashboard/+bug/1759750>`__

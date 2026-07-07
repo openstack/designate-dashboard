@@ -63,6 +63,17 @@
         }
       });
 
+    resourceType
+      .batchActions
+      .append({
+        id: 'batchDeleteRecordset',
+        service: deleteAction,
+        template: {
+          text: gettext('Delete Record Sets'),
+          type: 'delete-selected'
+        }
+      });
+
     // Append a record set view to the zones actions
     var zoneResourceType = registry.getResourceType("OS::Designate::Zone");
     zoneResourceType
