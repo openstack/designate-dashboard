@@ -23,9 +23,6 @@ dist
 *.orig
 *.DS_Store
 *.idea
-.testrepository/*
-functionaltests/tempest.log
-functionaltests/.testrepository/
 *.ipynb
 /.ipynb_checkpoints/*
 releasenotes/build
