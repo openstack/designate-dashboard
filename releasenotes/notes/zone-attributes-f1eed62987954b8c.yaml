@@ -1,0 +1,8 @@
+---
+features:
+  - |
+    Added support for zone attributes in the zone creation form.
+    Users can now specify key-value attributes (e.g. pool_id) when
+    creating a zone, which Designate uses for pool scheduling. To
+    make use of this feature, the relevant scheduler filters (such as
+    ``attribute``) must be enabled in the Designate configuration.
