@@ -56,7 +56,8 @@
   function run(detailRoute, registry, api, resourceTypeString, util) {
     var resourceType = registry.getResourceType(resourceTypeString);
     resourceType
-      .setNames(gettext('Floating IP'), gettext('Floating IPs'))
+      .setNames('Floating IP', 'Floating IPs',
+                ngettext('Floating IP', 'Floating IPs', 1))
       .setDefaultIndexUrl('/project/reverse_dns/')
       .setListFunction(listFloatingIps)
       .setProperty('id', {
