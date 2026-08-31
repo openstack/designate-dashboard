@@ -116,8 +116,16 @@
 
     function create(zoneId, data) {
       return httpService.post(apiPassthroughUrl + 'v2/zones/' + zoneId + '/recordsets/', data)
-        .catch(function () {
-          toastService.add('error', gettext('Unable to create the record set.'));
+        .catch(function (error) {
+          var message = gettext('Unable to create the record set.');
+          if (error && error.data) {
+            if (typeof error.data === 'string') {
+              message = error.data;
+            } else if (error.data.message) {
+              message = error.data.message;
+            }
+          }
+          toastService.add('error', message);
         });
     }
 
