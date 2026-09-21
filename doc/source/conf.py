@@ -4,7 +4,7 @@
 #
 #    http://www.apache.org/licenses/LICENSE-2.0
 #
-# Unless reqdashboardred by applicable law or agreed to in writing, software
+# Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
 # implied.
@@ -33,7 +33,7 @@ openstackdocs_bug_project = 'designate-dashboard'
 openstackdocs_bug_tag = ''
 html_theme = 'openstackdocs'
 
-# autodoc generation is a bit aggressive and a ndashboardsance when doing heavy
+# autodoc generation is a bit aggressive and a nuisance when doing heavy
 # text edit cycles.
 # execute "export SPHINX_DEBUG=1" in your terminal to disable
 
@@ -65,7 +65,7 @@ pygments_style = 'native'
 # html_theme = '_theme'
 # html_static_path = ['static']
 
-# Output file base name for HTML help bdashboardlder.
+# Output file base name for HTML help builder.
 htmlhelp_basename = '%sdoc' % project
 
 # Grouping the document tree into LaTeX files. List of tuples
