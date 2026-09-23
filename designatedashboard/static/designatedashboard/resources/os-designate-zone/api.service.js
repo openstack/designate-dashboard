@@ -119,8 +119,16 @@
      */
     function create(data) {
       return httpService.post(apiPassthroughUrl + 'v2/zones/', data)
-        .catch(function() {
-          toastService.add('error', gettext('Unable to create the zone.'));
+        .catch(function(error) {
+          var message = gettext('Unable to create the zone.');
+          if (error && error.data) {
+            if (typeof error.data === 'string') {
+              message = error.data;
+            } else if (error.data.message) {
+              message = error.data.message;
+            }
+          }
+          toastService.add('error', message);
         });
     }
 
