@@ -93,7 +93,8 @@
                util) {
     var resourceType = registry.getResourceType(resourceTypeString);
     resourceType
-      .setNames(gettext('DNS Record Set'), gettext('DNS Record Sets'))
+      .setNames('DNS Record Set', 'DNS Record Sets',
+                ngettext('DNS Record Set', 'DNS Record Sets', 1))
       .setDefaultIndexUrl('/project/dnszones/')
       .setListFunction(list)
       .setProperty('id', {
